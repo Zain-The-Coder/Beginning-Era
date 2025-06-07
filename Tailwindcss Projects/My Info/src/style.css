@@ -1,0 +1,444 @@
+h1,h2,h3{
+    text-shadow: 3px 3px 5px #fff;
+}
+#projects,#contact,#about{
+    border: 10px groove black;
+}
+header nav a,main p{
+    text-shadow: 1px 1px 1.5px #00f;
+}
+main p::first-letter{
+    font-size: 40px;
+}
+@keyframes to-left{
+    from {right:300px;} to {right: 0px;}
+}
+h1{
+    animation: to-left 1.5s ease;
+    position: relative;
+}
+
+                                           /* MEDIA QUERIES */
+@media (max-width:1130px){
+    p{
+        margin-left: 17px;
+        width: 100%;
+    }
+    #o{
+        border-radius: 90px;
+        margin-top: 90px;
+        margin-right: 150px;
+    }
+
+}
+@media (max-width:1050px){
+    p{
+        margin-left: 17px;
+        font-size: 21.5px;
+        width: 100%;
+    }
+    #o{
+        height: 130px;
+        width: 130px;
+        border-radius: 90px;
+        margin-top: 90px;
+        margin-right: 130px;
+    }
+}
+@media (max-width:975px){
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    p{
+        font-size: 20px;
+        margin-left: 39px;
+        width: 100%;  
+    }
+    #o{
+        display: none;
+    }
+     h3{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    article{
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 23px;
+        margin-left: 40px;
+         width: 95%;
+    }
+    #projects ,#about,#contact{
+        border: 2px groove black;
+    }
+    article a,article li{
+        font-size: 14px;
+        margin-left: -25px;
+    }
+    #contact a{
+        margin-left: 3.3px;
+        font-size: 14px;
+    }
+    table{
+        margin-left: -10px;
+        width: 100%;
+    }
+    p{
+        margin-left: 0%;
+        font-size: 14px;
+    }
+
+}
+@media (max-width:920px){
+    h3{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    article{
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 23px;
+         margin-left: 40px;
+         width: 95%;
+    }
+    #projects ,#about,#contact{
+        border: 2px groove black;
+    }
+    article a,article li{
+        font-size: 14px;
+        margin-left: -25px;
+    }
+    #contact a{
+        margin-left: 3.3px;
+        font-size: 14px;
+    }
+    table{
+        margin-left: -10px;
+        width: 100%;
+        border-spacing: 2px;
+    }
+    p{
+        margin-left: 0%;
+        font-size: 14px;
+    }
+}
+@media (max-width:810px){
+    article{
+        flex-direction: column;
+        width: 95%;
+    }
+     #contact,#about,#projects{
+        
+        margin-left: -20px;
+        width: 100%;
+        border-top: 4px groove black;
+        border-bottom: 4px groove black;
+    }
+    table{
+        text-align: center;
+        width: 100%;
+        margin-left: 13px;
+    }
+    nav{
+        text-align: center;
+        margin-left: 10px;
+    }
+}
+@media (max-width:778px)  {
+    h2{
+        margin-left: 20px;
+    }
+    p{
+        font-size: 20px;
+        margin-left: 23px;
+        margin-top: 0px;
+        width: 100%;
+    }
+    #o{
+        display: none;
+    }
+    #p{
+        height: 75px;
+        width: 75px;
+        margin-top: -10px;
+        border-radius: 100px;
+    }
+    article{
+        flex-direction: column;
+        width: 95%;
+    }
+     #contact,#about,#projects{
+        
+        margin-left: -20px;
+        width: 100%;
+        border-top: 4px groove black;
+        border-bottom: 4px groove black;
+    }
+    table{
+        text-align: center;
+        width: 100%;
+        margin-left: 5px;
+    }
+    nav{
+        text-align: center;
+        margin-left: 10px;
+    }
+        
+    }
+
+@media (max-width:660px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        font-size: 30px;
+        width: 80%;
+        margin-left: 65px;
+    }
+    p{
+        font-size: 22px;
+        margin-left: 20px;
+        width: 90%;
+    }
+    #o{
+        display: none;
+    }
+}
+@media (max-width:600px) {
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    #o{
+        display: none;
+    }
+    main{
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    margin-left: 17px;
+    font-size: 32px;
+    text-align: center;
+    width: 100%;
+  }
+
+  p {
+    margin-left: 10px;
+    width: 100%;
+    margin-right: 20px;
+    font-size: 19px;
+  }
+
+  #o {
+    margin: 20px auto;
+  }
+  article{
+        flex-direction: column;
+        width: 95%;
+    }
+     #contact,#about,#projects{
+        
+        margin-left: -20px;
+        width: 100%;
+        border-top: 4px groove black;
+        border-bottom: 4px groove black;
+    }
+    table{
+        text-align: center;
+        width: 100%;
+        margin-left: 13px;
+    }
+    nav{
+        text-align: center;
+        margin-left: 10px;
+    }
+}
+@media (max-width:536px){
+   
+    h1{
+        font-size: 25px;  
+        width: 100%;
+     }
+}
+@media (max-width:521px){
+    h1{
+        font-size: 25px;
+    }
+    a{
+        font-size: 14px;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    article{
+        flex-direction: column;
+        width: 95%;
+    }
+     #contact,#about,#projects{
+        
+        margin-left: -20px;
+        width: 100%;
+         border-top: 4px groove black;
+        border-bottom: 4px groove black;
+    }
+    table{
+        text-align: center;
+        width: 100%;
+        margin-left: 5px;
+    }
+    nav{
+        text-align: center;
+        margin-left: 10px;
+    }
+    #about p{
+        font-size: 15.4px;
+    }
+}
+@media (max-width:425px){
+    h2{
+        font-size: 25px;
+    }
+    h1{
+        font-size: 18px;
+    }
+    a{
+        font-size: 12px;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    article{
+        flex-direction: column;
+        width: 95%;
+    }
+     #contact,#about,#projects{
+        
+        margin-left: -20px;
+        width: 100%;
+         border-top: 4px groove black;
+        border-bottom: 4px groove black;
+    }
+    table{
+        text-align: center;
+        width: 100%;
+        margin-left: 8px;
+    }
+    nav{
+        text-align: center;
+        margin-left: 10px;
+    }
+    #about p{
+        font-size: 14.5px;
+    }
+}
+@media (max-width:406px){
+    h1{
+        font-size: 17px;
+    }
+    a{
+        font-size: 11px;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    article{
+        flex-direction: column;
+        width: 95%;
+    }
+     #contact,#about,#projects{
+        
+        margin-left: -20px;
+        width: 100%;
+         border-top: 4px groove black;
+        border-bottom: 4px groove black;
+    }
+    table{
+        text-align: center;
+        width: 100%;
+        margin-left: 13px;
+    }
+    nav{
+        text-align: center;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:410px){
+     main{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    margin-left: 20px;
+    font-size: 23px;
+    text-align: center;
+  }
+
+  p {
+    margin-left: 10px;
+    width: 100%;
+    margin-right: 20px;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  #o {
+    margin: 20px auto;
+    height: 120px;
+    width: 120px;
+  }
+     article{
+        flex-direction: column;
+        width: 95%;
+    }
+     #contact,#about,#projects{
+        
+        margin-left: -20px;
+        width: 100%;
+         border-top: 4px groove black;
+        border-bottom: 4px groove black;
+    }
+    table{
+        text-align: center;
+        width: 100%;
+        margin-left: 8px;
+    }
+    nav{
+        text-align: center;
+        margin-left: 10px;
+    }
+
+}
+
+@media (max-width:338px){
+    h2{
+        font-size: 17px;
+    }
+    article{
+        flex-direction: column;
+        width: 95%;
+    }
+    #contact,#about,#projects{
+        
+        margin-left: -20px;
+        width: 100%;
+        border-top: 3px groove black;
+        border-bottom: 3px groove black;
+    }
+    table{
+        text-align: center;
+        width: 100%;
+        margin-left: 10px;
+    }
+}
