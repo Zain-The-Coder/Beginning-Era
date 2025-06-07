@@ -1,0 +1,171 @@
+ /*  backgorund color transparent 
+    opacity is 1 is fully opaque and 0 is fully tarnsparent*/
+@keyframes gif-nji{
+    from {bottom:400px;} to {bottom:0px;} 
+}
+@keyframes lo{
+    from {right:700px;} to {right:0px;}
+}
+@keyframes p{
+    from {left:1200px;} to {left:0px;}
+}
+body{
+    margin: 0px;
+    background: linear-gradient(to top, #ffffcd, #aaaaaf);
+}
+.content{
+    display: flex;
+    border-bottom: 0.5px solid black;
+    gap: 50px;
+}
+    .header{
+    background-color: #9d9b94;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    animation: lo 3s ease-in;
+    
+    
+}
+ .header h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-left: -30px;
+    position: relative;
+    animation: gif-nji 3s ease-out;
+}
+
+
+.sec-head{
+    background-color: #aaaaa6;
+    margin-top: -17px;
+    position: relative;
+    animation: p 5s ease;
+}
+.sec-head ul{
+    display: flex;
+    gap: 40px;
+    margin: auto;
+    margin-left: 70px;
+    
+    
+}
+.sec-head li{
+    list-style: none;
+    
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize
+}
+a:hover{
+    text-decoration: dashed;
+    text-transform: uppercase;
+    color: #000000;
+}
+img{
+    height: 170px;
+    width: 170px;
+    float: right;  
+}
+.pictures p{
+    margin-left: 30px;
+    color: rgb(10, 9, 14);
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.pictures{
+    width: 200px;
+    margin-top: 0px;   
+}
+.items {
+    width: 550px;
+}
+ h2, .pop h3{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    text-decoration: underline;
+}
+.items h3{
+    color: #c62323;
+    font-size: 18px;
+}
+.items p,.pak p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+.iimg{
+    height: 250px;
+    width: 270px;
+}
+.header>h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center; 
+}
+.pak{
+    width: 270px;
+    border-right: 0.01px solid black;   
+    margin-left: -47px;
+}
+.items p::first-letter,.pak p::first-letter{
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.pop{
+    width: 200px;
+    
+    margin-right: 70px;
+}
+.pop ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #c62323;
+}
+#a{
+    text-transform: uppercase;
+    color: #c62323;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    margin-left: 65px;
+}
+.dishes,.dish,.dis{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    
+}
+.food{
+    display: flex;
+    justify-content: space-around;
+}
+#h{
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 3px 3px 7px #3f886f;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+h4{
+    margin-top:-10px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 35px;
+    text-align: center;
+}
