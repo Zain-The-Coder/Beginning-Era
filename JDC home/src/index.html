@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDC foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <div class="bg-gradient-to-r from-[#203c98] to-[#20316d] flex text-[#fff] justify-between items-center h-[40px]">
+        <div class="flex ml-[100px] gap-[20px] items-center">
+        <h1 class="text-[12px] uppercase">ambulance <br> helpline</h1>
+        <p class="font-bold text-[28px] ">1024</p>
+        <p class="uppercase text-[12px]">contact us <br>via whatsapp</p>
+        </div>
+        <div class="mr-[100px] items-center">
+            <p class="uppercase text-[12px]">become a volunteers</p>
+        </div>
+    </div>
+    <header class="flex justify-around border-b items-center h-[90px] ">
+        <img class="h-[110px] ml-[60px] absolute left-8.5 top-10" src="https://jdcwelfare.org/wp-content/uploads/2023/03/JDC-Logo-Square.webp" alt="JDC-Logo-Square">
+        <ul class="flex gap-[25px] ml-[180px]">
+            <li> <a class="font-bold capitalize hover:text-[#808080] hover:border-b-2 hover:pb-[15px] hover:border-[#000]" href="#">home</a></li>
+            <li> <a class="font-bold capitalize hover:text-[#808080] hover:border-b-2 hover:pb-[15px] hover:border-[#000] " href="#">projects</a></li>
+            <li><a class="font-bold capitalize  hover:text-[#808080] hover:border-b-2 hover:pb-[15px] hover:border-[#000]" href="#">contact us</a></li>
+            <li><a class="font-bold capitalize  hover:text-[#808080] hover:border-b-2 hover:pb-[15px] hover:border-[#000]" href="#">about us</a></li>
+            <li><a class="font-bold capitalize  hover:text-[#808080] hover:border-b-2 hover:pb-[15px] hover:border-[#000]" href="#">blogs</a></li>
+            <li><a class="font-bold capitalize  hover:text-[#808080] hover:border-b-2 hover:pb-[15px] hover:border-[#000]" href="#">taqatwar pakistan</a></li>
+            <li><a class="font-bold capitalize  hover:text-[#808080] hover:border-b-2 hover:pb-[15px] hover:border-[#000]" href="#">free IT city</a></li>
+        </ul>
+        <ul class="flex gap-[20px] mr-[60px]">
+            <li><button class=" border rounded-[5px] w-[110px] h-[33px] bg-[#203065] text-[#fff] font-bold capitalize text-[20px] cursor-pointer hover:bg-[#f5c528] "> donate</button></li>
+            <li><button class=" border rounded-[5px] w-[125px] h-[33px] bg-[#203065] text-[#fff] font-bold capitalize text-[20px] cursor-pointer hover:bg-[#f5c528] ">donate USA</button></li>
+            <li><button class=" border rounded-[5px] w-[115px] h-[33px] bg-[#203065] text-[#fff] font-bold capitalize text-[20px] cursor-pointer hover:bg-[#f5c528] ">donate CA</button></li>
+        </ul>
+    </header>
+    <img class="h-[480px] w-[100%]" src="https://theazb.com/wp-content/uploads/2023/04/Haleeb-Foods-and-JDC-partner-to-spread-Iftaar-Joy-for-the-Underprivileged-pic-01.jpeg" alt="main-picture">
+    <article class=" border m-auto w-[80%] h-[85vh] rounded-[20px]">
+        <img class="h-[150px] rounded-[100px] absolute top-144 left-15" src="https://www.feelingblessed.org/images/org/logo/2024-04-19-16-12-04-7xSjJQ.webp" alt="donate now">
+      <div class="text-center mt-[40px]">
+        <p class="font-[monospace] text-[18px]"> <span class="text-[#203a95] text-[25px] font-[monospace] ">You</span><span id="omega" class=" relative text-[203a95] "> are the one who belive on us......</span></p>
+        <div class=" w-[34%] mt-[10px] ml-[305px] text-center m-auto flex gap-[5px]  ">
+          <ul><button id="amount" class="border rounded-[7px]  border-[#000]   w-[150px] p-[7px] font-medium hover:bg-gradient-to-r from-[#20316d] to-[#5fcdfe] text-[#203a95] hover:text-[#fff] hover:border-[#fff]" >1. Amount</button></ul>
+          <ul><button id="details" class="border rounded-[7px] border-[#000000] w-[150px] p-[7px] text-[#203a95] font-medium hover:bg-gradient-to-r from-[#20316d] to-[#5fcdfe] hover:text-[#fff] hover:border-[#fff]">2. Details</button></ul>
+          <ul><button id="payment" class=" border rounded-[7px] border-[#000] w-[150px] p-[7px] text-[#203a95] font-medium hover:bg-gradient-to-r from-[#20316d] to-[#5fcdfe] hover:text-[#fff] hover:border-[#fff]">3. Payment</button></ul>
+        </div>
+      </div>
+        <div class="text-center">
+            <p class="capitalize font-bold text-[18px] mt-[30px]">enter your contribution amount (PKR)</p>
+            <input class="w-[400px] h-[37px] border rounded-[4px] mt-[10px] text-center font-bold text-[18px]" type="number" name="number">
+        </div>
+        <div>
+
+            <p class="uppercase font-bold text-[18px] text-center mt-[20px]">donations for</p>
+            <label >
+                <select class="w-[900px] p-2 border border-[#000] rounded-md uppercase font-bold pl-[30px] ml-[80px] " name="donation" id="donation">
+                    <option value="choose an option" selected>Choose an option</option>
+                    <option value="donate to palestine">Donate to Palestine</option>
+                    <option value="zakat">Zakat</option>
+                    <option value="qurbani">Qurbani</option>
+                    <option value="education">Education</option>
+                    <option value="food">Food</option>
+                    <option value="Social walfare">Social Walfare</option>
+                    <option value="shelter">Shelter</option>
+                    <option value="fitra">Fitra</option>
+                    <option value="health">Health</option>
+                </select>         
+            </label>
+            <button class="border bg-gradient-to-r from-[#3f2164] to-[#2a2a6a] text-[#fff] bg-[#202a96] uppercase rounded-[2px] w-[120px] h-[40px] font-bold hover:bg-gradient-to-r hover:from-[#20316d] hover:to-[#5fcdfe] float-right mt-[7px] mr-[76px]">next</button>
+
+        </div>
+        <div class="mt-[70px]">
+            <p class="uppercase font-[san-serif] text-[18px] text-center">for international donars</p>
+            <button id="sigma" class="flex cursor-pointer w-[350px] h-[47px] bg-[#002f86] justify-between pl-[20px] rounded-[10px] text-center ml-[350px] mt-[7px]"><span class="font-bold mt-[12px] ml-[15px] text-[#aeaeae]">Click To Donate</span> <img class="h-[40px] mt-[5px] w-[50px] mr-[26px]" src="https://img.utdstc.com/icon/d49/c48/d49c4851fcbdecccece71a27cddf0a6bddb23173461e763ec32cd08eeb778c69:200" alt="paypal-logo"> </button>
+             </div>
+    </article>       
+    <main  class="bg-[url(https://www.shutterstock.com/image-photo/two-poor-child-working-on-260nw-1796552365.jpg)] blur"> 
+    <div>
+    <img class="w-[200px] h-[200px] rounded-[100px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZn6lc5b6enbhbS3nRc5CyVtnKjVw0iBh-yg&s" alt="jdc owner pic">
+    <h2 class="font-bold text-[32px]">Help is Our Main Goal</h2>
+    <p>JDC Walfare Organization is a non profitable organization dedicated to serve Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quidem reiciendis placeat illo enim consectetur odio optio sequi accusantium natus, error dolor suscipit id quo sit odit tempore quis! Vitae.
+        is to work for creating a world where equality sustains.....</p>
+    </div>
+    </main>
+<br><br><br><br>
+
+</body>
+</html>
