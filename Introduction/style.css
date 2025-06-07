@@ -1,0 +1,101 @@
+.First-section{
+    border: 5px solid #008cba;
+    text-align: center;
+    color: #ffffff;
+    background-color: #008cba;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: auto;
+}    
+.First-section>ul{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    text-indent: 5px;
+  text-decoration: none;   
+    text-align: center;
+    list-style: none;   
+    font-weight: bold;
+}
+a{
+    color: #ffffff;
+    text-decoration: none; 
+}
+.second-section{
+    border: 2.5px solid #e2e2e4;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    
+
+}
+.second-section>h2{
+        text-transform: capitalize;
+        border-bottom:1px solid #008cba;
+        padding: 15.0px;
+        color: #008cba;
+    }
+.second-section>p{
+    font-style: italic;
+    text-indent: 50px;
+    font-size: 120%;
+    word-spacing: 3px;
+}
+.second-section>p::first-letter{
+    color: #008cba;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 200%;
+}
+.third-section{
+    border: 2.5px solid #e2e2e4;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+.third-section>h2{
+    color: #008cba;
+    border-bottom: 1px solid #008cba;
+    text-transform: capitalize;
+    padding: 15px;
+}
+
+h3{
+    display: inline;
+    text-transform: capitalize;
+    font-style: normal;
+}
+.third-section>ul{
+    line-height: 27px;
+    text-indent: 30px;
+    font-style: italic;
+}
+.fourth-section{
+    border-radius: 5px;
+    border: 2.5px solid #e2e2e4;
+    padding: 20px;
+    margin: 20px;
+}
+
+#contact{
+    border-bottom: 1.5px solid #008cba;
+    padding: 18px;
+    color: #008cba;
+}   
+.form-bar{
+    display: flex;
+}
+#part-1,#part-2{
+    border: 1px solid red;
+    display: inline;
+}
+#part-2{
+    margin-top: -80px;
+}
+input[type=text]:focus{
+    padding: 8px;
+    font-size: 16px;
+}

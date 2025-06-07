@@ -1,0 +1,94 @@
+@font-face {
+    font-family: backso;
+    src: url(access/font/backso.zip);
+}
+ @keyframes boxmove{   
+  0% {bottom: 400px;}
+    50% {bottom: 0px;}
+    /* 100% {top: 400px;} */
+ }
+
+
+#div{
+    border: 30px solid black ;
+    border-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZnhIUuPW3qBm57nPKsNroCWRitvtpPp03ig&s) 
+    20 40 20 40 repeat;
+     background-color: #000000;
+     width: 40%;
+     height: 450px;
+     text-align: center;
+     margin: 0 auto;
+     color: #f5f5dc;
+    position: relative;
+    animation: boxmove 2s ease;
+}
+
+p{
+    font-family: sans-serif;
+}
+.heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    text-shadow: 3px 3px 5px #fff;
+}
+img{
+    height: 150px;
+    width: 150px;
+    padding: 0%;
+    margin-top: 0%;
+
+}
+body{
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20231231/pngtree-an-intriguing-background-texture-the-black-block-against-a-dark-brick-image_13775571.png);
+}
+button{
+    color: #00bfff;
+    background-color: #251c1c;
+    border-radius: 20px;
+
+}
+h2{
+    color: #ffe4c4;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media (max-width:1120px){
+    #div{width: 50%; height:470px ;}
+}
+@media (max-width:1014px){#div{height: 510px;}}
+@media (max-width:900px){
+    #div{width: 54%;height: 520px;}
+}
+@media (max-width:778px){
+    .heading{font-size: 47px;}
+    #div{width:58.5%; border: 25px solid black; height:525px; border-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZnhIUuPW3qBm57nPKsNroCWRitvtpPp03ig&s) 
+    20 40 20 40 repeat;}
+}
+@media(max-width:650px){
+    .heading{font-size: 37px;}
+    #div{width: 65%; border: 22px solid black ;height: 515px;
+     border-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZnhIUuPW3qBm57nPKsNroCWRitvtpPp03ig&s) 
+    20 40 20 40 repeat;}
+}
+@media(max-width:538px){
+    .heading{font-size: 30px;}
+    #div{width: 78.5%; border: 15px solid black; height: 510px;
+     border-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZnhIUuPW3qBm57nPKsNroCWRitvtpPp03ig&s) 
+    20 40 20 40 repeat;}
+}
+@media (max-width:460px){
+.heading{
+font-size: 30px;
+}
+#div{width: 90%; border: 10px solid black; height: 500px;
+ border-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZnhIUuPW3qBm57nPKsNroCWRitvtpPp03ig&s) 
+    20 40 20 40 repeat;}
+p{font-size: 15px;}
+}
+@media (max-width:350px){
+    #div{height: 520px; border-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZnhIUuPW3qBm57nPKsNroCWRitvtpPp03ig&s) 
+    20 40 20 40 repeat;}
+}
