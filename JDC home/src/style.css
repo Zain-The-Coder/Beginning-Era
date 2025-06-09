@@ -1,16 +1,21 @@
+@keyframes to-left{
+    from{right:400px;} to {right:0px;}
+}
+@keyframes to-right{
+    from{left:400px;} to {left:0px;}
+}
 header{
     z-index: 110;
 }
 main{
     background-image: url(https://images.pexels.com/photos/1739842/pexels-photo-1739842.jpeg?cs=srgb&dl=pexels-hiteshchoudhary-1739842.jpg&fm=jpg);
 }
+article{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm6klCifVcgevOkMlm8AQbKCqHxrrtsTsTpw&s);
+}
 #gogo{
     height: 220px;
     width: 325px;
-}
-#anchor:hover{
-    transform: scale(1.1);
-    transition: all 1s ease;
 }
 article div ul button:hover{
     transition: all 1s ease ;
@@ -20,4 +25,9 @@ article div ul button:hover{
     transition: all 1s ease;
     transform: scale(0.8);
 }
-
+#hero{
+    animation: to-left 2s ease;
+}
+#heero{
+    animation: to-right 2s ease;
+}
