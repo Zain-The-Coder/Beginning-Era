@@ -19,9 +19,17 @@ article{
     height: 220px;
     width: 325px;
 }
+article div ul button{
+    transition: all 1s ease ;
+    transform: scale(1);
+}
 article div ul button:hover{
     transition: all 1s ease ;
     transform: scale(1.2);
+}
+#sigma{
+    transition: all 1s ease;
+    transform: scale(1);
 }
 #sigma:hover{
     transition: all 1s ease;
@@ -35,4 +43,13 @@ article div ul button:hover{
 }
 footer div ul li:hover{
     text-decoration: underline;
+}
+#sec input{
+    border-radius: 0px,0px,5px,5px;
+}
+#sec button{
+     transition: all 0.7s ease;
+}
+#sec button:hover{
+    transition: all 0.7s ease;
 }
