@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'hello-world';
+    src: url(../assests/fonts/Mistery\ Silent.otf);
+}
+@font-face{
+    font-family: "hello-mars";
+    src: url(../assests/fonts/Orange\ Gummy.ttf);
+}
+@media (max-width:344px){
+    header{
+    flex-direction: columns;
+    text-align: center;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    img{
+        height: 50px;width: 100px;
+    }
+}
