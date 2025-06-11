@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-200: oklch(92.4% 0.12 95.746);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -157,23 +158,11 @@
   }
 }
 @layer utilities {
-  .mr-\[0px\] {
-    margin-right: 0px;
-  }
-  .mr-\[50px\] {
-    margin-right: 50px;
-  }
   .mr-\[100px\] {
     margin-right: 100px;
   }
-  .mr-\[150px\] {
-    margin-right: 150px;
-  }
   .mr-\[220px\] {
     margin-right: 220px;
-  }
-  .mr-\[300px\] {
-    margin-right: 300px;
   }
   .flex {
     display: flex;
@@ -183,12 +172,6 @@
   }
   .h-\[220px\] {
     height: 220px;
-  }
-  .h-\[250px\] {
-    height: 250px;
-  }
-  .w-\[250px\] {
-    width: 250px;
   }
   .w-\[450px\] {
     width: 450px;
@@ -206,14 +189,17 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-amber-200 {
+    border-color: var(--color-amber-200);
+  }
   .bg-\[\#000\] {
     background-color: #000;
   }
   .pl-\[22px\] {
     padding-left: 22px;
   }
-  .pl-\[30px\] {
-    padding-left: 30px;
+  .text-center {
+    text-align: center;
   }
   .font-\[hello-mars\] {
     font-family: hello-mars;

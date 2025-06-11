@@ -6,10 +6,77 @@
     font-family: "hello-mars";
     src: url(../assests/fonts/Orange\ Gummy.ttf);
 }
-@media (max-width:344px){
-    header{
-    flex-direction: columns;
-    text-align: center;
+@media (max-width:570px){
+     div{
+        margin-right: 25px;margin-top: 38px;
+    }
+    img{
+        height: 140px;width: 250px;margin-left: -2px;
+    }
+    h2{
+        font-size: 23px;
+    }
+    h3{
+        font-size: 18px;
+    }
+
+}
+@media (max-width:1100px){
+     div{
+        margin-right: 20px;margin-top:14px ;
+    }
+    img{
+        margin-left: -20px; 
+    }
+}
+@media (max-width:1022px){
+     div{
+        margin-right: 37px;margin-top: 40px;
+    }
+    img{
+        height: 210px;width: 400px;margin-left: -12px;
+    }
+    h2{
+        font-size: 47px;
+    }
+    h3{
+        font-size: 36px;
+    }
+}
+@media (max-width:850px){
+     div{
+        margin-right: 32px;margin-top: 52px;
+    }
+    img{
+        height: 180px;width: 340px;margin-left: -8px;
+    }
+    h2{
+        font-size: 29px;
+    }
+    h3{
+        font-size: 22px;
+    }
+}
+@media (max-width:620px){
+     div{
+        margin-right: 25px;margin-top: 43px;
+    }
+    img{
+        height: 160px;width: 300px;margin-left: -2px;
+    }
+    h2{
+        font-size: 27px;
+    }
+    h3{
+        font-size: 20px;
+    }
+}
+@media (max-width:450px){
+     div{
+        margin-right: 25px;margin-top: 29px;
+    }
+    img{
+        height: 120px;width: 190px;margin-left: -2px;
     }
     h2{
         font-size: 20px;
@@ -17,7 +84,19 @@
     h3{
         font-size: 16px;
     }
+}
+@media (max-width:344px){
+    div{
+        margin-right: 10px;margin-top: 18px;
+    }
     img{
-        height: 50px;width: 100px;
+        height: 100px;width: 150px;margin-left: -2px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
     }
 }
+
