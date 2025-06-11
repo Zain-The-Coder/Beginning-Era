@@ -6,6 +6,28 @@
     font-family: "hello-mars";
     src: url(../assests/fonts/Orange\ Gummy.ttf);
 }
+@font-face {
+    font-family: hello-jupiter;
+    src: url(../assests/fonts/MarthaHayden-Regular.otf);
+}
+@font-face {
+    font-family: hello-sun;
+    src: url(../assests/fonts/CareeraScript_PERSONAL_USE_ONLY.otf);
+}
+@keyframes haha{
+    from{bottom:500px;} to {bottom:0px;}
+}
+@keyframes hr{
+    from{left:200px;} to {left: 0px;}
+}
+#para, header h2{
+    animation: haha 1s ease;
+    position: relative;
+}
+header h3{
+    animation: hr 1s ease;
+    position: relative;
+}
 @media (max-width:570px){
      div{
         margin-right: 25px;margin-top: 38px;
@@ -36,10 +58,10 @@
     img{
         height: 210px;width: 400px;margin-left: -12px;
     }
-    h2{
+    header h2{
         font-size: 47px;
     }
-    h3{
+    header h3{
         font-size: 36px;
     }
 }
@@ -50,11 +72,24 @@
     img{
         height: 180px;width: 340px;margin-left: -8px;
     }
-    h2{
+    header h2{
         font-size: 29px;
     }
-    h3{
+    header h3{
         font-size: 22px;
+    }
+    article h2{
+        font-size: 36px;
+        text-indent: 40px;
+    }
+    #para{
+        font-size: 23px;
+    }
+    article div h3{
+        font-size: 20px;
+    }
+    article div p{
+        font-size: 18px;text-indent: 16px;
     }
 }
 @media (max-width:620px){
@@ -70,6 +105,19 @@
     h3{
         font-size: 20px;
     }
+    article h2{
+        font-size: 30px;
+        text-indent: 30px;
+    }
+    #para{
+        font-size: 20px;
+    }
+    article div h3{
+        font-size: 22px;
+    }
+    article div p{
+        font-size: 17px;text-indent: 20px;
+    }
 }
 @media (max-width:450px){
      div{
@@ -78,11 +126,24 @@
     img{
         height: 120px;width: 190px;margin-left: -2px;
     }
-    h2{
+    header h2{
         font-size: 20px;
     }
-    h3{
+    header h3{
         font-size: 16px;
+    }
+    article h2{
+        font-size: 25px;
+        text-indent: 20px;
+    }
+    #para{
+        font-size: 16px;
+    }
+    article div h3{
+        font-size: 20px;
+    }
+    article div p{
+        font-size: 16px;text-indent: 16px;
     }
 }
 @media (max-width:344px){
@@ -92,11 +153,24 @@
     img{
         height: 100px;width: 150px;margin-left: -2px;
     }
-    h2{
+    header h2{
         font-size: 20px;
     }
-    h3{
+    header h3{
         font-size: 16px;
+    }
+    article h2{
+        font-size: 25px;
+        text-indent: 20px;
+    }
+    #para{
+        font-size: 16px;
+    }
+    article div h3{
+        font-size: 20px;
+    }
+    article div p{
+        font-size: 16px;text-indent: 16px;
     }
 }
 
