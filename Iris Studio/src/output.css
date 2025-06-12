@@ -7,10 +7,10 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-200: oklch(92.4% 0.12 95.746);
     --spacing: 0.25rem;
     --font-weight-bold: 700;
-    --default-transition-duration: 150ms;
-    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --font-weight-extrabold: 800;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -164,37 +164,142 @@
   .m-auto {
     margin: auto;
   }
+  .mt-\[1\] {
+    margin-top: 1;
+  }
+  .mt-\[2\] {
+    margin-top: 2;
+  }
   .mt-\[10px\] {
     margin-top: 10px;
+  }
+  .mt-\[20px\] {
+    margin-top: 20px;
+  }
+  .mr-\[20px\] {
+    margin-right: 20px;
   }
   .mr-\[100px\] {
     margin-right: 100px;
   }
+  .mb-\[10px\] {
+    margin-bottom: 10px;
+  }
+  .ml-\[20px\] {
+    margin-left: 20px;
+  }
   .flex {
     display: flex;
+  }
+  .table {
+    display: table;
   }
   .h-\[220px\] {
     height: 220px;
   }
+  .h-\[250px\] {
+    height: 250px;
+  }
+  .w-\[0px\] {
+    width: 0px;
+  }
+  .w-\[30\%\] {
+    width: 30%;
+  }
   .w-\[70\%\] {
     width: 70%;
+  }
+  .w-\[250px\] {
+    width: 250px;
   }
   .w-\[450px\] {
     width: 450px;
   }
+  .w-\[500px\] {
+    width: 500px;
+  }
+  .w-\[550px\] {
+    width: 550px;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
   .justify-between {
     justify-content: space-between;
+  }
+  .gap-\[20px\] {
+    gap: 20px;
+  }
+  .rounded-\[20px\] {
+    border-radius: 20px;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
   }
+  .border-t-3 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 3px;
+  }
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-b-3 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 3px;
+  }
+  .border-\[\#000\] {
+    border-color: #000;
+  }
+  .bg-\[\#00f\] {
+    background-color: #00f;
+  }
   .bg-\[\#000\] {
     background-color: #000;
+  }
+  .bg-\[\#4579\] {
+    background-color: #4579;
+  }
+  .bg-\[\#\] {
+    background-color: #;
+  }
+  .bg-\[\#aaa\] {
+    background-color: #aaa;
+  }
+  .bg-\[\#aeae\] {
+    background-color: #aeae;
+  }
+  .bg-\[00f\] {
+    background-color: 00f;
+  }
+  .bg-\[aeae\] {
+    background-color: aeae;
+  }
+  .bg-\[gre\] {
+    background-color: gre;
+  }
+  .bg-\[grey\] {
+    background-color: grey;
+  }
+  .bg-\[light-blue\] {
+    background-color: light-blue;
+  }
+  .bg-\[light\] {
+    background-color: light;
+  }
+  .bg-amber-200 {
+    background-color: var(--color-amber-200);
+  }
+  .p-\[30px\] {
+    padding: 30px;
   }
   .text-center {
     text-align: center;
@@ -204,6 +309,15 @@
   }
   .indent-36 {
     text-indent: calc(var(--spacing) * 36);
+  }
+  .indent-40 {
+    text-indent: calc(var(--spacing) * 40);
+  }
+  .font-\[gello--sun\] {
+    font-family: gello--sun;
+  }
+  .font-\[gello-sun\] {
+    font-family: gello-sun;
   }
   .font-\[hello-jupiter\] {
     font-family: hello-jupiter;
@@ -217,14 +331,23 @@
   .font-\[hello-world\] {
     font-family: hello-world;
   }
+  .font-\[monospace\] {
+    font-family: monospace;
+  }
   .text-\[18px\] {
     font-size: 18px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
   }
   .text-\[25px\] {
     font-size: 25px;
   }
   .text-\[30px\] {
     font-size: 30px;
+  }
+  .text-\[35px\] {
+    font-size: 35px;
   }
   .text-\[40px\] {
     font-size: 40px;
@@ -239,8 +362,18 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
   .text-\[\#000\] {
     color: #000;
+  }
+  .text-\[\#a\] {
+    color: #a;
+  }
+  .text-\[\#aeaeae\] {
+    color: #aeaeae;
   }
   .text-\[\#fff\] {
     color: #fff;
@@ -256,6 +389,10 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .first-letter\:text-\[37px\] {
     &::first-letter {
@@ -283,11 +420,17 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
     }
   }
 }
