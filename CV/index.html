@@ -5,44 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> My CV</title>
-    <style>
-        h2{
-    color: black6;
-    background-color: blanchedalmond;
-    font-size: medium;
-    font-style: italic;
-    font: bold;
-}
-h1{
-    color: rgb(24, 148, 236);
-    text-align: center;
-}
-.h2{
-    font-family: black;
-    text-align: center;
-}
-#html introduction{
-    color: aqua;
-}
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+    font-family: hello-world;
+    src: url(./fonts/Orange\ Gummy.otf);
+}
+@font-face {
+    font-family: hello-mars;
+    src: url(./fonts/Mistery\ Silent.otf);
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: hello-world;
+    color: #aeaeae;
+    text-shadow: 7px 7px 15px #000
+}
+.first-list{
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    width: 90%;
+    margin: auto;
+}
+.first-list li a{
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.first-list li a:hover {
+    border-bottom: 1px solid #000;
+}
+h2{
+    font-family: hello-mars;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+    </style>
     <h1> My CV</h1>
-    <ul> 
+    <ul class="first-list"> 
         <li><a href="#html-introduction">Introduction</a></li>
-        <li><a href="#html-video-introduction">Video Introduction</a></li>
+        <li><a href="#html-video-introduction">Video Intro</a></li>
         <li> <a href="#html-qualification">Qualification</a></li>
         <li> <a href="#html-experience">Experience</a></li>
         <li><a href="#html-location">Location</a></li>
         <li><a href="#html-contact">contact</a> </li>
         <li> <a href="#html-accounts">Social Media Accounts</a> </li>
     </ul>
-    <ul> 
+    <ul class="hello"> 
      <li><h2 id="html-Introduction"> INTRODUCTION </h2></li>
     <ul>
         <li><b> Name:</b> Zain ur rehman </li>
-        <li> <b>Father name:</b> Waheed ahmed</li>
+        <li> <b>Father name:</b> Waheed ahmed</li>      
         <li> <b>Profession:</b> Student</li>
         <li><b> Study :</b> Grade 10</li>
         <li> <b>Institute/school:</b> Metropolis Education System</li>
@@ -77,12 +102,12 @@ h1{
       </tr>  </table>
       <li> <h2 id="html-skills"> Skills</h2></li>
       <ol>
-       <h3> <li> Technical Skills</li> </h3>
+          <li><h3>Technical Skills </h3> </li>
         <ul>
            <li> Ethical hacking </li>
            <li> Data base management</li>
         </ul>
-        <h3> <li> Soft Skills</li> </h3>
+        <li><h3> Soft Skills </h3> </li>
         <ul>
         <li> Leader ship and team management</li>
         <li> Project management</li>

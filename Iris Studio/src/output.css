@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-200: oklch(92.4% 0.12 95.746);
     --spacing: 0.25rem;
     --font-weight-bold: 700;
     --default-transition-duration: 150ms;
@@ -165,20 +164,8 @@
   .m-auto {
     margin: auto;
   }
-  .mt-\[0px\] {
-    margin-top: 0px;
-  }
-  .mt-\[10\] {
-    margin-top: 10;
-  }
   .mt-\[10px\] {
     margin-top: 10px;
-  }
-  .mt-\[15px\] {
-    margin-top: 15px;
-  }
-  .mt-\[30px\] {
-    margin-top: 30px;
   }
   .mr-\[100px\] {
     margin-right: 100px;
@@ -186,17 +173,8 @@
   .flex {
     display: flex;
   }
-  .table {
-    display: table;
-  }
   .h-\[220px\] {
     height: 220px;
-  }
-  .w-\[7-\] {
-    width: 7-;
-  }
-  .w-\[7\] {
-    width: 7;
   }
   .w-\[70\%\] {
     width: 70%;
@@ -204,24 +182,8 @@
   .w-\[450px\] {
     width: 450px;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .transform {
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .resize {
-    resize: both;
-  }
-  .list-disc {
-    list-style-type: disc;
-  }
   .justify-between {
     justify-content: space-between;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-t {
     border-top-style: var(--tw-border-style);
@@ -237,26 +199,11 @@
   .text-center {
     text-align: center;
   }
-  .indent-4 {
-    text-indent: calc(var(--spacing) * 4);
-  }
-  .indent-10 {
-    text-indent: calc(var(--spacing) * 10);
-  }
-  .indent-16 {
-    text-indent: calc(var(--spacing) * 16);
-  }
   .indent-20 {
     text-indent: calc(var(--spacing) * 20);
   }
   .indent-36 {
     text-indent: calc(var(--spacing) * 36);
-  }
-  .font-\[hello-\] {
-    font-family: hello-;
-  }
-  .font-\[hello-hupiter\] {
-    font-family: hello-hupiter;
   }
   .font-\[hello-jupiter\] {
     font-family: hello-jupiter;
@@ -295,15 +242,6 @@
   .text-\[\#000\] {
     color: #000;
   }
-  .text-\[\#25px\] {
-    color: #25px;
-  }
-  .text-\[\#\] {
-    color: #;
-  }
-  .text-\[\#aaa\] {
-    color: #aaa;
-  }
   .text-\[\#fff\] {
     color: #fff;
   }
@@ -319,28 +257,9 @@
   .underline {
     text-decoration-line: underline;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .transition {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .first-letter\:text-\[35px\] {
-    &::first-letter {
-      font-size: 35px;
-    }
-  }
   .first-letter\:text-\[37px\] {
     &::first-letter {
       font-size: 37px;
-    }
-  }
-  .first-letter\:text-\[50px\] {
-    &::first-letter {
-      font-size: 50px;
     }
   }
   .first-letter\:font-bold {
@@ -354,31 +273,6 @@
       color: #00f;
     }
   }
-  .first-letter\:text-\[px\] {
-    &::first-letter {
-      color: px;
-    }
-  }
-}
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -389,22 +283,11 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-rotate-x: initial;
-      --tw-rotate-y: initial;
-      --tw-rotate-z: initial;
-      --tw-skew-x: initial;
-      --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }
