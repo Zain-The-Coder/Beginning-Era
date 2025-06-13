@@ -1,0 +1,29 @@
+@font-face {
+    font-family: hello-world;
+    src: url(../fonts/Orange\ Gummy.otf);
+}
+@font-face {
+    font-family: hello-mars;
+    src: url(../fonts/Mistery\ Silent.otf);
+}
+h1{
+    text-shadow: 4px 4px 6px #00f;
+}
+@media (max-width:700px){
+    header {
+        display: none;
+    }
+}
+@media (max-width:500px){
+    header {
+        display: none;
+    }
+}
+@media (max-width:950px){
+    header ul li a{
+        font-size: 13px;
+    }
+    header ul{
+        gap: 2px;
+    }
+}
