@@ -1,0 +1,54 @@
+header nav ul li a{
+    transition: all 1s ease;
+}
+header nav ul li a:hover{
+    transition: all 0.5s ease;
+}
+@keyframes move{
+    0%{transform: translate(0px);} 20%{transform: translate(-2px,2px);} 40%{transform: translate(-2px,-2px);}
+     60%{transform: translate(2px,2px);} 80%{transform: translate(2px , -2px);} 100%{transform: translate(0);}
+}
+@keyframes to-left{
+    from{right:550px;} to {right:0px;}
+}
+@keyframes to-right{
+    from{left:800px;} to {left:0px;}
+}
+@keyframes spin{
+    from{transform: rotate(0deg);} to{transform: rotate(360deg);}
+}
+@keyframes hello{
+    0%{opacity: 0;} 50%{opacity: 0.5;} 100%{opacity: 1;}
+}
+@keyframes hi{
+    0%{opacity: 0;} 50%{opacity: 0;} 80%{opacity: 0.5;} 100%{opacity: 1;}
+}
+@media (max-width:400px){
+    header ul{display: none;}
+    h2{font-size: 22px;}
+    p{font-size: 16px;}
+}
+h1{
+    text-shadow: 5px 5px 7px #aae5ac;
+}
+h2{
+    animation: move 1s infinite;
+}
+h3{
+    animation: spin 2s infinite;
+}
+#one{
+    animation: to-left 2s ease;
+}
+#two{
+    animation: to-right 2s ease;
+}
+#mm{
+    animation: hello 4s ease-out;
+}
+#oo{
+    animation: hi 6s ease;
+}
+header {
+    z-index: 200;
+}
