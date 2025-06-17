@@ -30,6 +30,13 @@ header nav ul li a:hover{
     header ul{display: none;}
     h2{font-size: 22px;}
     p{font-size: 16px;}
+    section #on ul li{font-size: 12px;padding-right: 2px;}
+    section #two ul li{font-size: 12px;}
+    #mm{font-size: 19px;}#oo{font-size: 15px; margin-left: -30px;}
+    #one,#twoo,#three,#four,#five{font-size: 20px;}
+    #one p,#twoo p,#three p,#four p,#five p{font-size: 18px;}
+    iframe{height: 250px; width: 250px; margin-top: 30px;}
+    #oo li{font-size: 15px;}#oo li a{margin-left: 90px;}
 }
 h1{
     text-shadow: 5px 5px 7px #aae5ac;
@@ -40,7 +47,7 @@ h2{
 h3{
     animation: spin 2s infinite;
 }
-#one{
+#on{
     animation: to-left 2s ease;
 }
 #two{

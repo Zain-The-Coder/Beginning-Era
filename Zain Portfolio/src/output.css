@@ -183,9 +183,6 @@
   .mt-\[60px\] {
     margin-top: 60px;
   }
-  .mt-\[70px\] {
-    margin-top: 70px;
-  }
   .mr-\[60px\] {
     margin-right: 60px;
   }
@@ -198,8 +195,14 @@
   .ml-\[60px\] {
     margin-left: 60px;
   }
-  .ml-\[80px\] {
-    margin-left: 80px;
+  .ml-\[100px\] {
+    margin-left: 100px;
+  }
+  .ml-\[150px\] {
+    margin-left: 150px;
+  }
+  .ml-\[160px\] {
+    margin-left: 160px;
   }
   .flex {
     display: flex;
@@ -311,8 +314,17 @@
   .text-center {
     text-align: center;
   }
-  .indent-28 {
-    text-indent: calc(var(--spacing) * 28);
+  .indent-3 {
+    text-indent: calc(var(--spacing) * 3);
+  }
+  .indent-10 {
+    text-indent: calc(var(--spacing) * 10);
+  }
+  .indent-20 {
+    text-indent: calc(var(--spacing) * 20);
+  }
+  .indent-30 {
+    text-indent: calc(var(--spacing) * 30);
   }
   .font-\[poppins\] {
     font-family: poppins;
@@ -346,14 +358,17 @@
   .text-\[\#808080\] {
     color: #808080;
   }
+  .text-\[\#\] {
+    color: #;
+  }
+  .text-\[\#f00\] {
+    color: #f00;
+  }
   .text-\[\#fff\] {
     color: #fff;
   }
   .text-\[grey\] {
     color: grey;
-  }
-  .text-\[hsl\(0\,0\%\,50\%\)\] {
-    color: hsl(0,0%,50%);
   }
   .capitalize {
     text-transform: capitalize;
@@ -401,6 +416,13 @@
     &:hover {
       @media (hover: hover) {
         color: #fff;
+      }
+    }
+  }
+  .hover\:underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
       }
     }
   }
