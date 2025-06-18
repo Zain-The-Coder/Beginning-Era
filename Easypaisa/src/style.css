@@ -1,0 +1,32 @@
+header div #f li a:hover{
+    transition: all 1s ease;
+}
+header div #f li a{
+    transition: all 1s ease;
+}
+@keyframes to-right{
+    from{left: 400px;} to{left: 0px;}
+}
+@keyframes to-left{
+    from{right: 400px;} to{right: 0px;}
+}
+@keyframes to-bottom{
+    from{top: 500px;} to{top: 0px;}
+}
+@media (max-width:400px){
+    header div #f li a{display: none;}
+    h1{width: 120px;}
+    #pp{display: none;}
+    #image img{height: 300px;}
+    #hello-pic-three{height: 200px; width: 550px;}
+    
+}
+#hello-pic{
+    animation: to-bottom 2s ease;
+}
+#hello-pic-two{
+    animation: to-right 1.6s ease;
+}
+#hello-pic-three{
+    animation: to-left 1.6s ease;
+}
