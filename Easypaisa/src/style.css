@@ -25,6 +25,9 @@ header div #f li a{
     #fo img{height:200px ;}
     #loop{flex-direction: column; gap: 20px;}
     #hello-pic-five{width: 90%; margin: auto; height: 300px;}
+    #opa{flex-direction: column;}
+    #opa div{margin-left: 10px;}
+    #opa ul figure{height: 40px; width: 40px;}
 
 }
 @media (max-width:640px){
@@ -50,4 +53,7 @@ header div #f li a{
 }
 #loop{
     animation: to-bottom 4s ease;
+}
+#opa ul {
+    width: 400px;
 }
