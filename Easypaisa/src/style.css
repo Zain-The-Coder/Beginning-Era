@@ -23,6 +23,9 @@ header div #f li a{
     #kl{margin-top: 5px;}
     #fo h2{font-size: 16px;} #fo p{ font-size: 12px; margin: auto;}
     #fo img{height:200px ;}
+    #loop{flex-direction: column; gap: 20px;}
+    #hello-pic-five{width: 90%; margin: auto; height: 300px;}
+
 }
 @media (max-width:640px){
     header div #f li a{display: none;}
@@ -33,7 +36,7 @@ header div #f li a{
     #kl p{font-size: 12px; margin-top: 0px;}
     #kl{margin-top: 5px;}
     #fo h2{font-size: 19px;} #fo p{ font-size: 12px; margin: auto;}
-    #fo img{height:250px ;}
+    #fo img{height:250px;}
 
 }
 #hello-pic{
@@ -44,4 +47,7 @@ header div #f li a{
 }
 #hello-pic-three{
     animation: to-left 1.6s ease;
+}
+#loop{
+    animation: to-bottom 4s ease;
 }
