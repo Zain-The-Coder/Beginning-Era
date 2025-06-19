@@ -19,7 +19,22 @@ header div #f li a{
     #pp{display: none;}
     #image img{height: 300px;}
     #hello-pic-three{height: 200px; width: 550px;}
-    
+    #kl p{font-size: 8px; margin-top: 0px;}
+    #kl{margin-top: 5px;}
+    #fo h2{font-size: 16px;} #fo p{ font-size: 12px; margin: auto;}
+    #fo img{height:200px ;}
+}
+@media (max-width:640px){
+    header div #f li a{display: none;}
+    h1{width: 140px;}
+    #pp{display: none;}
+    #image img{height: 300px;}
+    #hello-pic-three{height: 250px; width: 670px;}
+    #kl p{font-size: 12px; margin-top: 0px;}
+    #kl{margin-top: 5px;}
+    #fo h2{font-size: 19px;} #fo p{ font-size: 12px; margin: auto;}
+    #fo img{height:250px ;}
+
 }
 #hello-pic{
     animation: to-bottom 2s ease;
