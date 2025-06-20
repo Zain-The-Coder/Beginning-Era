@@ -13,12 +13,16 @@
 // let sum = `${num2 + num4}${num4}`;
 // console.log(sum);
 
-let a = 1;
-let b = 2;
-let c = 3;
-let d = 4;
-let sum = b*(c + a) + d*(b + c)*(b + a);
-console.log (sum);
+// let a = 1;
+// let b = 2;
+// let c = 3;
+// let d = 4;
+// let sum = b*(c + a) + d*(b + c)*(b + a);
+// console.log (sum);
+
+let firstName = prompt("What is your name ?");
+let lastName = prompt("What is your father name ?");
+console.log("Welcome ! " + firstName  + lastName);
 
 // let names = prompt("What is your name?");
 // let fatherName = prompt("What is your father name ?");
