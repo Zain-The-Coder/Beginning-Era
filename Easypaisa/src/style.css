@@ -30,8 +30,10 @@ header div #f li a{
     #opa ul figure{height: 50px; width: 50px;}
     #uio p{width: 160%;}
     #uio h2{width: 160%;}
-    #hello-pic-six{height: 200px;}
-
+    #hello-pic-six{height: 220px; margin-top: 10px;}
+    #o{width: 100%; margin: auto; margin-left: -20px;}
+    #o p,#o h2{width: 120%;}
+    #ol2{flex-direction: column; margin-left: 30px;}
 }
 @media (max-width:640px){
     header div #f li a{display: none;}
@@ -43,6 +45,10 @@ header div #f li a{
     #kl{margin-top: 5px;}
     #fo h2{font-size: 19px;} #fo p{ font-size: 12px; margin: auto;}
     #fo img{height:250px;}
+    #hello-pic-six{height: 260px; margin-top: 28px;}
+    #o{width: 100%; margin: auto; margin-left: -20px;}
+    #o p,#o h2{width: 120%; margin-left: 13px;}
+    #ol2{flex-direction: column; margin-left: 30px;}
 
 }
 #hello-pic{
@@ -56,6 +62,9 @@ header div #f li a{
 }
 #loop{
     animation: to-bottom 4s ease;
+}
+#loopa{
+    animation: to-bottom 6s ease;
 }
 #opa ul {
     width: 400px;
