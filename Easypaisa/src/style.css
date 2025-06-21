@@ -34,7 +34,13 @@ header div #f li a{
     #o{width: 100%; margin: auto; margin-left: -20px;}
     #o p,#o h2{width: 120%;}
     #ol2{flex-direction: column; margin-left: 30px;}
+    #yo{flex-direction: column-reverse; width: 90%; margin: auto; margin-top: 30px;}
+    #yo h2{font-size: 25px;}
+    #yo img{height: 300px; width: 120%; margin: auto; margin-top: 30px;}
+    #yo-div img{height: 20px; width: 20%; padding-left: 7px; border: none; margin: auto;}
 }
+
+
 @media (max-width:640px){
     header div #f li a{display: none;}
     h1{width: 140px;}
@@ -49,6 +55,10 @@ header div #f li a{
     #o{width: 100%; margin: auto; margin-left: -20px;}
     #o p,#o h2{width: 120%; margin-left: 13px;}
     #ol2{flex-direction: column; margin-left: 30px;}
+    #yo{flex-direction: column-reverse; width: 90%; margin: auto; margin-top: 30px;}
+    #yo h2{font-size: 28px;}
+    #yo img{height: 400px; width: 120%; margin: auto; margin-top: 30px;}
+    #yo-div img{height: 60px; width: 20%; padding-left: 7px; border: none; margin: auto;}
 
 }
 #hello-pic{
