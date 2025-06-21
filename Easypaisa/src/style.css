@@ -60,6 +60,8 @@ header div #f li a{
     #yo h2{font-size: 28px;}
     #yo img{height: 300px; width: 120%; margin: auto; margin-top: 30px;}
     #yo-div img{height: 60px; width: 20%; padding-left: 7px; border: none; margin: auto;}
+    #pap{flex-direction: column; width: 90%; margin: auto; margin-top: 40px;}
+    #pap img{margin-top: 10px;}
 
 }
 #hello-pic{
