@@ -20,9 +20,9 @@
 // let sum = b*(c + a) + d*(b + c)*(b + a);
 // console.log (sum);
 
-let firstName = prompt("What is your name ?");
-let lastName = prompt("What is your father name ?");
-console.log("Welcome ! " + firstName  + lastName);
+// let firstName = prompt("What is your name ?");
+// let lastName = prompt("What is your father name ?");
+// console.log("Welcome ! " + firstName  + lastName);
 
 // let names = prompt("What is your name?");
 // let fatherName = prompt("What is your father name ?");
@@ -30,3 +30,13 @@ console.log("Welcome ! " + firstName  + lastName);
 // alert("Welcome on Zain's Page"); 
 // alert("Registration Successful");
 // console.log("Welcome " + names  + " Your father name is " + fatherName  + " Your profession is " + profession);
+
+let x = prompt("What is your name? ");
+let y = prompt("What is your father name? ");
+let z = prompt("What is your profession? ");
+
+console.log("Welcome ! " + x);
+console.log(x + "Your Father name is " + y);
+console.log("Listen " + x  + y  + " Nowadays, Your profession is " + z);
+alert("Thankyou for your participation ! " + x);
+alert("Registration Successful !");
