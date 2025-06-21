@@ -459,6 +459,9 @@
   .text-center {
     text-align: center;
   }
+  .font-\[\#00bd5f\] {
+    font-family: #00bd5f;
+  }
   .font-\[poppins\] {
     font-family: poppins;
   }
@@ -495,6 +498,9 @@
   }
   .text-\[\#00bc5f\] {
     color: #00bc5f;
+  }
+  .text-\[\#00bd5f\] {
+    color: #00bd5f;
   }
   .text-\[\#322d41\] {
     color: #322d41;
