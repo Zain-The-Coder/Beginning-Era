@@ -39,6 +39,8 @@ header div #f li a{
     #yo h2{font-size: 25px;}
     #yo img{height: 300px; width: 120%; margin: auto; margin-top: 30px;}
     #yo-div img{height: 20px; width: 20%; padding-left: 7px; border: none; margin: auto;}
+    #poop div img{height: 200px;}
+
 }
 
 
@@ -62,7 +64,10 @@ header div #f li a{
     #yo-div img{height: 60px; width: 20%; padding-left: 7px; border: none; margin: auto;}
     #pap{flex-direction: column; width: 90%; margin: auto; margin-top: 40px;}
     #pap img{margin-top: 10px;}
-
+    #poop{margin-left: 20px;}
+    #poop-div{width: 100%; margin: auto;}
+    #poop h2{font-size: 25px;}
+    #poop div img{width: 80%; margin: auto;}
 }
 #hello-pic{
     animation: to-bottom 2s ease;
