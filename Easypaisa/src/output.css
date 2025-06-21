@@ -10,6 +10,7 @@
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --spacing: 0.25rem;
     --font-weight-bold: 700;
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -263,6 +264,9 @@
   }
   .h-\[400px\] {
     height: 400px;
+  }
+  .h-\[440px\] {
+    height: 440px;
   }
   .h-\[450px\] {
     height: 450px;
@@ -537,6 +541,10 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .ease-out {
+    --tw-ease: var(--ease-out);
+    transition-timing-function: var(--ease-out);
+  }
   .hover\:bg-\[\#07bf53\] {
     &:hover {
       @media (hover: hover) {
@@ -728,9 +736,39 @@
       display: flex;
     }
   }
+  .lg\:h-\[4px\] {
+    @media (width >= 64rem) {
+      height: 4px;
+    }
+  }
+  .lg\:h-\[40px\] {
+    @media (width >= 64rem) {
+      height: 40px;
+    }
+  }
+  .lg\:h-\[47px\] {
+    @media (width >= 64rem) {
+      height: 47px;
+    }
+  }
   .lg\:h-\[350px\] {
     @media (width >= 64rem) {
       height: 350px;
+    }
+  }
+  .lg\:h-\[380px\] {
+    @media (width >= 64rem) {
+      height: 380px;
+    }
+  }
+  .lg\:w-\[60px\] {
+    @media (width >= 64rem) {
+      width: 60px;
+    }
+  }
+  .lg\:w-\[80px\] {
+    @media (width >= 64rem) {
+      width: 80px;
     }
   }
   .lg\:flex-row {
@@ -748,9 +786,39 @@
       gap: calc(var(--spacing) * 4);
     }
   }
+  .lg\:pl-\[10px\] {
+    @media (width >= 64rem) {
+      padding-left: 10px;
+    }
+  }
   .xl\:mr-\[60px\] {
     @media (width >= 80rem) {
       margin-right: 60px;
+    }
+  }
+  .xl\:h-\[40px\] {
+    @media (width >= 80rem) {
+      height: 40px;
+    }
+  }
+  .xl\:h-\[55px\] {
+    @media (width >= 80rem) {
+      height: 55px;
+    }
+  }
+  .xl\:h-\[440px\] {
+    @media (width >= 80rem) {
+      height: 440px;
+    }
+  }
+  .xl\:h-\[480px\] {
+    @media (width >= 80rem) {
+      height: 480px;
+    }
+  }
+  .xl\:w-\[150px\] {
+    @media (width >= 80rem) {
+      width: 150px;
     }
   }
   .xl\:gap-\[30px\] {
@@ -758,9 +826,19 @@
       gap: 30px;
     }
   }
+  .xl\:gap-\[40px\] {
+    @media (width >= 80rem) {
+      gap: 40px;
+    }
+  }
   .xl\:gap-\[50px\] {
     @media (width >= 80rem) {
       gap: 50px;
+    }
+  }
+  .xl\:pl-\[40px\] {
+    @media (width >= 80rem) {
+      padding-left: 40px;
     }
   }
 }
@@ -778,12 +856,17 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-outline-style: solid;
+      --tw-ease: initial;
     }
   }
 }

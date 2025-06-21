@@ -13,6 +13,7 @@ header div #f li a{
 @keyframes to-bottom{
     from{top: 500px;} to{top: 0px;}
 }
+
 @media (max-width:400px){
     header div #f li a{display: none;}
     h1{width: 120px;}
@@ -57,17 +58,17 @@ header div #f li a{
     #ol2{flex-direction: column; margin-left: 30px;}
     #yo{flex-direction: column-reverse; width: 90%; margin: auto; margin-top: 30px;}
     #yo h2{font-size: 28px;}
-    #yo img{height: 400px; width: 120%; margin: auto; margin-top: 30px;}
+    #yo img{height: 300px; width: 120%; margin: auto; margin-top: 30px;}
     #yo-div img{height: 60px; width: 20%; padding-left: 7px; border: none; margin: auto;}
 
 }
 #hello-pic{
     animation: to-bottom 2s ease;
 }
-#hello-pic-two{
+#hello-pic-two,#heading-two{
     animation: to-right 1.6s ease;
 }
-#hello-pic-three{
+#hello-pic-three,#hello-pic-seven{
     animation: to-left 1.6s ease;
 }
 #loop{
@@ -78,4 +79,11 @@ header div #f li a{
 }
 #opa ul {
     width: 400px;
+}
+#para{
+    animation: to-right 4.7s ease;
+}
+#yo-div{
+    animation: to-right 7s ease-out
+    ;
 }
