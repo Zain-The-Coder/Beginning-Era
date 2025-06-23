@@ -31,12 +31,24 @@
 // alert("Registration Successful");
 // console.log("Welcome " + names  + " Your father name is " + fatherName  + " Your profession is " + profession);
 
-let x = prompt("What is your name? ");
-let y = prompt("What is your father name? ");
-let z = prompt("What is your profession? ");
+// let x = prompt("What is your name? ");
+// let y = prompt("What is your father name? ");
+// let z = prompt("What is your profession? ");
 
-console.log("Welcome ! " + x);
-console.log(x + "Your Father name is " + y);
-console.log("Listen " + x  + y  + " Nowadays, Your profession is " + z);
-alert("Thankyou for your participation ! " + x);
-alert("Registration Successful !");
+// console.log("Welcome ! " + x);
+// console.log(x + "Your Father name is " + y);
+// console.log("Listen " + x  + y  + " Nowadays, Your profession is " + z);
+// alert("Thankyou for your participation ! " + x);
+// alert("Registration Successful !");
+
+// alert("Welcome On Our Arithmetic Calculator");
+// let x = +prompt("Enter Your First Number : ");
+// let y = +prompt("Enter Your Second Number");
+// alert("Your Addition Of Two Numbers Is " + (x + y)); 
+// alert(`Your Substraction Of Two Numbers Is ${x - y}`);
+// alert(`Your Multiplication Of Two Numbers Is ${x * y}`);
+// alert("Your Division Of Two Numbers Is " + (x / y));
+// alert("Thankyou For Visit!");
+
+let num = prompt("Enter Any Table Number");
+console.log(num + "x" + 1 + "=" + num*2);
