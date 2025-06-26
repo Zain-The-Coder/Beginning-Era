@@ -42,7 +42,10 @@ header div #f li a{
     #poop div img{height: 200px;}
 
 }
-
+@media (max-width:545px){
+    #m{flex-direction: column;}
+    #m figure{width:100%;}
+}
 
 @media (max-width:640px){
     header div #f li a{display: none;}
