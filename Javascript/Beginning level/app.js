@@ -3,6 +3,7 @@
 // let lastName = "Rehman ";
 // console.log(firstName + middleName + lastName);
 
+
 // prompt("Enter your name");
 
 // let num1 = 2;
@@ -50,5 +51,88 @@
 // alert("Your Division Of Two Numbers Is " + (x / y));
 // alert("Thankyou For Visit!");
 
-let num = prompt("Enter Any Table Number");
-console.log(num + "x" + 1 + "=" + num*2);
+// let num = prompt("Enter Any Table Number");
+// console.log(num + " x " + 1 + " = " + num*1);
+// console.log(num + " x " + 2 + " = " + num*2);
+// console.log(num + " x " + 3 + " = " + num*3);
+// console.log(num + " x " + 4 + " = " + num*4);
+// console.log(num + " x " + 5 + " = " + num*5);
+// console.log(num + " x " + 6 + " = " + num*6);
+// console.log(num + " x " + 7 + " = " + num*7);
+// console.log(num + " x " + 8 + " = " + num*8);
+// console.log(num + " x " + 9 + " = " + num*9);
+// console.log(num + " x " + 10 + " = " + num*10);
+
+// let favDish = prompt("What is your favorite dish?" , "Biryani");
+// let x = +prompt("Enter First Number ! ");
+// let y = +prompt("Enter Second Number ! ");
+// alert(`The Addition of two number is ${x + y}`);
+// alert(`The Substraction of two number is ${x - y}`);
+// alert(`The Multiplication of two number is ${x * y}`);
+// alert(`The Division of two number is ${x / y}`);
+// alert(`The Modulus of two number is ${x % y}`);
+
+
+// let x = 6;
+// let y = 7;
+// let z = 2;
+// console.log(x++ + --y + x + y - z);
+
+// let i = 0;
+// let tableNumber = prompt("Enter any table number : ");
+
+// console.log(tableNumber + " x " + ++i + " = " + tableNumber * i );
+// console.log(tableNumber + " x " + ++i + " = " + tableNumber * i );
+// console.log(tableNumber + " x " + ++i + " = " + tableNumber * i );
+// console.log(tableNumber + " x " + ++i + " = " + tableNumber * i );
+// console.log(tableNumber + " x " + ++i + " = " + tableNumber * i );
+// console.log(tableNumber + " x " + ++i + " = " + tableNumber * i );
+// console.log(tableNumber + " x " + ++i + " = " + tableNumber * i );
+// console.log(tableNumber + " x " + ++i + " = " + tableNumber * i );
+// console.log(tableNumber + " x " + ++i + " = " + tableNumber * i );
+// console.log(tableNumber + " x " + ++i + " = " + tableNumber * i );
+
+// let fruits = ["Mango" , "Banana" , "Gavava" , "PineApple" , "Apple"];
+// let extraFruit = fruits[3] = "Grapes" ;
+// let helloFruit = fruits[8] = "Radish" ;
+// console.log(fruits);
+
+// alert("Welcome On Our Calculator ! ");
+// let x = +prompt("Enter First Number : ");
+// let y = +prompt("Enter Second Number : ");
+
+// alert("The Addition of two number is " + (x + y));
+// alert("The Substraction of two number is " + (x - y));
+// alert("The Multiplication of two number is " + (x * y));
+// alert("The Division of two number is " + (x / y));
+
+// alert("Thank you for your coming");
+// alert("Assalam u Alaikum");
+
+// let i = 0;
+// let t = prompt("Enter Any Table Number ");
+// console.log(t + " x " + ++i + " = " + t * i);
+// console.log(t + " x " + ++i + " = " + t * i);
+// console.log(t + " x " + ++i + " = " + t * i);
+// console.log(t + " x " + ++i + " = " + t * i);
+// console.log(t + " x " + ++i + " = " + t * i);
+// console.log(t + " x " + ++i + " = " + t * i);
+// console.log(t + " x " + ++i + " = " + t * i);
+// console.log(t + " x " + ++i + " = " + t * i);
+// console.log(t + " x " + ++i + " = " + t * i);
+// console.log(t + " x " + ++i + " = " + t * i);
+
+
+
+let x = prompt("Please user! Enter your name : ");
+alert("Welcome " + x);
+let favCar = prompt("Please ! " + x + " Enter your Favorite Car Company : ");
+
+let car2 = prompt("Enter Your Second Fav Company : ");
+let car3 = prompt("Enter Your Third Fav Company : ");
+let car4 = prompt("Enter Your Fourth Fav Company : ");
+let car5 = prompt("Enter Your Fifth Fav Company : ");
+
+console.log("Hello " + x + "Your Favorite Car Company is " + favCar );
+let cars = [ favCar , car2 , car3 , car4 , car5];
+console.log(cars);
