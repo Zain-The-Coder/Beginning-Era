@@ -153,18 +153,98 @@
 // let extraCar2 = cars[7] = "KIA";
 // console.log(cars);
 
-let x = prompt("Hello User ! " + " " + "Please Enter Your Name : ");
-alert("Welcome " + x + " ! ");
-let favCar1 = prompt("Please Enter Your Most Favorite Car Company : ");
-let favCar2 = prompt("Please Enter Your Second Favorite Car Company : ");
-let favCar3 = prompt("Please Enter Your Third Favorite Car Company : ");
-let favCar4 = prompt("Please Enter Your Fourth Favorite Car Company : ");
-let favCar5 = prompt("Please Enter Your Fifth Favorite Car Company : ");
+// let x = prompt("Hello User ! " + " " + "Please Enter Your Name : ");
+// alert("Welcome " + x + " ! ");
+// let favCar1 = prompt("Please Enter Your Most Favorite Car Company : ");
+// let favCar2 = prompt("Please Enter Your Second Favorite Car Company : ");
+// let favCar3 = prompt("Please Enter Your Third Favorite Car Company : ");
+// let favCar4 = prompt("Please Enter Your Fourth Favorite Car Company : ");
+// let favCar5 = prompt("Please Enter Your Fifth Favorite Car Company : ");
 
-let v = [favCar1 , favCar2 , favCar3 , favCar4 , favCar5];
-console.log("Welcome " + x + " ! ");
-let z = "Your Favorite Car Companies Are : ";
-console.log(z);
-console.log(v);
+// let v = [favCar1 , favCar2 , favCar3 , favCar4 , favCar5];
+// console.log("Welcome " + x + " ! ");
+// let z = "Your Favorite Car Companies Are : ";
+// console.log(z);
+// console.log(v);
 
- 
+// let numbers = [];
+// numbers[0] = prompt("enter first number : ");
+// numbers[1] = prompt("enter second number : ");
+// numbers[2] = prompt("enter third number : ");
+// numbers[3] = prompt("enter fourth number : ");
+// numbers[4] = prompt("enter fifth number : ");
+// numbers[5] = prompt("enter sixth number : ");
+// numbers[6] = prompt("enter seventh number : ");
+// numbers[7] = prompt("enter eight number : ");
+// numbers[8] = prompt("enter ninth number : ");
+// numbers[9] = prompt("enter tenth number : ");
+// numbers[10] = prompt("enter eleventh number : ");
+// numbers[11] = prompt("enter twelve number : ");
+// numbers[12] = prompt("enter thirteen number : ");
+// numbers[13] = prompt("enter fourteen number : ");
+// numbers[14] = prompt("enter fifteen number : ");
+
+// let a = 15;
+
+// console.log(numbers[14]);
+// console.log(numbers[13]);
+// console.log(numbers[12]);
+// console.log(numbers[11]);
+// console.log(numbers[10]);
+// console.log(numbers[9]);
+// console.log(numbers[8]);
+// console.log(numbers[7]);
+// console.log(numbers[6]);
+// console.log(numbers[5]);
+// console.log(numbers[4]);
+// console.log(numbers[3]);
+// console.log(numbers[2]);
+// console.log(numbers[1]);
+// console.log(numbers[0]);
+
+
+// let numbers = [];
+// numbers[0] = prompt("enter first number : ");
+// numbers[1] = prompt("enter second number : ");
+// numbers[2] = prompt("enter third number : ");
+// numbers[3] = prompt("enter fourth number : ");
+// numbers[4] = prompt("enter fifth number : ");
+// numbers[5] = prompt("enter sixth number : ");
+// numbers[6] = prompt("enter seventh number : ");
+// numbers[7] = prompt("enter eight number : ");
+// numbers[8] = prompt("enter ninth number : ");
+// numbers[9] = prompt("enter tenth number : ");
+// numbers[10] = prompt("enter eleventh number : ");
+// numbers[11] = prompt("enter twelve number : ");
+// numbers[12] = prompt("enter thirteen number : ");
+// numbers[13] = prompt("enter fourteen number : ");
+// numbers[14] = prompt("enter fifteen number : ");
+
+// let a = 15;
+
+// console.log(numbers[--a]);
+// console.log(numbers[--a]);
+// console.log(numbers[--a]);
+// console.log(numbers[--a]);
+// console.log(numbers[--a]);
+// console.log(numbers[--a]);
+// console.log(numbers[--a]);
+// console.log(numbers[--a]);
+// console.log(numbers[--a]);
+// console.log(numbers[--a]);
+// console.log(numbers[--a]);
+// console.log(numbers[--a]);
+// console.log(numbers[--a]);
+// console.log(numbers[--a]);
+// console.log(numbers[--a]);
+
+//  let human = {
+//     Name:"Khizar", 
+//     age:21, 
+//     clothes: "kameez Shalwar", 
+//     rollNo: 324244, 
+//     cnic: 4220132238283,
+// };
+
+// console.log(human)
+
