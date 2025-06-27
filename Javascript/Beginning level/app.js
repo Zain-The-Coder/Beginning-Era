@@ -124,15 +124,47 @@
 
 
 
-let x = prompt("Please user! Enter your name : ");
-alert("Welcome " + x);
-let favCar = prompt("Please ! " + x + " Enter your Favorite Car Company : ");
+// let x = prompt("Please user! Enter your name : ");
+// alert("Welcome " + x);
+// let favCar = prompt("Please ! " + x + " Enter your Favorite Car Company : ");
 
-let car2 = prompt("Enter Your Second Fav Company : ");
-let car3 = prompt("Enter Your Third Fav Company : ");
-let car4 = prompt("Enter Your Fourth Fav Company : ");
-let car5 = prompt("Enter Your Fifth Fav Company : ");
+// let car2 = prompt("Enter Your Second Fav Company : ");
+// let car3 = prompt("Enter Your Third Fav Company : ");
+// let car4 = prompt("Enter Your Fourth Fav Company : ");
+// let car5 = prompt("Enter Your Fifth Fav Company : ");
 
-console.log("Hello " + x + "Your Favorite Car Company is " + favCar );
-let cars = [ favCar , car2 , car3 , car4 , car5];
-console.log(cars);
+// console.log("Hello " + x + "Your Favorite Car Company is " + favCar );
+// let cars = [ favCar , car2 , car3 , car4 , car5];
+// console.log(cars);
+
+// let x = prompt("Hello User ! " + " " + "Please Enter Your Name : ");
+// alert("Welcome " + x  + "! ");
+
+// let a = +prompt("Enter First Number : ");
+// let b = +prompt("Enter Second Number : ");
+// alert("The Addition Of Two Numbers Is : " + (a + b));
+// alert("The Substraction Of Two Numbers Is : " + (a - b));
+// alert("The Multiplication Of Two Numbers Is : " + (a * b));
+// alert("The Divison Of Two Numbers Is : " + (a / b));
+// alert("The Modulus Of Two Numbers Is : " + (a % b));
+
+// let cars = ["Toyota" , "Hundai" , "Honda" , "Suzuki" , "BMU"];
+// let extraCar = cars[6] = "Ferarri";
+// let extraCar2 = cars[7] = "KIA";
+// console.log(cars);
+
+let x = prompt("Hello User ! " + " " + "Please Enter Your Name : ");
+alert("Welcome " + x + " ! ");
+let favCar1 = prompt("Please Enter Your Most Favorite Car Company : ");
+let favCar2 = prompt("Please Enter Your Second Favorite Car Company : ");
+let favCar3 = prompt("Please Enter Your Third Favorite Car Company : ");
+let favCar4 = prompt("Please Enter Your Fourth Favorite Car Company : ");
+let favCar5 = prompt("Please Enter Your Fifth Favorite Car Company : ");
+
+let v = [favCar1 , favCar2 , favCar3 , favCar4 , favCar5];
+console.log("Welcome " + x + " ! ");
+let z = "Your Favorite Car Companies Are : ";
+console.log(z);
+console.log(v);
+
+ 
