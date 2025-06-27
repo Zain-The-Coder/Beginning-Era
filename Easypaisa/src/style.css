@@ -72,6 +72,12 @@ header div #f li a{
     #poop h2{font-size: 25px;}
     #poop div img{width: 80%; margin: auto;}
 }
+@media (max-width:768px){
+    h2{font-size: 22px; text-align: center;}
+    #zc{flex-direction: column; gap: 20px;}
+    #zc div {width: 75%;}
+    #klo{padding-left: 0px;}
+}
 #hello-pic{
     animation: to-bottom 2s ease;
 }
