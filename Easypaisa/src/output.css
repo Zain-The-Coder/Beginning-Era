@@ -256,6 +256,9 @@
   .h-\[35px\] {
     height: 35px;
   }
+  .h-\[50px\] {
+    height: 50px;
+  }
   .h-\[55px\] {
     height: 55px;
   }
@@ -297,6 +300,9 @@
   }
   .w-\[44\%\] {
     width: 44%;
+  }
+  .w-\[50px\] {
+    width: 50px;
   }
   .w-\[57px\] {
     width: 57px;
@@ -393,6 +399,12 @@
   }
   .rounded-\[30px\] {
     border-radius: 30px;
+  }
+  .rounded-\[50px\] {
+    border-radius: 50px;
+  }
+  .rounded-\[100px\] {
+    border-radius: 100px;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -862,6 +874,52 @@
     @media (width >= 80rem) {
       gap: 40px;
     }
+  }
+  .xl\:gap-\[50px\] {
+    @media (width >= 80rem) {
+      gap: 50px;
+    }
+  }
+  .xl\:pl-\[20px\] {
+    @media (width >= 80rem) {
+      padding-left: 20px;
+    }
+  }
+  .xl\:text-\[16px\] {
+    @media (width >= 80rem) {
+      font-size: 16px;
+    }
+  }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-outline-style: solid;
+    }
+  }
+}
+  }
   }
   .xl\:gap-\[50px\] {
     @media (width >= 80rem) {
