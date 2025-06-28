@@ -13,6 +13,9 @@ header div #f li a{
 @keyframes to-bottom{
     from{top: 500px;} to{top: 0px;}
 }
+@keyframes haha{
+    0%{opacity: 0;} 50%{opacity: 0.5;} 100%{opacity: 1;}
+}
 
 @media (max-width:400px){
     header div #f li a{display: none;}
@@ -77,7 +80,11 @@ header div #f li a{
     #zc{flex-direction: column; gap: 20px;}
     #zc div {width: 75%;}
     #klo{padding-left: 0px;}
+    #div-g{flex-direction: column;gap: 60px;}
+    #div-g div{width: 70%;}
+    #gg{display: none;}
 }
+
 #h:hover #l{
     display: block;
 }
@@ -107,4 +114,7 @@ header div #f li a{
 }
 #yo-div{
     animation: to-right 7s ease-out;
+}
+#g{
+    animation: haha 3s ease;
 }
