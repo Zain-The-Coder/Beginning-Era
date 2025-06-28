@@ -10,7 +10,10 @@
     --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --font-weight-light: 300;
+    --font-weight-medium: 500;
     --font-weight-bold: 700;
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -229,6 +232,9 @@
   .ml-\[60px\] {
     margin-left: 60px;
   }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
   }
@@ -417,6 +423,9 @@
   }
   .border-\[\#97889b\] {
     border-color: #97889b;
+  }
+  .border-white {
+    border-color: var(--color-white);
   }
   .bg-\[\#2d2d64\] {
     background-color: #2d2d64;
