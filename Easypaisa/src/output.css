@@ -7,11 +7,10 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-50: oklch(98.7% 0.022 95.277);
+    --color-white: #fff;
     --spacing: 0.25rem;
-    --font-weight-light: 300;
-    --font-weight-medium: 500;
     --font-weight-bold: 700;
-    --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -164,6 +163,9 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .fixed {
     position: fixed;
   }
@@ -178,6 +180,9 @@
   }
   .z-\[100\] {
     z-index: 100;
+  }
+  .z-\[999\] {
+    z-index: 999;
   }
   .m-auto {
     margin: auto;
@@ -230,6 +235,9 @@
   .hidden {
     display: none;
   }
+  .inline-block {
+    display: inline-block;
+  }
   .table {
     display: table;
   }
@@ -272,17 +280,11 @@
   .h-\[600px\] {
     height: 600px;
   }
-  .w-\[\%\] {
-    width: %;
-  }
   .w-\[20px\] {
     width: 20px;
   }
   .w-\[25\%\] {
     width: 25%;
-  }
-  .w-\[30\%\] {
-    width: 30%;
   }
   .w-\[40\%\] {
     width: 40%;
@@ -316,6 +318,9 @@
   }
   .w-\[210px\] {
     width: 210px;
+  }
+  .w-\[260px\] {
+    width: 260px;
   }
   .w-\[650px\] {
     width: 650px;
@@ -387,10 +392,6 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-3 {
-    border-style: var(--tw-border-style);
-    border-width: 3px;
-  }
   .border-t-2 {
     border-top-style: var(--tw-border-style);
     border-top-width: 2px;
@@ -414,9 +415,6 @@
   .border-\[\#00bd5f\] {
     border-color: #00bd5f;
   }
-  .border-\[\#00bd\] {
-    border-color: #00bd;
-  }
   .border-\[\#97889b\] {
     border-color: #97889b;
   }
@@ -432,6 +430,9 @@
   .bg-\[\#fff\] {
     background-color: #fff;
   }
+  .bg-amber-50 {
+    background-color: var(--color-amber-50);
+  }
   .p-\[10px\] {
     padding: 10px;
   }
@@ -443,9 +444,6 @@
   }
   .pt-\[20px\] {
     padding-top: 20px;
-  }
-  .pt-\[50px\] {
-    padding-top: 50px;
   }
   .pt-\[60px\] {
     padding-top: 60px;
@@ -459,9 +457,6 @@
   .pr-\[20px\] {
     padding-right: 20px;
   }
-  .pb-\[2\] {
-    padding-bottom: 2;
-  }
   .pb-\[20px\] {
     padding-bottom: 20px;
   }
@@ -470,9 +465,6 @@
   }
   .pb-\[60px\] {
     padding-bottom: 60px;
-  }
-  .pb-\[150px\] {
-    padding-bottom: 150px;
   }
   .pl-\[20px\] {
     padding-left: 20px;
@@ -483,14 +475,8 @@
   .text-center {
     text-align: center;
   }
-  .font-\[poppi\] {
-    font-family: poppi;
-  }
   .font-\[poppins\] {
     font-family: poppins;
-  }
-  .text-\[1px\] {
-    font-size: 1px;
   }
   .text-\[9px\] {
     font-size: 9px;
@@ -528,35 +514,19 @@
   .text-\[30px\] {
     font-size: 30px;
   }
+  .leading-\[25px\] {
+    --tw-leading: 25px;
+    line-height: 25px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-  }
-  .font-light {
-    --tw-font-weight: var(--font-weight-light);
-    font-weight: var(--font-weight-light);
-  }
-  .font-medium {
-    --tw-font-weight: var(--font-weight-medium);
-    font-weight: var(--font-weight-medium);
-  }
-  .text-\[\#00a\] {
-    color: #00a;
   }
   .text-\[\#00bc5f\] {
     color: #00bc5f;
   }
   .text-\[\#00bd5f\] {
     color: #00bd5f;
-  }
-  .text-\[\#00bd\] {
-    color: #00bd;
-  }
-  .text-\[\#00bdf5\] {
-    color: #00bdf5;
-  }
-  .text-\[\#000\] {
-    color: #000;
   }
   .text-\[\#322d41\] {
     color: #322d41;
@@ -570,20 +540,8 @@
   .text-\[\#777882\] {
     color: #777882;
   }
-  .text-\[\#\] {
-    color: #;
-  }
-  .text-\[\#aaa\] {
-    color: #aaa;
-  }
-  .text-\[\#aeaeae\] {
-    color: #aeaeae;
-  }
   .text-\[\#fff\] {
     color: #fff;
-  }
-  .text-\[px\] {
-    color: px;
   }
   .capitalize {
     text-transform: capitalize;
@@ -599,17 +557,6 @@
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .ease-out {
-    --tw-ease: var(--ease-out);
-    transition-timing-function: var(--ease-out);
-  }
-  .hover\:block {
-    &:hover {
-      @media (hover: hover) {
-        display: block;
-      }
-    }
   }
   .hover\:bg-\[\#07bf53\] {
     &:hover {
@@ -862,24 +809,9 @@
       padding-left: 10px;
     }
   }
-  .lg\:pl-\[20px\] {
-    @media (width >= 64rem) {
-      padding-left: 20px;
-    }
-  }
   .lg\:text-\[15px\] {
     @media (width >= 64rem) {
       font-size: 15px;
-    }
-  }
-  .lg\:text-\[16px\] {
-    @media (width >= 64rem) {
-      font-size: 16px;
-    }
-  }
-  .lg\:text-\[16\] {
-    @media (width >= 64rem) {
-      color: 16;
     }
   }
   .xl\:mt-\[100px\] {
@@ -943,6 +875,10 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -952,17 +888,13 @@
   inherits: false;
   initial-value: solid;
 }
-@property --tw-ease {
-  syntax: "*";
-  inherits: false;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-outline-style: solid;
-      --tw-ease: initial;
     }
   }
 }

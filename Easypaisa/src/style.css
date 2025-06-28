@@ -78,6 +78,12 @@ header div #f li a{
     #zc div {width: 75%;}
     #klo{padding-left: 0px;}
 }
+#h:hover #l{
+    display: block;
+}
+#first:hover #first-ul , #second:hover #second-ul , #third:hover #third-ul{
+    display: block;
+}
 #hello-pic{
     animation: to-bottom 2s ease;
 }
@@ -100,6 +106,5 @@ header div #f li a{
     animation: to-right 4.7s ease;
 }
 #yo-div{
-    animation: to-right 7s ease-out
-    ;
+    animation: to-right 7s ease-out;
 }
