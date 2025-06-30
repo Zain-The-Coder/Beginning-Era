@@ -248,3 +248,46 @@
 
 // console.log(human)
 
+
+// let a = +prompt("Enter A Number : ");
+// let b = +prompt("Enter A Number : ");
+
+// console.log("The Addition Of Two Numbers is : " + (a + b));
+// console.log("The Substraction Of Two Numbers Is : " + (a - b));
+// console.log("The Multiplication Of Two Numbers Is : " , (a * b));
+// console.log("The Division Of Two Numbers Is : " , (a / b));
+
+// alert("The Addition Of Two Numbers Is : " + (a + b));
+// alert("The Substraction Of Two Numbers Is : " + (a - b));
+// alert("The Multiplication Of Two Numbers Is : " + (a * b));
+// alert("The Division Of Two Numbers Is :" + (a / b));
+
+// let vegetables = [ "Tomato" , "Potato" , "Lady Finger" , "Bringal" , "Radish"];
+// let extraVeg = vegetables[5] = "Onion" ;
+// console.log(vegetables);
+
+// let a = prompt("Enter an item :");
+// let b = prompt("Enter an item :");
+// let c = prompt("Enter an item :");
+// let d = prompt("Enter an item :");
+// let e = prompt("Enter an item :");
+
+// console.log([e , d , c , b , a])
+
+// let num = [];
+// num[1] = prompt("Enter an item :");
+// num[2] = prompt("Enter an item :");
+// num[3] = prompt("Enter an Item :");
+
+// let a = 3;
+
+// console.log(num[++a]);
+// console.log(num[++a]);
+// console.log(num[++a]);
+
+
+
+
+
+
+
