@@ -4,7 +4,8 @@
 // doctor();
 
 // function doctor (time) {
-//     console.log("Your " + time + " Is Ready");
+//     let x = ("Your " + time + " Is Ready");
+//     console.log(x);
 // }
 // doctor("Breakfast");
 // doctor("Lunch");
@@ -56,62 +57,51 @@
 // table();
 // table();
 
-// function add (a , b) {
-//     console.log(a + b)
+// function sum (a , b) {
+//     let x = (a + b);
+//     return x ;
 // }
-// add (+prompt("Enter 1st Number :"), +prompt("Enter 2nd Number :"));
+// function add (a , b) {
+//     let addition = sum(a , b);
+//     console.log(addition);
+// }
+// add (5 , 7)
 
-function get () {
-    let n = 5;
-    return n;
+
+
+
+// function get () {
+//     let n = 5;
+//     return n;
+// }
+
+// function multiply (value) {
+//     console.log(value * 10);
+// // }
+
+// let number = get ();   // return zaroori
+// multiply (number);
+
+
+function calculateTax (salary) {
+    let x = (salary * 0.1);
+    return x ;
 }
 
-function multiply (value) {
-    console.log(value * 10);
+function answer (salary) {
+    let tax = calculateTax(salary);
+    console.log("Your Income Tax Which You Paid Is :" + tax);
 }
-
-let number = get ();   // return zaroori
-multiply (number);
+answer(prompt("Enter Your Salary :"));
 
 
+// function calculateTax(price) {
+//     return price * 0.1;
+// }
 
+// function showBill(price) {
+//     let tax = calculateTax(price);  // Ek function se tax mil gaya
+//     console.log("Total Bill: " + (price + tax));
+// }
 
-// const foo = () => { return (10) };
-
-// console.log(foo())
-
-// or
-
-// const foo = () => 10;
-
-// console.log(foo())
-
-// or
-
-// const foo = _ => 10;
-
-// console.log(foo())
-
-// or
-
-// const foo = (value) => { console.log(value) };
-
-// foo(10)
-
-// or
-
-// const foo = value => console.log(value);
-
-// foo(10)
-
-// or
-
-// const foo = (num1 = 6, num2 = 4) => { console.log(num1 + num2) };
-
-// foo()
-
-// or
-
-// const foo = (value, ...rest) => { console.log(value + rest) };
-
-// foo(2, 2 + 2 + 2 + 2)
+// showBill(100);
