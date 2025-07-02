@@ -39,27 +39,39 @@
 
 // add (a , b);
 
-function table () {
-    console.log(tno + " x " + ++i + " = " + tno*i);
+// function table () {
+//     console.log(tno + " x " + ++i + " = " + tno*i);
+// }
+// let tno = prompt("Enter Any Table Number :");
+// let i = 0;
+
+// table();
+// table();
+// table();
+// table();
+// table();
+// table();
+// table();
+// table();
+// table();
+// table();
+
+// function add (a , b) {
+//     console.log(a + b)
+// }
+// add (+prompt("Enter 1st Number :"), +prompt("Enter 2nd Number :"));
+
+function get () {
+    let n = 5;
+    return n;
 }
-let tno = prompt("Enter Any Table Number :");
-let i = 0;
 
-table();
-table();
-table();
-table();
-table();
-table();
-table();
-table();
-table();
-table();
+function multiply (value) {
+    console.log(value * 10);
+}
 
-
-
-
-
+let number = get ();   // return zaroori
+multiply (number);
 
 
 

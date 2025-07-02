@@ -81,5 +81,60 @@
 
 // SEVENTH TASK
 
+// let dollar = 283;
+// let riyal = 75;
+// let pkrDollar = prompt("Enter, How Much Dollar You Have :");
+// let pkrRiyal = prompt("Enter, How Much Saudi Riyal You have :")
+// let pkrD = pkrDollar * 283;
+// let pkrR = pkrRiyal * 75;
+// let total = pkrD + pkrR;
+// console.log("According to Convert Your US Dollars, " + "You Have " + pkrD + "PKR");
+// console.log("According to Convert Your Saudi Riyal, " + "You Have " + pkrR + "PKR");
+// console.log("You have Total Currency is " + total + "PKR");
+
+// EIGHT TASK 
+
+// let x = +prompt("Enter Any Number : ");
+// let add = x + 5;
+// let mul = add * 10;
+// let result = mul / 2;
+// console.log("The Required Output is : " + result);
+// console.log("In Above , Your number is add by 5 and then multiply by 10 and answer divided by 2");
+
+//  NINTH TASK 
+
+// let cy = 2025;
+// let by = prompt("Enter Your Year Of Birth :");
+// console.log("Currunt Year : " + cy);
+// console.log("Your Birth Year : " + by);
+// let x = (cy- by);
+// console.log("Your Age Is : " + x);
+
+// TENTH TASK
+
+// let radius = prompt("Enter The Radius Of Circle : ");
+// let π = 3.142;
+// let circum = (2 * π * radius);
+// let area = (π * radius * radius);
+// console.log("Radius Of A Circle Is :" + radius);
+// console.log("Circumference Of A Circle Is :" + circum);
+// console.log("The Area Of A Circle Is : " + area);
+
+// ELEVENTH TASK
+
+// let favSnack = prompt("Enter Your Favorite Snack :");
+// let curAge = prompt("Enter Your Age : ");
+// let maxAge = 65;
+// let dailyAvg = prompt("How Much You Eat Your Favorite Snack In A Day :");
+// let age = (maxAge - curAge);
+// let day = 365;
+// let a = (age * day);
+// let answer = (a * dailyAvg);
+// console.log("You Will Need " + answer + " " +  favSnack + " According to your daily need " 
+//     +  "Until You Dead !");
+
+
+
+
 
 
