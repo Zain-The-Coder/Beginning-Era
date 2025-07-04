@@ -286,6 +286,15 @@
 // console.log(num[++a]);
 
 
+let numbers = [0, 1 , 2 , 3 ,27 ];
+let i = 5;
+console.log(numbers[--i]);
+console.log(numbers[--i]);
+console.log(numbers[--i]);
+console.log(numbers[--i]);
+console.log(numbers[--i]);
+
+
 
 
 
