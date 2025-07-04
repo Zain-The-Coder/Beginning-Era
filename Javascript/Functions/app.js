@@ -227,16 +227,37 @@
 // }
 // calculation(d,t);
 
-function celciusConverter () {
-    let c = (f - 32) * 5 / 9;
-    console.log("Your Temperature In Celcius Is :" + c);
-}
-let f = prompt("Enter Temperature In Farenheit :");
-celciusConverter(f);
+// function celciusConverter () {
+//     let c = (f - 32) * 5 / 9;
+//     console.log("Your Temperature In Celcius Is :" + c);
+// }
+// let f = prompt("Enter Temperature In Farenheit :");
+// celciusConverter(f);
 
-function farenheitConverter () {
-    let f = (c * 9/5) + 32
-    console.log("Your Temperature In Farenheit Is :" + f);
+// function farenheitConverter () {
+//     let f = (c * 9/5) + 32
+//     console.log("Your Temperature In Farenheit Is :" + f);
+// }
+// let c = prompt("Enter Temperature In Celcius :");
+// farenheitConverter(c);
+
+function take (base, topping1 , topping2) {
+    let size = base;
+    let top1 = topping1 + " topping ";
+    let top2 = topping2 + " topping "; 
+    return{
+        base : size,
+        topping1: top1,
+        topping2: top2,
+    }
 }
-let c = prompt("Enter Temperature In Celcius :");
-farenheitConverter(c);
+let pizzaBase = prompt("Enter your Pizza Base :");
+let firstTopping = prompt("Enter 1st Topping :");
+let secondTopping = prompt("Enter 2nd Topping :");
+
+function done (base , topping1 , topping2) {
+    let ingredients = take(base , topping1 , topping2);
+    console.log(" Your Pizza  " + ingredients.base + " With " +  ingredients.topping1 
+    + " and " + ingredients.topping2 + " Is Ready ");
+}
+done(pizzaBase , firstTopping , secondTopping);
