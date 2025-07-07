@@ -129,25 +129,50 @@
 //     }
 // }
 
-function checker () {
-let marks = prompt("Enter Your Marks :");
-let x = document.getElementById("shower");
-if(marks >= 80) {
-    x.innerHTML = "Congratulation ! You Have Passed With A+ Grade." + " Well Done , Keep It Up" ;
-}  
-else if (marks >= 70) {
-    x.innerHTML = "Congratulation ! You Have Passed With A Grade." + " Keep It Up" ;
+// function checker () {
+// let marks = prompt("Enter Your Marks :");
+// let x = document.getElementById("shower");
+// if(marks >= 80) {
+//     x.innerHTML = "Congratulation ! You Have Passed With A+ Grade." + " Well Done , Keep It Up" ;
+// }  
+// else if (marks >= 70) {
+//     x.innerHTML = "Congratulation ! You Have Passed With A Grade." + " Keep It Up" ;
+// }
+// else if (marks >= 70) {
+//     x.innerHTML = "Congratulation ! You Have Passed With A Grade." + " Good Efforts";
+// }
+// else if (marks >= 60) {
+//     x.innerHTML = "You Have Passed With B Grade." + " Good";
+// }
+// else if (marks >= 50) {
+//     x.innerHTML = "You Have Passed With C Grade." + " Need More Practise ";
+// }
+// else{
+//     x.innerHTML = "You Have Failed";
+// }
+// }
+
+// let userReligion = prompt("Enter Your Religion :") ;
+// let Religion = "Islam" ;
+
+// if(userReligion !== Religion) {
+//     console.log ("Go Back . You Are Not Allowed To Enter !") ;
+
+// } else {
+//     console.log("Welcome Muslim !");
+// }
+
+
+// let userItem = prompt("Enter The Snack Name, You Want To Eat :");
+// let userItem2 = prompt("Enter The  Soft Drink Name, You Want To Drink :");
+// let item = "kurkure" ;
+// let item2 = "pepsi" ;
+
+if (userItem === item && userItem2 === item2) {
+    console.log("Bohot best hogaya . Dono ly aao !");
+} else if (userItem === item || userItem2 === item2) {
+    console.log("Ly aao , koi 1 he ly aao !");
+} else {
+    console.log("Rehny dy bhai , naseeb may he nahi hai");
 }
-else if (marks >= 70) {
-    x.innerHTML = "Congratulation ! You Have Passed With A Grade." + " Good Efforts";
-}
-else if (marks >= 60) {
-    x.innerHTML = "You Have Passed With B Grade." + " Good";
-}
-else if (marks >= 50) {
-    x.innerHTML = "You Have Passed With C Grade." + " Need More Practise ";
-}
-else{
-    x.innerHTML = "You Have Failed";
-}
-}
+
