@@ -227,6 +227,7 @@
 // }
 // calculation(d,t);
 
+
 // function celciusConverter () {
 //     let c = (f - 32) * 5 / 9;
 //     console.log("Your Temperature In Celcius Is :" + c);
@@ -246,9 +247,9 @@ function take (base, topping1 , topping2) {
     let top1 = topping1 + " topping ";
     let top2 = topping2 + " topping "; 
     return{
-        base : size,
-        topping1: top1,
-        topping2: top2,
+        base:size,
+        topping1:top1,
+        topping2:top2,
     }
 }
 let pizzaBase = prompt("Enter your Pizza Base :");
@@ -257,7 +258,7 @@ let secondTopping = prompt("Enter 2nd Topping :");
 
 function done (base , topping1 , topping2) {
     let ingredients = take(base , topping1 , topping2);
-    console.log(" Your Pizza  " + ingredients.base + " With " +  ingredients.topping1 
+    console.log(" Your " + ingredients.base + " Pizza With " +  ingredients.topping1 
     + " and " + ingredients.topping2 + " Is Ready ");
 }
 done(pizzaBase , firstTopping , secondTopping);
