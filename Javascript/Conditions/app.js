@@ -168,11 +168,11 @@
 // let item = "kurkure" ;
 // let item2 = "pepsi" ;
 
-if (userItem === item && userItem2 === item2) {
-    console.log("Bohot best hogaya . Dono ly aao !");
-} else if (userItem === item || userItem2 === item2) {
-    console.log("Ly aao , koi 1 he ly aao !");
-} else {
-    console.log("Rehny dy bhai , naseeb may he nahi hai");
-}
+// if (userItem === item && userItem2 === item2) {
+//     console.log("Bohot best hogaya . Dono ly aao !");
+// } else if (userItem === item || userItem2 === item2) {
+//     console.log("Ly aao , koi 1 he ly aao !");
+// } else {
+//     console.log("Rehny dy bhai , naseeb may he nahi hai");
+// }
 
