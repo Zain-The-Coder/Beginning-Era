@@ -173,6 +173,46 @@
 // } else if (userItem === item || userItem2 === item2) {
 //     console.log("Ly aao , koi 1 he ly aao !");
 // } else {
-//     console.log("Rehny dy bhai , naseeb may he nahi hai");
+//     console.log("Rehny do bhai , naseeb may he nahi hai");
 // }
+
+
+// let userNumber = prompt("Enter First Number : ") ;
+// let userNumber1 = prompt("Enter Second Number :") ;
+// if(userNumber === userNumber1) {
+//     console.log("Both Values Are Equal !") ;
+// } else if (userNumber > userNumber1) {
+//     console.log("The Bigger Number Between Both Is " + userNumber) ;
+// } else {
+//     console.log("The Bigger Number Between Both Is " + userNumber1) ;
+// }
+
+// let userNumber = prompt("Enter Your Number :");
+// if (userNumber > 0) {
+//     console.log("You Enter Positive Number !");
+// } else if (userNumber < 0) {
+//         console.log("You Enter Negative Number !");
+// } else {
+//         console.log("You Enter Zero Number !");
+// }
+
+// let vowels = ["a" , "e" , "i" , "o" , "u"] ;
+// let userInput = prompt("Enter any character. If you enter vowel, you will return True !" 
+//     + " Otherwise False");
+// if(userInput === vowels) {
+//     console.log(true);
+// } else {
+//     console.log(false);
+// }
+
+let userPassword = prompt("Enter Your Password :") ;
+function checker () {
+    let Password = prompt("Enter Your Password !");
+    let x = document.getElementById("shower");
+    if(userPassword === Password) {
+        x.innerHTML = "Welcome User" ;
+    } else {
+        x.innerHTML = "Wrong Password" ;
+    }
+}
 
