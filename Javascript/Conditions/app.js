@@ -230,3 +230,6 @@
 // subjects.indexOf("Chemistry")
 
 // console.log(subjects.indexOf("Pakistan Studies"))
+
+let subjects = ["Chemistry" , "Physics" , "Computer" , "Urdu"];
+subjects.splice(1 , )
