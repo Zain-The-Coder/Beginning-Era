@@ -231,5 +231,12 @@
 
 // console.log(subjects.indexOf("Pakistan Studies"))
 
-let subjects = ["Chemistry" , "Physics" , "Computer" , "Urdu"];
-subjects.splice(1 , )
+// let subjects = ["Chemistry" , "Physics" , "Computer" , "Urdu"];
+// subjects.splice(2 , 1);
+// subjects.unshift("Islamiat");
+// console.log(subjects);
+
+// let cleanCities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Multan"];
+// let h1 = document.getElementById("shower");
+// h1.innerHTML = cleanCities.length  + " " + cleanCities;
+
