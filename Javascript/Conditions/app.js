@@ -205,14 +205,21 @@
 //     console.log(false);
 // }
 
-let userPassword = prompt("Enter Your Password :") ;
-function checker () {
-    let Password = prompt("Enter Your Password !");
-    let x = document.getElementById("shower");
-    if(userPassword === Password) {
-        x.innerHTML = "Welcome User" ;
-    } else {
-        x.innerHTML = "Wrong Password" ;
-    }
-}
+// let userPassword = prompt("Enter Your Password :") ;
+// function checker () {
+//     let Password = prompt("Enter Your Password !");
+//     let x = document.getElementById("shower");
+//     if(userPassword === Password) {
+//         x.innerHTML = "Welcome User" ;
+//     } else {
+//         x.innerHTML = "Wrong Password" ;
+//     }
+// }
 
+
+let userPassword = prompt("Enter Your Password :");
+if (userPassword.length === 6) {
+    console.log("Password Saved !")
+} else {
+    console.log("You Reached Out Of Limit !");
+}
