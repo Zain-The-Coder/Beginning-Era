@@ -240,3 +240,26 @@
 // let h1 = document.getElementById("shower");
 // h1.innerHTML = cleanCities.length  + " " + cleanCities;
 
+// let userSubject = "math";
+// let compulsary = ["english" , "islamiat" , "urdu" , "math"];
+// if (userSubject === compulsary[3]) {
+//     console.log("correct");
+// } else {
+//     console.log("wrong")
+// }
+
+// let userSubject = "islamiat";
+// let compulsary = ["english" , "islamiat" , "urdu" , "math"];
+// if (compulsary.indexOf(userSubject) === 4) {
+//     console.log("You Entered Correct Subject !") ;
+// } else {
+//     console.log("Wrong Subject ! Please Check Again.");
+// }
+
+let userSubject = prompt("Enter Any Compulsary Subject : ");
+let compulsary = ["english" , "islamiat" , "urdu" , "math"];
+if (compulsary.indexOf(userSubject) >= 0) {
+    console.log("You Entered Correct Subject !");
+} else {
+    console.log("Wrong Subject ! Please Check Again.")
+}
