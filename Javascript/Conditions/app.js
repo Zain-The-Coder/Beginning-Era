@@ -256,10 +256,14 @@
 //     console.log("Wrong Subject ! Please Check Again.");
 // }
 
-let userSubject = prompt("Enter Any Compulsary Subject : ");
-let compulsary = ["english" , "islamiat" , "urdu" , "math"];
-if (compulsary.indexOf(userSubject) >= 0) {
-    console.log("You Entered Correct Subject !");
-} else {
-    console.log("Wrong Subject ! Please Check Again.")
+// let userSubject = prompt("Enter Any Compulsary Subject : ");
+// let compulsary = ["english" , "islamiat" , "urdu" , "math"];
+// if (compulsary.indexOf(userSubject) >= 0) {
+//     console.log("You Entered Correct Subject !");
+// } else {
+//     console.log("Wrong Subject ! Please Check Again.")
+// }
+let tno = prompt("Enter Table Number :");
+for (let i = 1 ; i <= 10 ; i++) {
+    console.log(tno + " x " + i + " = " + tno*i);
 }
