@@ -217,9 +217,16 @@
 // }
 
 
-let userPassword = prompt("Enter Your Password :");
-if (userPassword.length === 6) {
-    console.log("Password Saved !")
-} else {
-    console.log("You Reached Out Of Limit !");
-}
+// let userPassword = prompt("Enter Your Password :");
+// if (userPassword.length <= 6) {
+//     console.log("Password Saved !")
+// } else {
+//     console.log("You Reached Out Of Limit !");
+// }
+
+
+let subjects = ["Chemistry" , "Physics" , "Computer" , "Urdu"];
+subjects.unshift("Pakistan Studies");
+
+
+console.log(subjects)
