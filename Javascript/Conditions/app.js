@@ -225,8 +225,8 @@
 // }
 
 
-let subjects = ["Chemistry" , "Physics" , "Computer" , "Urdu"];
-subjects.unshift("Pakistan Studies");
+// let subjects = ["Chemistry" , "Physics" , "Computer" , "Urdu"];
+// subjects.unshift("Pakistan Studies");
+// subjects.indexOf("Chemistry")
 
-
-console.log(subjects)
+// console.log(subjects.indexOf("Pakistan Studies"))
