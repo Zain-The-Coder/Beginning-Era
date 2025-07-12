@@ -267,7 +267,26 @@
 // for (let i = 1 ; i <= 10 ; i++) {
 //     console.log(tno + " x " + i + " = " + tno*i);
 // }
-let userSubject = prompt("Enter Any Compulsary Subject :")
-let subjects = ["Chemistry" , "Physics" , "Math" ];
+let userField = prompt("Enter Your Field For Check Your Subjects :");
+let fields = ["computer science" , "pre engineering" , "pre medical" , "commerce"] ;
 
-console.log(subjects.length)
+if (fields.indexOf(userField) === 0) {
+    let computerSubjects = ["urdu" , "english" , "math" , "computer" , "physics" , "islamiat"];
+    console.log("Your Computer Science Subjects Are :");
+    console.log(computerSubjects);
+} 
+else if (fields.indexOf(userField) === 1){
+    let engineeringSubjects = ["urdu" , "english" , "math" , "chemistry" , "physics" , "islamiat"];
+    console.log("Your Pre Enginnering Subjects Are :");
+    console.log(engineeringSubjects);
+}
+else if (fields.indexOf(userField) === 2) {
+    let medicalSubjects = ["urdu" , "english" , "biology" , "chemistry" , "physics" , "islamiat"];
+    console.log("Your Pre Medical Subjects Are :");
+    console.log(medicalSubjects);
+} else {
+    let commerceSubjects = ["urdu" , "english" , "accounting" , "commerce" , "banking" , "islamiat"];
+    console.log("Your Commerce Subjects Are :")
+    console.log(commerceSubjects);
+
+}
