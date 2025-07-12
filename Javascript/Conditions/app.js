@@ -263,7 +263,11 @@
 // } else {
 //     console.log("Wrong Subject ! Please Check Again.")
 // }
-let tno = prompt("Enter Table Number :");
-for (let i = 1 ; i <= 10 ; i++) {
-    console.log(tno + " x " + i + " = " + tno*i);
-}
+// let tno = prompt("Enter Table Number :");
+// for (let i = 1 ; i <= 10 ; i++) {
+//     console.log(tno + " x " + i + " = " + tno*i);
+// }
+let userSubject = prompt("Enter Any Compulsary Subject :")
+let subjects = ["Chemistry" , "Physics" , "Math" ];
+
+console.log(subjects.length)
