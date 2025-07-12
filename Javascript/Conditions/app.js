@@ -263,10 +263,10 @@
 // } else {
 //     console.log("Wrong Subject ! Please Check Again.")
 // }
-// let tno = prompt("Enter Table Number :");
-// for (let i = 1 ; i <= 10 ; i++) {
-//     console.log(tno + " x " + i + " = " + tno*i);
-// }
+let tno = prompt("Enter Table Number :");
+for (let i = 1 ; i <= 10 ; i++) {
+    console.log(tno + " x " + i + " = " + tno*i);
+}
 let userField = prompt("Enter Your Field For Check Your Subjects :");
 let fields = ["computer science" , "pre engineering" , "pre medical" , "commerce"] ;
 

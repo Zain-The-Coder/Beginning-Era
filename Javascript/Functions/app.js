@@ -242,23 +242,54 @@
 // let c = prompt("Enter Temperature In Celcius :");
 // farenheitConverter(c);
 
-function take (base, topping1 , topping2) {
-    let size = base;
-    let top1 = topping1 + " topping ";
-    let top2 = topping2 + " topping "; 
-    return{
-        base:size,
-        topping1:top1,
-        topping2:top2,
+// function take (base, topping1 , topping2) {
+//     let size = base;
+//     let top1 = topping1 + " topping ";
+//     let top2 = topping2 + " topping "; 
+//     return{
+//         base:size,
+//         topping1:top1,
+//         topping2:top2,
+//     }
+// }
+// let pizzaBase = prompt("Enter your Pizza Base :");
+// let firstTopping = prompt("Enter 1st Topping :");
+// let secondTopping = prompt("Enter 2nd Topping :");
+
+// function done (base , topping1 , topping2) {
+//     let ingredients = take(base , topping1 , topping2);
+//     console.log(" Your " + ingredients.base + " Pizza With " +  ingredients.topping1 
+//     + " and " + ingredients.topping2 + " Is Ready ");
+// }
+// done (pizzaBase , secondTopping , firstTopping)
+
+function buildStudent(name , averageMarks , Grade)  {
+    let studentName = name;
+    let firstMarks = marks1;
+    let secondMarks = marks2;
+    let thirdMarks = marks3;
+    let averageMarks = ((firstMarks + secondMarks + thirdMarks) / 3);
+    return [studentName , firstMarks , secondMarks , thirdMarks, averageMarks];
+}
+
+let studentName = prompt("Enter Your Name :");
+let firstMarks = prompt("Enter Your English Marks Out Of 100 :");
+let secondMarks = prompt("Enter Your Urdu Marks Out Of 100 :");
+let thirdMarks = prompt("Enter Your Math Marks Out Of 100");
+
+function resultPrinter (name ,average , Grade) {
+    let firstFunction = buildStudent(name , marks1 , marks2 , marks3);
+        let firstGrade = ("You Achieved A Grade") ;
+        let secondGrade = ("You Achieved B Grade");
+        let thirdGrade = ("You Have Failed");
+    console.log("Your Name is " + firstFunction[0]);
+    console.log("Your Average Marks Is " + firstFunction[4]);
+    if (averageMarks >= 80) {
+        console.log("You Achieved A Grade") ;
+    } else if (averageMarks >= 60) {
+        console.log("You Achieved B Grade");
+    } else {
+        console.log("You Have Failed");
     }
 }
-let pizzaBase = prompt("Enter your Pizza Base :");
-let firstTopping = prompt("Enter 1st Topping :");
-let secondTopping = prompt("Enter 2nd Topping :");
-
-function done (base , topping1 , topping2) {
-    let ingredients = take(base , topping1 , topping2);
-    console.log(" Your " + ingredients.base + " Pizza With " +  ingredients.topping1 
-    + " and " + ingredients.topping2 + " Is Ready ");
-}
-done(pizzaBase , firstTopping , secondTopping);
+resultPrinter(studentName , averageMarks)
