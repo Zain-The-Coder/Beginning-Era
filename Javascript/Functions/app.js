@@ -287,34 +287,75 @@
 // buildStudent();
 
 
-// 
+// // 
 
-function buildStudent (userName , marks1 , marks2 , marks3) {
+// function buildStudent (userName , marks1 , marks2 , marks3) {
+//     let studentName = userName ;
+//     let averageMarks = ((marks1 + marks2 + marks3) / 3);
+//     let grade ;
+//     if (averageMarks >= 80) {
+//         grade = "You Got A Grade !";
+//     } else if (averageMarks >= 60) {
+//         grade = "You Got B Grade !" ;
+//     } else {
+//         grade = "You Have Failed !" ;
+//     }
+//     return [studentName , averageMarks.toFixed(1) , grade]
+// }
+// let userName = prompt("Enter Your Name :");
+// let m1 = +prompt("Enter Your English Marks :");
+// let m2 = +prompt("Enter Your Urdu Marks :");
+// let m3 = +prompt("Enter Your Math Marks :");
+
+
+// function resultPrinter (userName , marks1 , marks2 , marks3) {
+//     let studentInfo = buildStudent(userName , marks1 , marks2 , marks3);
+//     let p1 = document.getElementById("firstLine");
+//     let p2 = document.getElementById("secondLine");
+//     let p3 = document.getElementById("thirdLine");
+//     p1.innerHTML = "Welcome " + studentInfo[0];
+//     p2.innerHTML = "Your Average Marks Is " + studentInfo[1];
+//     p3.innerHTML =  studentInfo[2] ;
+// }
+// resultPrinter(userName , m1 , m2 , m3);
+
+function generateStudent (userName , marks1 , marks2 , marks3 , marks4 , marks5) {
     let studentName = userName ;
-    let averageMarks = ((marks1 + marks2 + marks3) / 3);
-    let grade ;
+    let marksArray = [marks1 , marks2 , marks3 , marks4 , marks5];
+    let averageMarks = ((marksArray[0] + marksArray[1] + marksArray[2] + marksArray[3] + marksArray[4]) / 5);
+    let grade;
     if (averageMarks >= 80) {
-        grade = "You Got A Grade !";
+        grade = "You Got A Grade !" ;
     } else if (averageMarks >= 60) {
-        grade = "You Got B Grade !" ;
+        grade = "You Got B Grade !";
     } else {
         grade = "You Have Failed !" ;
     }
-    return [studentName , averageMarks.toFixed(1) , grade]
+    let percentage = (((marksArray[0] + marksArray[1] + marksArray[2] + marksArray[3] + marksArray[4]) / 500) * 100 ) + " % " ;
+    return {
+        userName : studentName ,
+        average : averageMarks.toFixed(1) ,
+        Grade : grade ,
+        percent : percentage ,
+    }
 }
-let userName = prompt("Enter Your Name :");
+let studentName = prompt("Enter Your Name :");
 let m1 = +prompt("Enter Your English Marks :");
 let m2 = +prompt("Enter Your Urdu Marks :");
 let m3 = +prompt("Enter Your Math Marks :");
+let m4 = +prompt("Enter Your Chemistry Marks :");
+let m5 = +prompt("Enter Your Physics Marks :");
 
-
-function resultPrinter (userName , marks1 , marks2 , marks3) {
-    let studentInfo = buildStudent(userName , marks1 , marks2 , marks3);
+function resultPrinter (userName , marks1 , marks2 , marks3 , marks4 , marks5) {
+    let calculateResult = generateStudent (userName , marks1 , marks2 , marks3 , marks4 , marks5);
     let p1 = document.getElementById("firstLine");
     let p2 = document.getElementById("secondLine");
     let p3 = document.getElementById("thirdLine");
-    p1.innerHTML = "Welcome " + studentInfo[0];
-    p2.innerHTML = "Your Average Marks Is " + studentInfo[1];
-    p3.innerHTML =  studentInfo[2] ;
+    let p4 = document.getElementById("fourthLine");
+    p1.innerHTML = "Welcome " + calculateResult.userName + " ! " ;
+    p2.innerHTML = "Your Average Marks Are " + calculateResult.average ;
+    p3.innerHTML = "Your Percentage Is " + calculateResult.percent ;
+    p4.innerHTML = calculateResult.Grade ;
 }
-resultPrinter(userName , m1 , m2 , m3);
+
+resultPrinter(studentName , m1 , m2 , m3 , m4 , m5);
