@@ -263,33 +263,58 @@
 // }
 // done (pizzaBase , secondTopping , firstTopping)
 
-function buildStudent(name , averageMarks , Grade)  {
-    let studentName = name;
-    let firstMarks = marks1;
-    let secondMarks = marks2;
-    let thirdMarks = marks3;
-    let averageMarks = ((firstMarks + secondMarks + thirdMarks) / 3);
-    return [studentName , firstMarks , secondMarks , thirdMarks, averageMarks];
-}
 
-let studentName = prompt("Enter Your Name :");
-let firstMarks = prompt("Enter Your English Marks Out Of 100 :");
-let secondMarks = prompt("Enter Your Urdu Marks Out Of 100 :");
-let thirdMarks = prompt("Enter Your Math Marks Out Of 100");
+// function buildStudent () {
+//     let userName = prompt("Enter Your Name :");
+//     let firstMarks = +prompt("Enter English Marks Out Of 100 :");
+//     let secondMarks = +prompt("Enter Urdu Marks Out Of 100 :");
+//     let thirdMarks = +prompt("Enter Math Marks Out Of 100 :") ;
+//     let averageMarks = ((firstMarks + secondMarks + thirdMarks) / 3);
+//     if(averageMarks >= 80) {
+//         console.log("Welcome ! " + userName);
+//         console.log("Your Average Marks Are " + averageMarks);
+//         console.log("You Got A Grade !");
+//     } else if (averageMarks >= 60) {
+//         console.log("Welcome ! " + userName);
+//         console.log("Your Average Marks Are " + averageMarks);
+//         console.log("You Got B Grade !");
+//     } else {
+//         console.log("Welcome ! " + userName);
+//         console.log("Your Average Marks Are " + averageMarks);
+//         console.log("You Have Failed");
+//     }
+// }
+// buildStudent();
 
-function resultPrinter (name ,average , Grade) {
-    let firstFunction = buildStudent(name , marks1 , marks2 , marks3);
-        let firstGrade = ("You Achieved A Grade") ;
-        let secondGrade = ("You Achieved B Grade");
-        let thirdGrade = ("You Have Failed");
-    console.log("Your Name is " + firstFunction[0]);
-    console.log("Your Average Marks Is " + firstFunction[4]);
+
+// 
+
+function buildStudent (userName , marks1 , marks2 , marks3) {
+    let studentName = userName ;
+    let averageMarks = ((marks1 + marks2 + marks3) / 3);
+    let grade ;
     if (averageMarks >= 80) {
-        console.log("You Achieved A Grade") ;
+        grade = "You Got A Grade !";
     } else if (averageMarks >= 60) {
-        console.log("You Achieved B Grade");
+        grade = "You Got B Grade !" ;
     } else {
-        console.log("You Have Failed");
+        grade = "You Have Failed !" ;
     }
+    return [studentName , averageMarks.toFixed(1) , grade]
 }
-resultPrinter(studentName , averageMarks)
+let userName = prompt("Enter Your Name :");
+let m1 = +prompt("Enter Your English Marks :");
+let m2 = +prompt("Enter Your Urdu Marks :");
+let m3 = +prompt("Enter Your Math Marks :");
+
+
+function resultPrinter (userName , marks1 , marks2 , marks3) {
+    let studentInfo = buildStudent(userName , marks1 , marks2 , marks3);
+    let p1 = document.getElementById("firstLine");
+    let p2 = document.getElementById("secondLine");
+    let p3 = document.getElementById("thirdLine");
+    p1.innerHTML = "Welcome " + studentInfo[0];
+    p2.innerHTML = "Your Average Marks Is " + studentInfo[1];
+    p3.innerHTML =  studentInfo[2] ;
+}
+resultPrinter(userName , m1 , m2 , m3);
