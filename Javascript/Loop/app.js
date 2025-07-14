@@ -39,17 +39,20 @@
 // }
 
 
+// let numbers = [1,2,3,4,5,6,7,4,77,56,77,77];
+// let evenNumber = 0;
+// let oddNumber = 0;
+
+// for (let i = 0 ; i < numbers.length ; i++) {
+//     if (numbers[i] % 2 === 0) {
+//         evenNumber++ ;
+//     } else {
+//         oddNumber++ ;
+//     }
+// }
+// console.log("Total Even Numbers Are : " + evenNumber);
+
+
 let numbers = [1,2,3,4,5,6,7,4,77,56,77,77];
-let evenCount = 0;
-let oddCount = 0;
-
-for (let i = 0 ; i < numbers.length ; i++) {
-    if(numbers[i] % 2 === 0) {
-        evenCount++ ;
-    } else {
-        oddCount++ ;
-    }
-}
-console.log("even numbers are :" + evenCount);
-
+let total = 0;
 
