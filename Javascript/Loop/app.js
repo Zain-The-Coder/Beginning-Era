@@ -34,4 +34,22 @@
 //     console.log(seasons[i]);
 // }
 
+// for (let i = 10 ; i >= 1 ; i--){
+//     console.log(i);
+// }
+
+
+let numbers = [1,2,3,4,5,6,7,4,77,56,77,77];
+let evenCount = 0;
+let oddCount = 0;
+
+for (let i = 0 ; i < numbers.length ; i++) {
+    if(numbers[i] % 2 === 0) {
+        evenCount++ ;
+    } else {
+        oddCount++ ;
+    }
+}
+console.log("even numbers are :" + evenCount);
+
 
