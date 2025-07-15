@@ -152,5 +152,86 @@
 // } 
 // console.log(numbers);
 
+// let cleanCities = ["Karachi", "Lahore", "Islamabad", "Peshawar"];
+// let userCity = prompt("Enter Your City :");
+// let isClean = false;
+// for (i = 0 ; i < cleanCities.length ; i++) {
+//     if(userCity === cleanCities[i]) {
+//         isClean = true ;
+//             break ;
+//     }
+// }
+// if(isClean === true) {
+//     console.log("You Live In A Clean City !");
+// } else {
+//     console.log("You Don't Live In A Clean City !");
+// }
 
+// let healthyFruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+// let userFruit = prompt("Enter Your Fruit : ");
+// for (i = 0 ; i < healthyFruits.length ; i++) {
+//     if(userFruit === healthyFruits[i]) {
+//         console.log("Your Fruit Is Healthy !")
+//     } else {
+//         console.log("Your Fruit Is Not Healthy !");
+//     }
+// // }
+// let healthyFruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+// let userFruit = prompt("Enter Your Fruit : ");
+// let isHealthy = false ;
+// for (i = 0 ; i < healthyFruits.length ; i++) {
+//     if(userFruit === healthyFruits[i]) {
+//         isHealthy = true ;
+//         break ;
+//     }
+// }
+// if(isHealthy === true) {
+//     console.log("Your Fruit Is Healthy !");
+// } else {
+//     console.log("Your Fruit Is Not Healthy !");
+// }
 
+// let userLetter = prompt("Enter Your Word Then I Found Vowels In Your Word !");
+// let vowelscount = 0 ;
+// let vowels = "aeiou" ;
+// for (i = 0; i < userLetter.length; i++) {
+//     let curruntLetter = userLetter[i].toLowerCase() ;
+//     if(vowels.includes(curruntLetter)) {
+//         vowelscount++ ;
+//     }
+// }
+// console.log("The Vowels Found In Your Word Is : " + vowelscount);
+
+// let numbers = [3, 5, 15, 7, 10, 18, 22, 30, 8];
+// let multiBy3 = [] ;
+// let multiBy5 = [] ;
+// let other = [] ;
+// for (let i = 0; i < numbers.length; i++) {
+//     if(numbers[i] % 3 === 0) {
+//         multiBy3.push(numbers[i]);
+//     } else if(numbers[i] % 5 === 0){
+//         multiBy5.push(numbers[i]);
+//     } else {
+//         other.push(numbers[i]);
+//     }
+// }
+// console.log("The Multiplayer Of 3 In The Array Include " + multiBy3);
+// console.log("The Multiplayer Of 5 In The Array Include " + multiBy5);
+// console.log("Other Numbers Are : " + other);
+
+let numbers = [3, 5, 15, 7, 10, 18, 22, 30, 8];
+let multiBy3 = [] ;
+let multiBy5 = [] ;
+let other = [] ;
+for (let i = 0; i < numbers.length; i++) {
+    if(numbers[i] % 3 === 0) {
+        multiBy3.splice(i , 0 , numbers[i]);
+    } if(numbers[i] % 5 === 0){
+        multiBy5.splice(i , 0 , numbers[i]);
+    } else {
+        other.push(numbers[i]);
+    }
+}
+console.log("The Multiplayer Of 3 In The Array Include " + multiBy3.join(" - "));
+console.log("The Multiplayer Of 5 In The Array Include " + multiBy5.join(" - "));
+console.log("Other Numbers Are : " + other.join(" - "));
