@@ -85,16 +85,50 @@
 // }
 // console.log(evenNumber); console.log(oddNumber)
 
-let numbers = [2 , 6 , 4 , 67 , 32 , 78 , 7 , 99 , 53 , 97 , 55];
-let evenNumber = 0 ;
-let oddNumber = 0 ;
+// let numbers = [2 , 6 , 4 , 67 , 32 , 78 , 7 , 99 , 53 , 97 , 55];
+// let evenNumber = 0 ;
+// let oddNumber = 0 ;
 
-for (i = 0 ; i < numbers.length ; i++) {
-    if(numbers[i] % 2 === 0) {
-        evenNumber = evenNumber + numbers[i];
-    } else {
-        oddNumber = oddNumber + numbers[i]
+// for (i = 0 ; i < numbers.length ; i++) {
+//     if(numbers[i] % 2 === 0) {
+//         evenNumber = evenNumber + numbers[i];
+//     } else {
+//         oddNumber = oddNumber + numbers[i]
+//     }
+// }
+// console.log(evenNumber);
+// console.log(oddNumber);
+
+
+// let numbers = [2 , 6 , 4 , 67 , 32 , 78 , 7 , 99 , 53 , 97 , 55];
+// let evenNumber = [] ;
+// let oddNumber = [] ;
+// for (i = 0 ; i < numbers.length ; i++) {
+//     if(numbers[i] % 2 === 0) {
+//         evenNumber.push(numbers[i]);
+//     } else {
+//         oddNumber.push(numbers[i]);
+//     }
+// }
+// console.log("Even Numbers In The Array Are: " + evenNumber.join(" - "));
+// console.log("Odd Numbers In The Array Are: " + oddNumber.join(" - "));
+
+let numbers = [2, 7, 4, 9, 6, 11, 8];
+let oddNumbers = [];
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 !== 0) {
+        oddNumbers.push(numbers[i]);
     }
 }
-console.log(evenNumber);
-console.log(oddNumber)
+oddNumbers.reverse();
+let oddIndex = 0;
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 !== 0) {
+        numbers[i] = oddNumbers[oddIndex];
+        oddIndex++;
+    }
+}
+
+console.log(numbers);
+
