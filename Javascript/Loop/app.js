@@ -122,11 +122,29 @@
 //     }
 // }
 // oddNumbers.reverse();
-// let oddIndex = 0;
+// let oddNumber = 0 ;
 // for (let i = 0; i < numbers.length; i++) {
 //     if (numbers[i] % 2 !== 0) {
-//         numbers[i] = oddNumbers[oddIndex];
-//         oddIndex++;
+//         numbers[i] = oddNumbers[oddNumber];
+//         oddNumber++ 
+//     }
+// }
+
+// console.log(numbers);
+// let numbers = [2, 7, 4, 9, 6, 11, 8];
+// let oddNumbers = [];
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 !== 0) {
+//         oddNumbers.push(numbers[i]);
+//     }
+// }
+// oddNumbers.reverse();
+// let oddNumber = 0 ;
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 === 0){
+//         numbers[i] = oddNumbers[oddNumber];
+//         oddNumber++ ;
 //     }
 // }
 
@@ -236,18 +254,46 @@
 // console.log("The Multiplayer Of 5 In The Array Include " + multiBy5.join(" - "));
 // console.log("Other Numbers Are : " + other.join(" - "));
 
-let cleanCities = ["Karachi", "Lahore", "Islamabad", "Peshawar", "Quetta"];
-let userCity = prompt("Enter Your City :") ;
-let isCity = false ;
-for(i = 0 ; i < cleanCities.length; i++) {
-    if(userCity === cleanCities[i]) {
-        isCity = true;
-        break ;
-    }
-}
-if(isCity === true) {
-    console.log("You Live In A Clean City !");
-    console.log("Your Data Is Present In " + cleanCities[i].indexOf(cleanCities) + " Index ");
-} else {
-    console.log("You Do Not Live In A Clean City !");
-}
+// let cleanCities = ["Karachi", "Lahore", "Islamabad", "Peshawar", "Quetta"];
+// let userCity = prompt("Enter Your City :") ;
+// let isCity = false ;
+// for(i = 0 ; i < cleanCities.length; i++) {
+//     if(userCity === cleanCities[i]) {
+//         isCity = true;
+//         break ;
+//     }
+// }
+// if(isCity === true) {
+//     console.log("You Live In A Clean City !");
+//     console.log("Your Data Is Present In " + cleanCities[i].indexOf(cleanCities) + " Index ");
+// } else {
+//     console.log("You Do Not Live In A Clean City !");
+// }
+
+// let studentNames = ["Ali", "Sara", "Zain", "Hina", "Ahmed", "Fatima"];
+// let studentMarks = [88, 95, 67, 92, 76, 90];
+// let topScores = [] ;
+// for (let i = 0; i < studentNames.length; i++) {
+//     console.log(studentNames[i] + " k Marks Hein " + studentMarks[i]);
+//     if(studentMarks[i] >= 90) {
+//         topScores.push(studentNames[i]);
+//     }
+// }
+// console.log("And The Top Scorers Are : " + topScores.join(" - "));
+
+// let studentNames = ["Ali", "Sara", "Zain", "Hina", "Ahmed", "Fatima"];
+// let studentMarks = [88, 95, 67, 32, 76, 45];
+// let passedStudents = [] ;
+// let failedStudents = [] ;
+
+// for (i= 0; i < studentNames.length; i++) {
+//     if(studentMarks[i] >= 51) {
+//          passedStudents.push(studentNames[i] + " : Pass");
+//     } else {
+//         failedStudents.push(studentNames[i] + " : fail") ;
+//     }
+// }
+// console.log("PASSED STUDENTS :");
+// console.log(passedStudents.join("\n"));
+// console.log("FAILED STUDENTS :");
+// console.log(failedStudents.join("\n"));
