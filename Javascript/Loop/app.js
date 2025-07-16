@@ -219,19 +219,35 @@
 // console.log("The Multiplayer Of 5 In The Array Include " + multiBy5);
 // console.log("Other Numbers Are : " + other);
 
-let numbers = [3, 5, 15, 7, 10, 18, 22, 30, 8];
-let multiBy3 = [] ;
-let multiBy5 = [] ;
-let other = [] ;
-for (let i = 0; i < numbers.length; i++) {
-    if(numbers[i] % 3 === 0) {
-        multiBy3.splice(i , 0 , numbers[i]);
-    } if(numbers[i] % 5 === 0){
-        multiBy5.splice(i , 0 , numbers[i]);
-    } else {
-        other.push(numbers[i]);
+// let numbers = [3, 5, 15, 7, 10, 18, 22, 30, 8];
+// let multiBy3 = [] ;
+// let multiBy5 = [] ;
+// let other = [] ;
+// for (let i = 0; i < numbers.length; i++) {
+//     if(numbers[i] % 3 === 0) {
+//         multiBy3.splice(i , 0 , numbers[i]);
+//     } if(numbers[i] % 5 === 0){
+//         multiBy5.splice(i , 0 , numbers[i]);
+//     } else {
+//         other.push(numbers[i]);
+//     }
+// }
+// console.log("The Multiplayer Of 3 In The Array Include " + multiBy3.join(" - "));
+// console.log("The Multiplayer Of 5 In The Array Include " + multiBy5.join(" - "));
+// console.log("Other Numbers Are : " + other.join(" - "));
+
+let cleanCities = ["Karachi", "Lahore", "Islamabad", "Peshawar", "Quetta"];
+let userCity = prompt("Enter Your City :") ;
+let isCity = false ;
+for(i = 0 ; i < cleanCities.length; i++) {
+    if(userCity === cleanCities[i]) {
+        isCity = true;
+        break ;
     }
 }
-console.log("The Multiplayer Of 3 In The Array Include " + multiBy3.join(" - "));
-console.log("The Multiplayer Of 5 In The Array Include " + multiBy5.join(" - "));
-console.log("Other Numbers Are : " + other.join(" - "));
+if(isCity === true) {
+    console.log("You Live In A Clean City !");
+    console.log("Your Data Is Present In " + cleanCities[i].indexOf(cleanCities) + " Index ");
+} else {
+    console.log("You Do Not Live In A Clean City !");
+}
