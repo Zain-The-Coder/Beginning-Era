@@ -41,13 +41,14 @@
 // }
 // console.log(scholarShipResult.join("\n"));
 
-let firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
-let lastNames = ["Zzz", "Burp", "Dogbone", "Droop"];
-let fullNames = [];
-let mm = 0;
-for (var i = 0; i < firstNames.length; i++) {
-fullNames.push(firstNames[i] + (mm = mm + lastNames[i]));
-}
-console.log(fullNames)
+
+// let firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
+// let lastNames = ["Zzz", "Burp", "Dogbone", "Droop"];
+// let fullNames = [];
+// let mm = 0;
+// for (var i = 0; i < firstNames.length; i++) {
+// fullNames.push(firstNames[i] + lastNames[i]);
+// }
+// console.log(fullNames);
 
 
