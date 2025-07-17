@@ -297,3 +297,27 @@
 // console.log(passedStudents.join("\n"));
 // console.log("FAILED STUDENTS :");
 // console.log(failedStudents.join("\n"));
+
+let studentNames = ["Ali", "Sara", "Zain", "Hina", "Ahmed", "Fatima"];
+let studentMarks = [88, 95, 67, 32, 76, 45];
+let lastResult = [] ;
+let grades = [] ;
+let per = [] ;
+let totalMarks = 100;
+for (i = 0; i , studentNames.length; i++) {
+    let percentage = (studentMarks[i] / totalMarks) * 100 ;
+    if(studentMarks[i] >= 90) {
+        grades.push("A+");
+        lastResult.push("Name" + " : " + studentNames[i]);
+
+    } else if (studentMarks[i] >= 80) {
+        grades.push("A")
+    } else if(studentMarks[i] >= 70) {
+        grades.push("B");
+    } else if(studentMarks[i] >= 60) {
+        grades.push("C");
+    } else if(studentMarks[i]  >= 50) {
+        grades.push("D");
+    }
+}
+console.log(lastResult);
