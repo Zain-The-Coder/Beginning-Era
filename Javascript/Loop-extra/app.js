@@ -52,3 +52,17 @@
 // console.log(fullNames);
 
 
+// let studentNames = ["Ali", "Sara", "Zain", "Hina", "Ahmed", "Fatima"];
+// let studentMarks = [88, 95, 67, 92, 76, 90];
+let studentData = [ 
+    { Name : Ali , Marks : 88 ,},
+    { Name : Sara , Marks : 95 ,},
+    { Name : Zain , Marks : 67 ,},
+    { Name : Hina , Marks : 92 ,},
+    { Name : Ahmed , Marks : 76 ,},
+    { Name : Fatima , Marks : 90 ,}
+]
+let totalMarks = 100 ;
+for (let i = 0; i <studentData.length; i++) {
+    
+}
