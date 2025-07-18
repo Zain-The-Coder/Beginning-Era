@@ -55,14 +55,29 @@
 // let studentNames = ["Ali", "Sara", "Zain", "Hina", "Ahmed", "Fatima"];
 // let studentMarks = [88, 95, 67, 92, 76, 90];
 let studentData = [ 
-    { Name : Ali , Marks : 88 ,},
-    { Name : Sara , Marks : 95 ,},
-    { Name : Zain , Marks : 67 ,},
-    { Name : Hina , Marks : 92 ,},
-    { Name : Ahmed , Marks : 76 ,},
-    { Name : Fatima , Marks : 90 ,}
+    { Name : "Ali" , Marks : 88 ,},
+    { Name : "Sara" , Marks : 95 ,},
+    { Name : "Zain" , Marks : 67 ,},
+    { Name : "Hina" , Marks : 92 ,},
+    { Name : "Ahmed" , Marks : 76 ,},
+    { Name : "Fatima" , Marks : 90 ,}
 ]
 let totalMarks = 100 ;
 for (let i = 0; i <studentData.length; i++) {
-    
+    let percentage = ((studentData[i].Marks / totalMarks) * 100);
+    studentData[i].percentage = percentage.toFixed(2);
+    if(percentage >= 90) {
+        studentData[i].grade = "A+" ;
+    } else if(percentage >= 80) {
+        studentData[i].grade = "A";
+    } else if(percentage >= 70) {
+        studentData[i].grade = "B" ;
+    } else if(percentage >= 60) {
+        studentData[i].grade = "C" ;
+    } else if(percentage >= 50) {
+        studentData[i].grade = "D" ;
+    } else {
+        studentData[i].grade = "Fail";
+    }
+console.log(studentData[i].Name + " - Marks : " + studentData[i].Marks + " - Percentage : " + studentData[i].percentage + " - Grade : " + studentData[i].grade);
 }
