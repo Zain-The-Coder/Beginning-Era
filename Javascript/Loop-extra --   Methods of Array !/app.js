@@ -122,32 +122,32 @@
 
 // https://youtu.be/B2AySOOwWJY?si=QmxjnzS_bpmQZqB5 ;
 
-let products = [
-{name : "Soap" , price : 120 , stock : 43 , sold : 30},
-{name : "Detergent" , price : 210 , stock : 4 , sold : 32},
-{name : "Shampoo" , price : 20 , stock : 20 , sold : 30},
-{name : "Biscuit" , price : 40 , stock : 67 , sold : 7},
-{name : "Oil" , price : 520 , stock : 87 , sold : 25},
-{name : "Rice" , price : 340 , stock: 0 , sold : 20},
-{name : "floar" , price : 90 , stock : 120 , sold : 90},
-]
-for (let i = 0; i < products.length; i++) {
-    let totalEarning = (products[i].price * products[i].sold);
-    products[i].totalEarning = totalEarning ;
-    if(products[i].stock < 10) {
-        products[i].stockStatus = " Out Of Stock ! " ;
-    } else {
-        products[i].stockStatus = " In Stock !" ;
-    }
-    console.log("Product Name : " + products[i].name + " - Price : " + products[i].price + 
-" - Remaining Stock : " + products[i].stock + " - Sold Out " + products[i].sold + " - Total Earning " + 
-totalEarning + " - Stock Status : " + products[i].stockStatus);
-}
-    let topSellingProduct = products[0];
-for (i = 0; i < products.length; i++) {
-    if(products[i].sold > topSellingProduct.sold) {
-        topSellingProduct = products[i];
-    }
-}
-console.log("THE TOP SELLING PRODUCT IS: " + topSellingProduct.name.toUpperCase() + 
-" - Sold: " + topSellingProduct.sold);
+// let products = [
+// {name : "Soap" , price : 120 , stock : 43 , sold : 30},
+// {name : "Detergent" , price : 210 , stock : 4 , sold : 32},
+// {name : "Shampoo" , price : 20 , stock : 20 , sold : 30},
+// {name : "Biscuit" , price : 40 , stock : 67 , sold : 7},
+// {name : "Oil" , price : 520 , stock : 87 , sold : 25},
+// {name : "Rice" , price : 340 , stock: 0 , sold : 20},
+// {name : "floar" , price : 90 , stock : 120 , sold : 90},
+// ]
+// for (let i = 0; i < products.length; i++) {
+//     let totalEarning = (products[i].price * products[i].sold);
+//     products[i].totalEarning = totalEarning ;
+//     if(products[i].stock < 10) {
+//         products[i].stockStatus = " Out Of Stock ! " ;
+//     } else {
+//         products[i].stockStatus = " In Stock !" ;
+//     }
+//     console.log("Product Name : " + products[i].name + " - Price : " + products[i].price + 
+// " - Remaining Stock : " + products[i].stock + " - Sold Out " + products[i].sold + " - Total Earning " + 
+// totalEarning + " - Stock Status : " + products[i].stockStatus);
+// }
+//     let topSellingProduct = products[0];
+// for (i = 0; i < products.length; i++) {
+//     if(products[i].sold > topSellingProduct.sold) {
+//         topSellingProduct = products[i];
+//     }
+// }
+// console.log("THE TOP SELLING PRODUCT IS: " + topSellingProduct.name.toUpperCase() + 
+// " - Sold: " + topSellingProduct.sold);
