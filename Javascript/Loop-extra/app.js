@@ -112,5 +112,12 @@ for (let i = 0; i < employees.length; i++) {
     console.log(employees[i].name + " - Score : " + employees[i].score + " - Percentage : " 
         + percentage + "%" + " - Grade : " + employees[i].grade);
 }
-// console.log(result);
+let topPerformer = employees[0];
+for (let i = 0; i < employees.length; i++) {
+    if(employees[i].score > topPerformer.score); 
+    topPerformer = employees[i];
+}
+console.log("👑 " + "THE TOP PERFORMER BETWEEN EMPLOYEES IS : " + topPerformer.name.toUpperCase());
+
+
 // https://youtu.be/B2AySOOwWJY?si=QmxjnzS_bpmQZqB5 ;
