@@ -151,3 +151,62 @@
 // }
 // console.log("THE TOP SELLING PRODUCT IS: " + topSellingProduct.name.toUpperCase() + 
 // " - Sold: " + topSellingProduct.sold);
+
+// let cities = ["Karachi" , "Islamabad" , "Lahore" , "Quetta" , "Peshawar"];
+// cities.splice(2, 3 , "Multan" , "Thatta" , "Hyderabad" );
+// console.log(cities);
+
+// let cities = ["Karachi" , "Islamabad" , "Lahore" , "Quetta" , "Peshawar"];
+// let favCities = cities.slice(1 , 2);
+// console.log(cities);
+// console.log(favCities);
+
+// CHAPTER 17 TO 20 ( TASKS );
+
+// let matrix = [
+//      ["z" , "a" , "i" , "n"],
+//      ["n" , "i" , "a" , "z"], 
+// ]
+// console.log(matrix[1][2]);
+
+// let thread = [
+//     [
+//     [0 , 1],
+//     [2 , 3],
+//     ],
+//     [
+//         [4 , 5],
+//         [6 , 7],
+//     ]
+//     [
+//         [8 , 9],
+//         [10 , 11]
+//     ]
+// ] 
+// console.log(thread[0][1][1]);
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i);
+// }
+
+// let x = +prompt("Enter Your Starting Number :");
+// let y = +prompt("Enter The Ending Number :");
+// let z = +prompt("Enter Your Table Number :");
+// for (let i = x; i <= y; i++) {
+//     console.log(z + " x " + i + " = " + (i*z));
+// }
+
+function printer () {
+    let x = +document.getElementById("tableNumber").value;
+    let y = +document.getElementById("startingPoint").value;
+    let z = +document.getElementById("endingPoint").value;
+
+    let output = " " ;
+
+    for(let i = y; i <= z; i++) {
+        output += (x + " x " + i + " = " + (x * i)); 
+    }
+    
+
+}
+
