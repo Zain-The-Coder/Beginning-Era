@@ -196,17 +196,48 @@
 //     console.log(z + " x " + i + " = " + (i*z));
 // }
 
-function printer () {
-    let x = +document.getElementById("tableNumber").value;
-    let y = +document.getElementById("startingPoint").value;
-    let z = +document.getElementById("endingPoint").value;
+// function printer () {
+//     let x = +document.getElementById("tableNumber").value;
+//     let y = +document.getElementById("startingPoint").value;
+//     let z = +document.getElementById("endingPoint").value;
 
-    let output = " " ;
+//     let output = " " ;
 
-    for(let i = y; i <= z; i++) {
-        output += (x + " x " + i + " = " + (x * i) + "<br>"); 
+//     for(let i = y; i <= z; i++) {
+//         output += (x + " x " + i + " = " + (x * i) + "<br>"); 
+//     }
+//     let p1 = document.getElementById("tablePrinter");
+//     p1.innerHTML = output ;
+// }
+
+// let fruits = ["apple" , "banana" , "mango" , "bringal"];
+// fruits.pop([3]);
+// fruits.splice(2 , 0 , "pineapple" , "orange");
+// console.log(fruits);
+// for(let i = 0; i < fruits.length; i++) {
+//     console.log("Element At Index " + [i] + " Is " + fruits[i] );
+// }
+
+let counting = ["Counting : "] ;
+let reverseCounting = ["Reverse Counting : "] ;
+let evenNumbers = ["Even Numbers : "] ;
+let oddNumbers = ["Odd Numbers : "] ;
+let series = ["Series : "] ;
+for (let i = 1; i <= 15; i++) {
+    counting.push(i);
+    if(i % 2 === 0) {
+        evenNumbers.push(i);
+        series.push(i+ "k");
+    } else {
+        oddNumbers.push(i);
     }
-    let p1 = document.getElementById("tablePrinter");
-    p1.innerHTML = output ;
 }
+for(let i = 15; i >= 1; i--) {
+    reverseCounting.push(i);
+}
+console.log(counting);
+console.log(reverseCounting);
+console.log(evenNumbers);
+console.log(oddNumbers);
+console.log(series);
 
