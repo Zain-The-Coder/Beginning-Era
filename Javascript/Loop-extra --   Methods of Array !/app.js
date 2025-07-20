@@ -204,9 +204,9 @@ function printer () {
     let output = " " ;
 
     for(let i = y; i <= z; i++) {
-        output += (x + " x " + i + " = " + (x * i)); 
+        output += (x + " x " + i + " = " + (x * i) + "<br>"); 
     }
-    
-
+    let p1 = document.getElementById("tablePrinter");
+    p1.innerHTML = output ;
 }
 
