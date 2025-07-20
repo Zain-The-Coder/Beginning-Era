@@ -218,26 +218,53 @@
 //     console.log("Element At Index " + [i] + " Is " + fruits[i] );
 // }
 
-let counting = ["Counting : "] ;
-let reverseCounting = ["Reverse Counting : "] ;
-let evenNumbers = ["Even Numbers : "] ;
-let oddNumbers = ["Odd Numbers : "] ;
-let series = ["Series : "] ;
-for (let i = 1; i <= 15; i++) {
-    counting.push(i);
-    if(i % 2 === 0) {
-        evenNumbers.push(i);
-        series.push(i+ "k");
+// let counting = ["Counting : "] ;
+// let reverseCounting = ["Reverse Counting : "] ;
+// let evenNumbers = ["Even Numbers : "] ;
+// let oddNumbers = ["Odd Numbers : "] ;
+// let series = ["Series : "] ;
+// for (let i = 1; i <= 15; i++) {
+//     counting.push(i);
+//     if(i % 2 === 0) {
+//         evenNumbers.push(i);
+//         series.push(i+ "k");
+//     } else {
+//         oddNumbers.push(i);
+//     }
+// }
+// for(let i = 15; i >= 1; i--) {
+//     reverseCounting.push(i);
+// }
+// console.log(counting);
+// console.log(reverseCounting);
+// console.log(evenNumbers);
+// console.log(oddNumbers);
+// console.log(series);
+
+let numbers = [24 , 53 , 78 , 91 , 12];
+let biggestNumber =  numbers[0] ;
+for (let i = 0; i < numbers.length; i++) {
+    if(biggestNumber ==!  numbers[0]) {
+        biggestNumber = "The Biggest Number Is : " + numbers[0] ;
     } else {
-        oddNumbers.push(i);
+        biggestNumber = "The Biggest Number Is : " + numbers[i] ;
     }
 }
-for(let i = 15; i >= 1; i--) {
-    reverseCounting.push(i);
-}
-console.log(counting);
-console.log(reverseCounting);
-console.log(evenNumbers);
-console.log(oddNumbers);
-console.log(series);
+console.log(numbers);
+console.log(biggestNumber);
 
+
+let items = ["cake" , "apple pie" , "cookies" , "chips" , "patties"];
+alert("Welcome To ABC Bakkery !");
+let userItem = prompt("What Do You Want To Order ?");
+let item = false ;
+
+for (let i = 0; i < items.length; i++) {
+    if(userItem === items[i]) {
+        console.log("your Item Is here");
+        item = true ;
+        break ;
+    } else {
+        console.log("Sorry");
+    }
+}
