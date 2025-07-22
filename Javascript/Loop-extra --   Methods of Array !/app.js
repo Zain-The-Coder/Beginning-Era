@@ -241,30 +241,72 @@
 // console.log(oddNumbers);
 // console.log(series);
 
-let numbers = [24 , 53 , 78 , 91 , 12];
-let biggestNumber =  numbers[0] ;
-for (let i = 0; i < numbers.length; i++) {
-    if(biggestNumber ==!  numbers[0]) {
-        biggestNumber = "The Biggest Number Is : " + numbers[0] ;
+// let numbers = [24 , 53 , 78 , 91 , 12];
+// let biggestNumber =  numbers[0] ;
+// for (let i = 0; i < numbers.length; i++) {
+//     if(biggestNumber ==!  numbers[0]) {
+//         biggestNumber = "The Biggest Number Is : " + numbers[0] ;
+//     } else {
+//         biggestNumber = "The Biggest Number Is : " + numbers[i] ;
+//     }
+// }
+// console.log(numbers);
+// console.log(biggestNumber);
+
+
+// let items = ["cake" , "apple pie" , "cookies" , "chips" , "patties"];
+// alert("Welcome To ABC BAKERS !");
+// let userItem = prompt("Enter The Time That You Want : ");
+// stock = false ;
+// for (let i = 0; i < items.length; i++) {
+//     if(items[i] === userItem) {
+//         stock = true ; 
+//         break ;
+//     }
+// } 
+// if(stock === true) {
+//     console.log("Your item Is Present In Our Bakery ! ");
+// } else {
+//     console.log("Sorry , We Have Not !");
+// }
+
+// let text =  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam numquam, quam aut unde, ullam natus libero quo tenetur distinctio ut illo debitis facilis minus tempora, esse impedit provident quas incidunt. " ;
+
+// text = text.toLowerCase();
+// console.log(text);
+// let result = " " ;
+// let textUpper = true ;
+// for (let i = 0; i < text.length; i++) {
+//     let char = text[i] ;
+//     if(textUpper === true && char >= "a" && char <= "z") {
+//         result = result + char.toUpperCase() ;
+//         textUpper = false ;
+//     } else {
+//         result = result + char ;
+//     } 
+//     if(char === " ") {
+//         result = result + char.toLowerCase() ;
+//         textUpper = true ;
+//     }
+// }
+// console.log(result);
+
+let text =  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam numquam, quam aut unde, ullam natus libero quo tenetur distinctio ut illo debitis facilis minus tempora, esse impedit provident quas incidunt. " ;
+
+text = text.toLowerCase();
+console.log(text);
+let result = " " ;
+let textUpper = true ;
+for (let i = 0; i < text.length; i++) {
+    if(textUpper === true && text[i] >= "a" && text[i] <= "z") {
+        result = result + text[i].toUpperCase() ;
+        textUpper = false ;
     } else {
-        biggestNumber = "The Biggest Number Is : " + numbers[i] ;
+        result = result + text[i] ;
+    } 
+    if(text[i] === " ") {
+        result = result + text[i].toLowerCase() ;
+        textUpper = true ;
     }
 }
-console.log(numbers);
-console.log(biggestNumber);
-
-
-let items = ["cake" , "apple pie" , "cookies" , "chips" , "patties"];
-alert("Welcome To ABC Bakkery !");
-let userItem = prompt("What Do You Want To Order ?");
-let item = false ;
-
-for (let i = 0; i < items.length; i++) {
-    if(userItem === items[i]) {
-        console.log("your Item Is here");
-        item = true ;
-        break ;
-    } else {
-        console.log("Sorry");
-    }
-}
+console.log(result);
