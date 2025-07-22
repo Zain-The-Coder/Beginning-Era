@@ -293,20 +293,39 @@
 
 let text =  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam numquam, quam aut unde, ullam natus libero quo tenetur distinctio ut illo debitis facilis minus tempora, esse impedit provident quas incidunt. " ;
 
-text = text.toLowerCase();
-console.log(text);
-let result = " " ;
-let textUpper = true ;
-for (let i = 0; i < text.length; i++) {
-    if(textUpper === true && text[i] >= "a" && text[i] <= "z") {
-        result = result + text[i].toUpperCase() ;
-        textUpper = false ;
-    } else {
-        result = result + text[i] ;
+// text = text.toLowerCase();
+// console.log(text);
+// let result = " " ;
+// let textUpper = true ;
+// for (let i = 0; i < text.length; i++) {
+//     if(textUpper === true && text[i] >= "a" && text[i] <= "z") {
+//         result = result + text[i].toUpperCase() ;
+//         textUpper = false ;
+//     } else {
+//         result = result + text[i] ;
+//     } 
+//     if(text[i] === " ") {
+//         result = result + text[i].toLowerCase() ;
+//         textUpper = true ;
+//     }
+// }
+// console.log(result);
+
+let fruits = ["apple" , "banana" , "mango" , "bringal"];
+fruits.pop();
+let dummyFruits = fruits.slice(1 , 4);
+dummyFruits.push("pineapple" , "gavava" , "peach");
+console.log(dummyFruits);
+let userFruit = prompt("Enter Your Fruit : ");
+let resent = false ;
+for (let i = 0; i < dummyFruits.length; i++) {
+    if(userFruit.toLowerCase() === dummyFruits[i].toLowerCase()) {
+        resent = true;
+        break ;
     } 
-    if(text[i] === " ") {
-        result = result + text[i].toLowerCase() ;
-        textUpper = true ;
-    }
 }
-console.log(result);
+if(resent) {
+    console.log("Your Fruit Is Healthy !");
+} else {
+    console.log("Your fruit Is Not Healthy !");
+}
