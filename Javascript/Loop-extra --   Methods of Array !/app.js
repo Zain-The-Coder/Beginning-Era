@@ -388,3 +388,19 @@
 //     }
 // }
 // console.log("The Smaller Number Is " + smallNumber);
+
+let items = ["cake" , "apple pie" , "cookies" , "chips" , "patties"];
+alert("Welcome To ABC BAKERS !");
+let userItem = prompt("Enter The Time That You Want : ");
+let available = false ;
+let result = " " ;
+for (let i = 0; i < items.length; i++) {
+    if(userItem.toLowerCase() === items[i].toLowerCase()) {
+        available = true ;
+        result = "Your Item Is present at " + [i] + " counter In Our Bakery !";
+        break ;
+    } else {
+        result = "Sorry !" ;
+    }
+}
+console.log(result);
