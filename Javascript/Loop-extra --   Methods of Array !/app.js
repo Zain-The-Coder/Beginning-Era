@@ -453,7 +453,33 @@
 // let n = "abcdefghijklmnopqrstuvwxyz";
 // console.log("The Index Of Z Is : " + n.indexOf("z"));
 
-// let firstName =  "Hafiz" ;
-// let lastname = "Zain" ;
-// let fullName = firstName.concat(" " , lastname);
-// console.log(fullName);
+    // let firstName =  "Hafiz" ;
+    // let lastname = "Zain" ;
+    // let fullName = firstName.concat(" " , lastname);
+    // console.log(fullName);
+
+// let message = "Ali and Ahmed are brothers and they play cricket and football.";
+// let update = message.replace(/and/g , "&");
+// console.log(message);
+// console.log(update);
+
+// let stringNumber = "245" ;
+// let number =  Number(stringNumber);
+// console.log("Value:" + stringNumber + " \n " + "Data Type : String");
+// console.log("Value:" + number + " \n " + "Data Type : Number");
+
+// let userInput = prompt("Enter Your Item : ");
+// console.log(userInput);
+// let newInput = userInput.toUpperCase();
+// console.log(newInput);
+
+let userInput = prompt("Enter Your Item : ");
+let changeChase = true ;
+let result = " " ;
+for (let i = 0; i < userInput.length; i++) {
+if(userInput) {
+    result = result + userInput[i].toUpperCase();
+    changeChase = false ;
+}
+}
+console.log(result);
