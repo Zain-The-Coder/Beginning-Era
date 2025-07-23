@@ -389,18 +389,46 @@
 // }
 // console.log("The Smaller Number Is " + smallNumber);
 
-let items = ["cake" , "apple pie" , "cookies" , "chips" , "patties"];
-alert("Welcome To ABC BAKERS !");
-let userItem = prompt("Enter The Time That You Want : ");
-let available = false ;
-let result = " " ;
-for (let i = 0; i < items.length; i++) {
-    if(userItem.toLowerCase() === items[i].toLowerCase()) {
-        available = true ;
-        result = "Your Item Is present at " + [i] + " counter In Our Bakery !";
-        break ;
-    } else {
-        result = "Sorry !" ;
-    }
-}
-console.log(result);
+// let items = ["cake" , "apple pie" , "cookies" , "chips" , "patties"];
+// alert("Welcome To ABC BAKERS !");
+// let userItem = prompt("Enter The Time That You Want : ");
+// let available = false ;
+// let result = " " ;
+// for (let i = 0; i < items.length; i++) {
+//     if(userItem.toLowerCase() === items[i].toLowerCase()) {
+//         available = true ;
+//         result = "Your Item Is present at " + [i] + " counter In Our Bakery !";
+//         break ;
+//     } else {
+//         result = "Sorry !" ;
+//     }
+// }
+// console.log(result);
+
+// let months = ["jan" , "feb" , "mar" , "apr" , "may" , "jun"];
+// let userMonth =   prompt("Enter Your Birth Month :");
+// userMonth = userMonth.toLowerCase();
+// userMonth = userMonth.slice(0 , 3);
+// let birthMonth = months.indexOf(userMonth);
+// if(birthMonth > -1) {
+//     console.log("You Got The Discount !");
+// } else {
+//     console.log("You Are Not Achieve Discount !");
+// }
+
+// let months = ["jan" , "feb" , "mar" , "apr" , "may" , "jun"];
+// let userMonth =   prompt("Enter Your Birth Month :");
+// userMonth = userMonth.toLowerCase();
+// userMonth = userMonth.slice(0 , 3);
+// let discount =  false ;
+// for (let i = 0; i < months.length; i++) {
+//     if(userMonth === months[i]){
+//         discount = true;
+//         break ;
+//     } 
+// }
+// if(discount === true) {
+//     console.log("You Got The Discount !"); 
+// } else {
+//     console.log("Sorry !");
+// }   
