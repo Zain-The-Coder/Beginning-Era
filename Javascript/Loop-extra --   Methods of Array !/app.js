@@ -432,3 +432,28 @@
 // } else {
 //     console.log("Sorry !");
 // }   
+
+// let x = prompt("Enter Your Favorite Mobile Phone : ");
+// console.log("My Favorite Mobile Phone Is :" + x);
+// console.log("The Lenght Of String value is :" + x.length);
+
+// let userCountry = prompt("Enter Your Country : ");
+// let user = userCountry.indexOf("n");
+// if(user <= -1) {
+//     console.log("The Letter -N- Is Not Found In Your Input !")
+// } else {
+//     console.log("The User Country Is " + userCountry);
+//     console.log("The Index Of -N- Is " + user);
+// }
+
+// let n = "Hello World" ;
+// console.log(n.toUpperCase());
+// console.log("The Last Index Of -L- Is : " + n.lastIndexOf("l"));
+
+// let n = "abcdefghijklmnopqrstuvwxyz";
+// console.log("The Index Of Z Is : " + n.indexOf("z"));
+
+// let firstName =  "Hafiz" ;
+// let lastname = "Zain" ;
+// let fullName = firstName.concat(" " , lastname);
+// console.log(fullName);
