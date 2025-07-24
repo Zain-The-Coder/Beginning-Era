@@ -189,26 +189,26 @@
 // //     console.log(i);
 // // }
 
-// // let x = +prompt("Enter Your Starting Number :");
-// // let y = +prompt("Enter The Ending Number :");
-// // let z = +prompt("Enter Your Table Number :");
-// // for (let i = x; i <= y; i++) {
-// //     console.log(z + " x " + i + " = " + (i*z));
-// // }
+// let x = +prompt("Enter Your Starting Number :");
+// let y = +prompt("Enter The Ending Number :");
+// let z = +prompt("Enter Your Table Number :");
+// for (let i = x; i <= y; i++) {
+//     console.log(z + " x " + i + " = " + (i*z));
+// }
 
-// // function printer () {
-// //     let x = +document.getElementById("tableNumber").value;
-// //     let y = +document.getElementById("startingPoint").value;
-// //     let z = +document.getElementById("endingPoint").value;
+// function printer () {
+//     let x = +document.getElementById("tableNumber").value;
+//     let y = +document.getElementById("startingPoint").value;
+//     let z = +document.getElementById("endingPoint").value;
 
-// //     let output = " " ;
+//     let output = " " ;
 
-// //     for(let i = y; i <= z; i++) {
-// //         output += (x + " x " + i + " = " + (x * i) + "<br>"); 
-// //     }
-// //     let p1 = document.getElementById("tablePrinter");
-// //     p1.innerHTML = output ;
-// // }
+//     for(let i = y; i <= z; i++) {
+//         output += (x + " x " + i + " = " + (x * i) + "<br>"); 
+//     }
+//     let p1 = document.getElementById("tablePrinter");
+//     p1.innerHTML = output ;
+// }
 
 // // let fruits = ["apple" , "banana" , "mango" , "bringal"];
 // // fruits.pop([3]);
@@ -473,13 +473,59 @@
 // let newInput = userInput.toUpperCase();
 // console.log(newInput);
 
-let userInput = prompt("Enter Your Item : ");
-let changeChase = true ;
-let result = " " ;
-for (let i = 0; i < userInput.length; i++) {
-if(userInput) {
-    result = result + userInput[i].toUpperCase();
-    changeChase = false ;
-}
-}
-console.log(result);
+// let userInput = prompt("Enter Your Item : ");
+// let changeChase = true ;
+// let result = " " ;
+// for (let i = 0; i < userInput.length; i++) {
+// if(userInput) {
+//     result = result + userInput[i].toUpperCase();
+//     changeChase = false ;
+// }
+// }
+// console.log(result);
+
+// let text = "a quick  brown fox jumps over the lazy dog" ;
+// let correct = false ;
+// for (let i = 0; i < text.length; i++) {
+//     let char = text.slice(i , i + 2);
+//     console.log(char);
+//     if(char === "  ") {
+//         correct = true ;
+//         break ;
+//     }
+// }
+// if(correct === false) {
+//     console.log("Your Information Is Correct !");
+// } else{
+//     console.log("Sorry !");
+
+// let teslaa = prompt("Enter Your Text :");
+// let result = "Your Text Is Correct ! " ;
+// for (let i = 0; i < teslaa.length; i++) {
+//     let char = teslaa.slice(i , i + 2);
+//     console.log(char);
+//     if(char === "  ") {
+//         result = "Please Enter Your Text In Simple Way !" ;
+//         break ;
+//     } 
+// }
+// console.log(result);
+
+// let userNumber = 56.86 ;
+// console.log(userNumber);
+// userNumber = userNumber.toString().replace("." , "");
+// console.log(userNumber);
+
+
+// let items = ["cake" , "apple pie" , "cookies" , "chips" , "patties"];
+// let x = prompt("Enter Your Item :");
+// x = x.toLowerCase();
+// let print = " " ;
+// for (let i = 0; i < items.length; i++) {
+//     if(items[i] === x) {
+//         print = "Your Item Is Present At Index " + items.indexOf(x) + "In Our Bakery !" ;
+//     } else {
+//         print = "Sorry ! Your Item Is Not Availabe At Our Bakery !" ;
+//     }
+// }
+// console.log(print);
