@@ -24,7 +24,6 @@
 // // // console.log("STUDNETS RESULT");
 // // // console.log(lastResult.join("\n"));
 
-
 // // // let studentNames = ["Ali", "Sara", "Zain", "Hina", "Ahmed", "Fatima"];
 // // // let studentMarks = [88, 95, 67, 92, 76, 90];
 // // // let totalMarks = 100;
@@ -516,6 +515,9 @@
 // userNumber = userNumber.toString().replace("." , "");
 // console.log(userNumber);
 
+// let userNumber = 56.76 ;
+// userNumber = Math.floor(userNumber); // Removing float point numbers
+// console.log(userNumber);
 
 // let items = ["cake" , "apple pie" , "cookies" , "chips" , "patties"];
 // let x = prompt("Enter Your Item :");
