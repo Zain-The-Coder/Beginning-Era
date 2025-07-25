@@ -531,3 +531,21 @@
 //     }
 // }
 // console.log(print);
+
+// let fruits = ["apPLe" , "BaNAnA" , "GavAvA" , "MANGo" , "pEAch" , "wAteR MElon"];
+// for (let i = 0; i < fruits.length; i++) {
+//     let fruitName = fruits[i] ;
+//     let firstLetter = fruitName.charAt(0).toUpperCase();
+//     let dummyFruits = fruitName.slice(1).toLowerCase();
+//     console.log(firstLetter + dummyFruits);
+// }
+
+let animals = ["liON", "elEPHant", "zeBrA", "whiTE TIGEr", "giRAffE"];
+for(let i = 0; i < animals.length; i++) {
+    animals =  animals[i].toLowerCase().split(" ");
+    for (let j = 0; j < animals.length; j++) {
+        animals[j] = animals[j].charAt(0).toUpperCase() + animals[j].slice(1);
+    }
+    let finalResult = animals.join(" ");
+    console.log((i + 1) + " - " + finalResult);
+}
