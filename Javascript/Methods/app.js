@@ -595,13 +595,64 @@
 // message = message.replace(/stupid/g , "******");
 // console.log(message);
 
-let para = "a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.";
-let replacetext = "The Second World War" ;
-for (let i = 0; i < para.length; i++) {
-    let advancePara = para.slice(i , i + 12);
-    console.log(advancePara);
-    if(advancePara === "World War II") {
-        para = para.slice(0 , i);
-    }
-    console.log(para)
-}
+
+// let para = "a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.";
+// let spaces = 0 ;
+// for (let i = 0; i < para.length; i++) {
+//     if(para.charAt(i) === " ") {
+//         spaces ++ ;
+//     }
+// }
+// console.log("The Numbers Of Words Are : " , spaces + 1);
+
+
+// let str = "alsafadfadfa as&*df adsfAS@";
+// for (let i = 0; i < str.length; i++) {
+//     let char = str.charAt(i);
+//     if(char >= "a" && char <= "z") {
+//         console.log("This Is A Lower Case : " + char);
+//     } else if(char >= "A" && char <= "Z") {
+//         console.log("This Is A Upper Case : " + char);
+//     } else {
+//         console.log("This Is Not A Character !" + char);
+//     }
+// }
+
+// let text = "UniVERsity of kaRAchi" ;
+// let lowerCaseText = text.toLowerCase().split(" ");
+// for (let i = 0; i < lowerCaseText.length; i++) {
+//     lowerCaseText[i] = lowerCaseText[i].charAt(0).toUpperCase() + lowerCaseText[i].slice(1);
+// }
+//     let finalResult = lowerCaseText.join(" ");
+//     console.log(finalResult);
+
+// let universities = ["UniVERsity of kaRAchi" , "UniVERsity OF Quetta" , "UniVERsity Of lahoRe"];
+// for(let i = 0; i < universities.length; i++) {
+// let lowerUni = universities[i].toLowerCase().split(" ");
+// for(let j = 0; j < lowerUni.length; j++) {
+//     lowerUni[j] = lowerUni[j].charAt(0).toUpperCase() + lowerUni[j].slice(1).toLowerCase();
+//     }
+//     let lastResult = lowerUni.join(" ");
+//     console.log((i + 1 ) + " - " + lastResult);
+// }
+
+// let months = ["jan" , "feb" , "mar" , "apr" , "may"];
+// let userMonth = prompt("Enter Your Month :");
+// userMonth = userMonth.slice(0 , 3);
+// userMonth = userMonth.toLowerCase();
+// let discount = false ;
+// for(let i = 0; i < months.length; i++) {
+//     if(userMonth === months[i]) {
+//         discount = true ;
+//         break ;
+//     }
+// }
+// if(discount) {
+//     console.log("Discount Available !");
+// } else {
+//     console.log("Sorry !");
+// }
+
+let userInput = prompt("Enter any text:");
+let lastChar = userInput.charAt(userInput.length - 1);
+console.log("The last character is:", lastChar);
