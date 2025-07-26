@@ -540,12 +540,20 @@
 //     console.log(firstLetter + dummyFruits);
 // }
 
-let animals = ["liON", "elEPHant", "zeBrA", "whiTE TIGEr", "giRAffE"];
-for(let i = 0; i < animals.length; i++) {
-    animals =  animals[i].toLowerCase().split(" ");
-    for (let j = 0; j < animals.length; j++) {
-        animals[j] = animals[j].charAt(0).toUpperCase() + animals[j].slice(1);
-    }
-    let finalResult = animals.join(" ");
-    console.log((i + 1) + " - " + finalResult);
-}
+ 
+// let animals = ["liON", "elEPHant", "zeBrA", "whiTE TIGEr", "giRAffE" , "blACK peNTHer"];
+// for(let i = 0; i < animals.length; i++) {
+//     let firstLetter = animals[i].charAt(0).toUpperCase();
+//     let extraText = animals[i].slice(1).toLowerCase();
+//     console.log(firstLetter + extraText);
+// }
+
+// let animals = ["liON", "elEPHant", "zeBrA", "whiTE TIGEr", "giRAffE" , "blACK peNTHer"];
+// for (let i = 0; i < animals.length; i++) {
+//     let updateAnimal = animals[i].toLowerCase().split(" ");
+//     for (let j = 0; j < updateAnimal.length; j++) {
+//         updateAnimal[j] = updateAnimal[j].charAt(0).toUpperCase() + updateAnimal[j].slice(1).toLowerCase();
+//     }
+//     let lastResult = updateAnimal.join(" ");
+//     console.log((i + 1) + " - " + lastResult);
+// }
