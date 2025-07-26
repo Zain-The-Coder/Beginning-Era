@@ -557,3 +557,23 @@
 //     let lastResult = updateAnimal.join(" ");
 //     console.log((i + 1) + " - " + lastResult);
 // }
+
+// let items = ["cookies" , "rusk" , "cake" , "paties" , "chips" , "nimco"];
+// let userItem = prompt("Enter The Item You Want To Buy :");
+// let present = false ;
+// let index = 0;
+// let userInput = userItem.toLowerCase();
+// for (let i = 0; i < items.length; i++) {
+//     if(items[i] === userInput) {
+//         present = true ;
+//         break ;
+//     }
+//     index = i ;
+// }
+// if(present) {
+//     console.log("Your Item Is Present At Index " + index + " In Our Bakery !");
+// } else {
+//     console.log("Sorry , Your Item Is Not Available !");
+// }
+
+assignment no 15 ;
