@@ -576,4 +576,32 @@
 //     console.log("Sorry , Your Item Is Not Available !");
 // }
 
-assignment no 15 ;
+// let userPassword = prompt("Enter Your Password :");
+// if(/^[0-9]/.test(userPassword)) {
+//     console.log("You Cannot ❌ Use Number As A Starter Of Password !");
+// } else if(userPassword.length < 6) {
+//     console.log("Please Enter 6 Digits Password !");
+// } else if(!/^[a-zA-Z0-9. ]+$/.test(userPassword)) {
+//     console.log("Invalid Password. Kindly Remove ❌ Special Character From Your Password !");
+// } else {
+//     console.log("✅ Your Password Has Saved !");
+// }
+
+// let text = "This Is A Stupid Product ! " ;
+// text = text.replace("Stupid" , "******");
+// console.log(text);
+
+// let message = "This is a stupid Product. you guys are stupid.";
+// message = message.replace(/stupid/g , "******");
+// console.log(message);
+
+let para = "a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.a quick World War II brown fox jumps over the lazy dog.";
+let replacetext = "The Second World War" ;
+for (let i = 0; i < para.length; i++) {
+    let advancePara = para.slice(i , i + 12);
+    console.log(advancePara);
+    if(advancePara === "World War II") {
+        para = para.slice(0 , i);
+    }
+    console.log(para)
+}
