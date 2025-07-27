@@ -1,28 +1,28 @@
-// // // let studentNames = ["Ali", "Sara", "Zain", "Hina", "Ahmed", "Fatima"];
-// // // let studentMarks = [88, 95, 67, 32, 76, 45];
-// // // let totalMarks = 100;
-// // // let lastResult = [] ;
-// // // for (i = 0; i < studentNames.length; i++) {
-// // //     let percentage = ((studentMarks[i] / totalMarks) * 100);
-// // //     let grade = "" ;
-// // //     if(percentage >= 90) {
-// // //         grade = "A+" ;
-// // //     } else if(percentage >= 80) {
-// // //         grade = "A" ;
-// // //     } else if(percentage >= 70) {
-// // //         grade = "B" ;
-// // //     } else if(percentage >= 60) {
-// // //         grade = "C" ;
-// // //     } else if(percentage >= 50) {
-// // //         grade = "D" ;
-// // //     } else {
-// // //         grade = "Fail" ;
-// // //     }
-// // //     lastResult.push(studentNames[i] + " - Marks : " + studentMarks[i] + " - Percentage : " + percentage + "%" 
-// // //         + " - Grade : " + grade);
-// // // }
-// // // console.log("STUDNETS RESULT");
-// // // console.log(lastResult.join("\n"));
+// let studentNames = ["Ali", "Sara", "Zain", "Hina", "Ahmed", "Fatima"];
+// let studentMarks = [88, 95, 67, 32, 76, 45];
+// let totalMarks = 100;
+// let lastResult = [] ;
+// for (i = 0; i < studentNames.length; i++) {
+//     let percentage = ((studentMarks[i] / totalMarks) * 100);
+//     let grade = "" ;
+//     if(percentage >= 90) {
+//         grade = "A+" ;
+//     } else if(percentage >= 80) {
+//         grade = "A" ;
+//     } else if(percentage >= 70) {
+//         grade = "B" ;
+//     } else if(percentage >= 60) {
+//         grade = "C" ;
+//     } else if(percentage >= 50) {
+//         grade = "D" ;
+//     } else {
+//         grade = "Fail" ;
+//     }
+//     lastResult.push(studentNames[i] + " - Marks : " + studentMarks[i] + " - Percentage : " + percentage + "%" 
+//         + " - Grade : " + grade);
+// }
+// console.log("STUDNETS RESULT");
+// console.log(lastResult.join("\n"));
 
 // // // let studentNames = ["Ali", "Sara", "Zain", "Hina", "Ahmed", "Fatima"];
 // // // let studentMarks = [88, 95, 67, 92, 76, 90];
@@ -653,6 +653,45 @@
 //     console.log("Sorry !");
 // }
 
-let userInput = prompt("Enter any text:");
-let lastChar = userInput.charAt(userInput.length - 1);
-console.log("The last character is:", lastChar);
+// let userInput = prompt("Enter any text:");
+// let lastChar = userInput.charAt(userInput.length -1);
+// console.log("The last character is:", lastChar);
+
+
+// console.log(null + 1);
+// console.log("5" + 3);
+// console.log("5" - 3);
+// console.log(true + false);
+
+function addition () {
+    let x = +document.getElementById("firstNumber").value ;
+    let y = +document.getElementById("secondNumber").value;
+    let output = " " ;
+    output += (x + y);
+    let printer = document.getElementById("output") ;
+    printer.innerHTML = "The Addition of " + x + " and " + y + " is : " + output ;
+}
+function substraction () {
+    let x = document.getElementById("firstNumber").value;
+    let y = document.getElementById("secondNumber").value;
+    let output = " " ;
+    output += (x - y);
+    let printer = document.getElementById("output") ;
+    printer.innerHTML = "The Substraction of " + x + " and " + y + " is : " + output ;
+}
+function multiplication () {
+    let x = document.getElementById("firstNumber").value;
+    let y = document.getElementById("secondNumber").value;
+    let output = " " ;
+    output += (x * y);
+    let printer = document.getElementById("output") ;
+    printer.innerHTML = "The Multiplication of " + x + " and " + y + " is : " + output ;
+}
+function division () {
+    let x = document.getElementById("firstNumber").value;
+    let y = document.getElementById("secondNumber").value;
+    let output = " " ;
+    output += (x / y);
+    let printer = document.getElementById("output") ;
+    printer.innerHTML = "The Division of " + x + " and " + y + " is : " + output ;
+}
