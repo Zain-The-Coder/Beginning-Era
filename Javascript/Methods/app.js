@@ -663,35 +663,67 @@
 // console.log("5" - 3);
 // console.log(true + false);
 
-function addition () {
-    let x = +document.getElementById("firstNumber").value ;
-    let y = +document.getElementById("secondNumber").value;
-    let output = " " ;
-    output += (x + y);
-    let printer = document.getElementById("output") ;
-    printer.innerHTML = "The Addition of " + x + " and " + y + " is : " + output ;
-}
-function substraction () {
-    let x = document.getElementById("firstNumber").value;
-    let y = document.getElementById("secondNumber").value;
-    let output = " " ;
-    output += (x - y);
-    let printer = document.getElementById("output") ;
-    printer.innerHTML = "The Substraction of " + x + " and " + y + " is : " + output ;
-}
-function multiplication () {
-    let x = document.getElementById("firstNumber").value;
-    let y = document.getElementById("secondNumber").value;
-    let output = " " ;
-    output += (x * y);
-    let printer = document.getElementById("output") ;
-    printer.innerHTML = "The Multiplication of " + x + " and " + y + " is : " + output ;
-}
-function division () {
-    let x = document.getElementById("firstNumber").value;
-    let y = document.getElementById("secondNumber").value;
-    let output = " " ;
-    output += (x / y);
-    let printer = document.getElementById("output") ;
-    printer.innerHTML = "The Division of " + x + " and " + y + " is : " + output ;
-}
+// function addition () {
+//     let x = +document.getElementById("firstNumber").value ;
+//     let y = +document.getElementById("secondNumber").value;
+//     let output = " " ;
+//     output += (x + y);
+//     let printer = document.getElementById("output") ;
+//     printer.innerHTML = "The Addition of " + x + " and " + y + " is : " + output ;
+// }
+// function substraction () {
+//     let x = document.getElementById("firstNumber").value;
+//     let y = document.getElementById("secondNumber").value;
+//     let output = " " ;
+//     output += (x - y);
+//     let printer = document.getElementById("output") ;
+//     printer.innerHTML = "The Substraction of " + x + " and " + y + " is : " + output ;
+// }
+// function multiplication () {
+//     let x = document.getElementById("firstNumber").value;
+//     let y = document.getElementById("secondNumber").value;
+//     let output = " " ;
+//     output += (x * y);
+//     let printer = document.getElementById("output") ;
+//     printer.innerHTML = "The Multiplication of " + x + " and " + y + " is : " + output ;
+// }
+// function division () {
+//     let x = document.getElementById("firstNumber").value;
+//     let y = document.getElementById("secondNumber").value;
+//     let output = " " ;
+
+//     output += (x / y);
+//     let printer = document.getElementById("output") ;
+//     printer.innerHTML = "The Division of " + x + " and " + y + " is : " + output ;
+// }
+
+// let password = "Zai7" ;
+// let capital = false ;
+// let number = false ;
+// let speChar = false ;
+// let Special = "!@#$%^&*" ;
+// for(let i = 0; i < password.length; i++) {
+//     let char = password[i] ;
+//     if(char >= "A" && char <= "Z") {
+//         capital = true ;
+//     } 
+//     if(char >= "0" && char <= "9") {
+//         number = true ;
+//     }
+//     if(Special.includes(char)) {
+//         speChar = true ;
+//     }
+// }
+// if(capital && number && password.length >= 6 && speChar) {
+//     console.log("Your Password Is Strong !");
+// } else {
+//     console.log("Your Password Is Weak !");
+// }
+// console.log(Math.round(Math.random() * 10) + 1)
+
+// let randomNumber = Math.round((Math.random() * 10));
+// console.log(randomNumber);
+
+// console.log(Math.round(56.8))
+
+let random = Math.floor()
