@@ -185,41 +185,42 @@
 
 
 let code = [] ;
-for(let i = 1; i <= 3 ; i++) {
+for(let i = 0; i < 3; i++) {
 code.push(Math.floor(Math.random() * 10));
 }
-
-for(let a = 1; a <= 5; a++) {
-    let userInput = prompt("Attempt No " + a + " Out Of 5 " + "\n" + " Enter Your 3 Digits Code !");
-    if(userInput.length !== 3 || isNaN(userInput)) {
-        alert("Please Enter Valid Code !");
-        a-- ;
+for(let j = 1 ; j <= 5; j++) {
+    let userNumber =  prompt("Enter Your Number !");
+    if(userNumber.length !== 3 || isNaN(userNumber)) {
+        alert("Please enter 3 digit code !");
+        j-- ;
         continue ;
     }
+
     let copyCode = [...code];
-    let userArray = userInput.split("").map(Number);
     let exect = 0;
     let partial = 0 ;
+    let userArray = userNumber.split("").map(Number);
+
     for(let i = 0; i < 3; i++) {
-        if(userArray[i] === userInput[i]) {
+        if(copyCode[i] === userArray[i]) {
             exect++ ;
-            userInput = null ;
-            userArray = -1 ;
-        } 
+            copyCode[i] = null ;
+            userArray[i] = null ;
+        }
     }
     for(let i = 0; i < 3; i++) {
-        if(copyCode.includes(userArray[i])) {
-            partial++ ;
+        if(userArray[i] !== null && copyCode.includes(userArray[i])) {
+            partial ++ ;
             let index = copyCode.indexOf(userArray[i]);
             copyCode[index] = null ;
         }
     }
     if(exect === 3) {
-        alert("PERFECT ! YOU DESTROY THE CODE ! ");
+        alert("Bravo ! You Destroy The Code !");
     } else {
-        alert(partial + " are correct but in wrong place !");
+        alert(exect + " digits matches and on correct position !" + "\n" + partial + " digits matches but in wrong place !");
     }
-    if(userInput === 5) {
-        alert("Better Luck , Next Time !" + "\n" + "The Code Is " + code);
+    if(j === 5) {
+        alert("You have out of attempts !" + " The code is " + code.join(""));
     }
-}
+} 
