@@ -184,43 +184,43 @@
 // }
 
 
-let code = [] ;
-for(let i = 0; i < 3; i++) {
-code.push(Math.floor(Math.random() * 10));
-}
-for(let j = 1 ; j <= 5; j++) {
-    let userNumber =  prompt("Enter Your Number !");
-    if(userNumber.length !== 3 || isNaN(userNumber)) {
-        alert("Please enter 3 digit code !");
-        j-- ;
-        continue ;
-    }
-
-    let copyCode = [...code];
-    let exect = 0;
-    let partial = 0 ;
-    let userArray = userNumber.split("").map(Number);
-
-    for(let i = 0; i < 3; i++) {
-        if(copyCode[i] === userArray[i]) {
-            exect++ ;
-            copyCode[i] = null ;
-            userArray[i] = null ;
-        }
-    }
-    for(let i = 0; i < 3; i++) {
-        if(userArray[i] !== null && copyCode.includes(userArray[i])) {
-            partial ++ ;
-            let index = copyCode.indexOf(userArray[i]);
-            copyCode[index] = null ;
-        }
-    }
-    if(exect === 3) {
-        alert("Bravo ! You Destroy The Code !");
-    } else {
-        alert(exect + " digits matches and on correct position !" + "\n" + partial + " digits matches but in wrong place !");
-    }
-    if(j === 5) {
-        alert("You have out of attempts !" + " The code is " + code.join(""));
-    }
-} 
+// let code = [] ;
+// for(let i = 0; i < 3; i++) {
+//     code.push(Math.floor(Math.random() * 10));
+// }
+// for(let attempt = 1 ; attempt <= 5; attempt++) {
+//     let userNumber = prompt("( attempt no " + attempt + " out of 5 ) Enter Your 3 digits code :");
+//     if(userNumber.length !== 3 || isNaN(userNumber)) {
+//         alert("Enter valid numbers or only 3 digits");
+//         attempt-- ;
+//         continue ;
+//     }
+//     let copyCode = [...code] ;
+//     let userInput = userNumber.split("").map(Number);
+//     let exectMatches = 0;
+//     let partialMatches = 0;
+//     for(let i = 0; i < 3; i++) {
+//     if(copyCode[i] === userInput[i]) {
+//         exectMatches++ ;
+//         copyCode[i] = null ;
+//         userNumber[i] = null ;
+//     }
+// }
+// for(let i = 0; i < 3; i++) {
+//     if(copyCode.includes(userNumber[i])) {
+//         partialMatches++ ;
+//         let arra = copyCode.indexOf(userNumber[i]);
+//         copyCode[arra] = null ;
+//     }
+// }
+// if(exectMatches === 3) {
+//     alert("Bravo ! You Destroy the code !");
+// } else {
+//     alert(exectMatches + " digits are matched and in correct place " +  "\n" + partialMatches
+//         + " digits correct but in wrong place !");
+// }
+// if(attempt === 5) {
+//     alert("You have out of attempt. The answer is :  " + code.join(""));
+// }
+// }
+// 

@@ -663,40 +663,6 @@
 // console.log("5" - 3);
 // console.log(true + false);
 
-// function addition () {
-//     let x = +document.getElementById("firstNumber").value ;
-//     let y = +document.getElementById("secondNumber").value;
-//     let output = " " ;
-//     output += (x + y);
-//     let printer = document.getElementById("output") ;
-//     printer.innerHTML = "The Addition of " + x + " and " + y + " is : " + output ;
-// }
-// function substraction () {
-//     let x = document.getElementById("firstNumber").value;
-//     let y = document.getElementById("secondNumber").value;
-//     let output = " " ;
-//     output += (x - y);
-//     let printer = document.getElementById("output") ;
-//     printer.innerHTML = "The Substraction of " + x + " and " + y + " is : " + output ;
-// }
-// function multiplication () {
-//     let x = document.getElementById("firstNumber").value;
-//     let y = document.getElementById("secondNumber").value;
-//     let output = " " ;
-//     output += (x * y);
-//     let printer = document.getElementById("output") ;
-//     printer.innerHTML = "The Multiplication of " + x + " and " + y + " is : " + output ;
-// }
-// function division () {
-//     let x = document.getElementById("firstNumber").value;
-//     let y = document.getElementById("secondNumber").value;
-//     let output = " " ;
-
-//     output += (x / y);
-//     let printer = document.getElementById("output") ;
-//     printer.innerHTML = "The Division of " + x + " and " + y + " is : " + output ;
-// }
-
 // let password = "Zai7" ;
 // let capital = false ;
 // let number = false ;
@@ -726,4 +692,4 @@
 
 // console.log(Math.round(56.8))
 
-let random = Math.floor()
+// let random = Math.floor()
