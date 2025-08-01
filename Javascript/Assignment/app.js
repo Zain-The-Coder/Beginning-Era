@@ -64,6 +64,10 @@
 //Q3 :
 
 
+let number = "345Kg" ;
+console.log(Number(number));
+console.log(parseInt(number));
+console.log(parseFloat(number));
 
 
 
