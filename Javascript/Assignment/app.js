@@ -64,11 +64,17 @@
 //Q3 :
 
 
-let number = "345Kg" ;
-console.log(Number(number));
-console.log(parseInt(number));
-console.log(parseFloat(number));
+//Q4 :
+// let userAge = prompt("Enter your age :");
+// if(userAge >= 18) {
+//     console.log("you are man");
+// } else if(userAge >= 12) {
+//     console.log("you are big child !");
+// } else {
+//     console.log("you are child !");
+// }
 
+//Q5 : 
 
 
 
