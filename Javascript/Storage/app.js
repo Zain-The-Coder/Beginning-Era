@@ -83,53 +83,107 @@
 // // } , 100 );
 
 
-let x = document.getElementById("first");
-let y = document.getElementById("second");
-let z = document.getElementById("third");
+// let x = document.getElementById("first");
+// let y = document.getElementById("second");
+// let z = document.getElementById("third");
 
-let hour = prompt("Enter Hour");
-let minute = prompt("Enter Minute");
-let second = prompt("Enter Second");
+// let hour = prompt("Enter Hour");
+// let minute = prompt("Enter Minute");
+// let second = prompt("Enter Second");
 
-function hello () {
-if(hour < 10) {
-    x.innerHTML = "0" + hour + ":" ;
-} else {
-    x.innerHTML = hour + ":" ;
+// function hello () {
+// if(hour < 10) {
+//     x.innerHTML = "0" + hour + ":" ;
+// } else {
+//     x.innerHTML = hour + ":" ;
+// }
+// if (minute < 10) {
+//     y.innerHTML = "0" + minute + ":" ;
+// } else {
+//     y.innerHTML = minute + ":" ;
+// } 
+// if(second < 10) {
+//     z.innerHTML = "0" + second;
+// } else {
+//     z.innerHTML = second;
+// }
+// }
+
+// let myInterval =  setInterval(function () {
+//     hello() ;
+//     second-- ;
+//     if(second < 0) {
+//         second = 59 ;
+//         minute -- ;
+//     } 
+//     if(minute < 0) {
+//         minute = 59 ;
+//         hour -- ;
+//     }
+//     if(hour === -1) {
+//         clearInterval(myInterval);
+//         x.innerHTML = "" ;
+//         y.innerHTML = "Time Is Up" ;
+//         z.innerHTML = "" ;
+//     }
+
+// }, 10)
+
+
+// setInterval( function () {
+//     let x = document.getElementById("first");
+//     let y = document.getElementById("second");
+//     let z = document.getElementById("third");
+//     let curruntTime = new Date () ;
+    
+//     let hour = curruntTime.getHours();
+//     let minute = curruntTime.getMinutes();
+//     let second = curruntTime.getSeconds();
+    
+//     if(hour > 12) {
+//         x.innerHTML = (hour - 12 ) + " : ";
+//     } else {
+//         x.innerHTML = hour + " : " ;
+//     }
+    
+//     if(minute < 10) {
+//         y.innerHTML = "0" + minute + " : " ;
+//     } else {
+//         y.innerHTML = minute + " : "
+//     }
+//     if(second < 10) {
+//         z.innerHTML = "0" + second;
+//     } else {
+//         z.innerHTML = second;
+//     }
+// }, 1000);
+
+
+// let userNames  = JSON.parse(localStorage.getItem("nameOfUser")) || [];
+// let userPasswords = JSON.parse(localStorage.getItem("passwordOfUser")) || [];
+// function submit () {
+//     let x = document.getElementById("name").value; 
+//     let y = document.getElementById("password").value;
+// userNames.push(x);
+// userPasswords.push(y);
+// document.getElementById("name").value = "" ;
+// document.getElementById("password").value = "" ;
+// localStorage.setItem("nameOfUser" , JSON.stringify(userNames));
+// localStorage.setItem("passwordOfUser" , JSON.stringify(userPasswords));
+
+// console.log(userNames);
+// console.log(userPasswords);
 }
-if (minute < 10) {
-    y.innerHTML = "0" + minute + ":" ;
-} else {
-    y.innerHTML = minute + ":" ;
-} 
-if(second < 10) {
-    z.innerHTML = "0" + second;
-} else {
-    z.innerHTML = second;
-}
-}
-
-let myInterval =  setInterval(function () {
-    hello() ;
-    second-- ;
-    if(second < 0) {
-        second = 59 ;
-        minute -- ;
-    } 
-    if(minute < 0) {
-        minute = 59 ;
-        hour -- ;
-    }
-    if(hour === -1) {
-        clearInterval(myInterval);
-        x.innerHTML = "" ;
-        y.innerHTML = "Time Is Up" ;
-        z.innerHTML = "" ;
-    }
-
-}, 1000)
 
 
 
 
+// let studentName = document.getElementById("student-name");
+// let studentNameEl = document.getElementById("name");
 
+
+// function printName () {
+//     localStorage.setItem("studentName", studentName.value);
+//     studentNameEl.innerHTML = localStorage.getItem("studentName");
+// }
+// studentNameEl.innerHTML = localStorage.getItem("");
