@@ -8,30 +8,128 @@
 // console.log(result);
 
 
+// let x = document.getElementById("first");
+// let y = document.getElementById("second");
+// let z = document.getElementById("third");
+
+// let curruntTime = new Date () ;
+// let hour = curruntTime.getHours();
+// let minute = curruntTime.getMinutes();
+// let second = curruntTime.getSeconds();
+
+
+
+// x.innerHTML = hour + ":" ;
+// y.innerHTML = minute + ":" ;
+// z.innerHTML = second ;
+
+// if(hour > 12) {
+//     x.innerHTML = hour - 12 +  ":" ;
+// }
+// if(second <= 9) {
+//     z.innerHTML = "0" + second ;
+// }
+// if(minute <= 9) {
+//     y.innerHTML = "0" + minute + ":" ;
+// }
+
+// setTimeout(function (){
+//     console.log("Hello World");
+// }, 10000);
+
+// let timeout = 0;
+// let myInterval = setInterval (function () {
+//     console.log("Hello World");
+//     timeout++ ;
+//     if(timeout === 3) {
+//         clearInterval(myInterval);
+//         console.log("Stopped !");
+//     }
+// } , 1000);
+
+
+// let i = 60;
+// let print = document.getElementById("first");
+// let myInterval = setInterval ( function () {
+//     print.innerHTML = i-- ;
+//     if(i <= 9) {
+//         print.innerHTML = "0" + i ;
+//     }
+//     if(i === 0  ) {
+//         clearInterval(myInterval);
+//     }
+// } ,100)
+
+
+// let minute = document.getElementById("first");
+// let second = document.getElementById("second");
+// let x = 1 ;
+// let y = 60 ;
+
+
+// // let myInterval = setInterval (function () {
+// //     second.innerHTML = " "+ y-- ;
+// //     if(y === -1) {
+// //         y = 60 ;
+// //         x-- ;
+// //     }
+// //     if(y <= 9) {
+// //         second.innerHTML = " 0" + y ;
+// //     }
+// //     if(x === 0) {
+// //         clearInterval(myInterval)
+// //     }
+// //     minute.innerHTML ="0" + x + " :";
+// // } , 100 );
+
+
 let x = document.getElementById("first");
 let y = document.getElementById("second");
 let z = document.getElementById("third");
 
-let curruntTime = new Date () ;
-let hour = curruntTime.getHours();
-let minute = curruntTime.getMinutes();
-let second = curruntTime.getSeconds();
+let hour = prompt("Enter Hour");
+let minute = prompt("Enter Minute");
+let second = prompt("Enter Second");
 
-setInterval(function() {
-
-
-x.innerHTML = hour + ":" ;
-y.innerHTML = minute + ":" ;
-z.innerHTML = second ;
-
-if(hour > 12) {
-    x.innerHTML = hour - 12 +  ":" ;
+function hello () {
+if(hour < 10) {
+    x.innerHTML = "0" + hour + ":" ;
+} else {
+    x.innerHTML = hour + ":" ;
 }
-if(second <= 9) {
-    z.innerHTML = "0" + second ;
-}
-if(minute <= 9) {
+if (minute < 10) {
     y.innerHTML = "0" + minute + ":" ;
+} else {
+    y.innerHTML = minute + ":" ;
+} 
+if(second < 10) {
+    z.innerHTML = "0" + second;
+} else {
+    z.innerHTML = second;
 }
-} , 100);
+}
+
+let myInterval =  setInterval(function () {
+    hello() ;
+    second-- ;
+    if(second < 0) {
+        second = 59 ;
+        minute -- ;
+    } 
+    if(minute < 0) {
+        minute = 59 ;
+        hour -- ;
+    }
+    if(hour === -1) {
+        clearInterval(myInterval);
+        x.innerHTML = "" ;
+        y.innerHTML = "Time Is Up" ;
+        z.innerHTML = "" ;
+    }
+
+}, 1000)
+
+
+
+
 
