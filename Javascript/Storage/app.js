@@ -173,7 +173,7 @@
 
 // console.log(userNames);
 // console.log(userPasswords);
-}
+//}
 
 
 
@@ -187,3 +187,77 @@
 //     studentNameEl.innerHTML = localStorage.getItem("studentName");
 // }
 // studentNameEl.innerHTML = localStorage.getItem("");
+
+// let curruntTime = new Date () ;
+// let x = curruntTime.getMonth() ;
+// console.log(x);
+
+
+// console.log(0.1 + 0.2 === 0.3);
+// console.log(typeof null);
+// console.log([ 2, 4] + [4 , 2]);
+
+
+// let array = ["a" , "b" , "c" , "d" , "e" , "f"];
+// localStorage.setItem("names " , JSON.stringify(array));
+
+// let object = {
+//     myName : "Zain" , 
+//     rollNo : 52 ,
+// }
+// console.log(object);
+// localStorage.setItem("myObject" , JSON.stringify(object));
+
+// localStorage.setItem("username" , "talal");
+
+// console.log(localStorage.getItem("username"));
+
+// let stdntName = document.getElementById("name");
+// let rollNo = document.getElementById("password");
+// let allStudents = [];
+
+
+// function submit () {
+//     let student = {
+//         "studentName": stdntName.value,
+//         "rollNo": rollNo.value
+//     }
+
+//     let savedStdnt = localStorage.getItem("studentInfo");
+
+//     if (savedStdnt) {
+//         allStudents.push(JSON.parse(savedStdnt));
+//     }
+
+//     allStudents.push(student);
+
+//     localStorage.setItem("studentInfo", JSON.stringify(allStudents));
+// }
+
+// let array = ["hello" , "hell" , "hellllo"];
+// for(let i = 0 ; i < array.length; i++) {
+// localStorage.setItem("helloTypes" + i , array[i]);
+// console.log(localStorage.getItem("helloTypes"));
+// }
+
+let _userName = document.getElementById("name");
+let _userPassword = document.getElementById("password");
+let information = [] ;
+
+
+function submit () {
+    userInfo = {
+        userName : _userName.value ,
+        userPassword : _userPassword.value ,
+    }
+    let user = localStorage.getItem("userInfo");
+
+    if(user) {
+        information.push(JSON.parse(user))
+    }
+    information.push(userInfo)
+localStorage.setItem("userInfo" , JSON.stringify(information));
+document.getElementById("name").value = "" ;
+document.getElementById("password").value = "" ; 
+
+}
