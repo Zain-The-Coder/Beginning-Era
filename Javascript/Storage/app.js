@@ -240,24 +240,44 @@
 // console.log(localStorage.getItem("helloTypes"));
 // }
 
-let _userName = document.getElementById("name");
-let _userPassword = document.getElementById("password");
-let information = [] ;
+// let _userName = document.getElementById("name");
+// let _userPassword = document.getElementById("password");
+// let information = [] ;
 
+
+// function submit () {
+//     userInfo = {
+//         userName : _userName.value ,
+//         userPassword : _userPassword.value ,
+//     }
+//     let user = localStorage.getItem("userInfo");
+
+//     if(user) {
+//         information.push(JSON.parse(user))
+//     }
+//     information.push(userInfo)
+// localStorage.setItem("userInfo" , JSON.stringify(information));
+// document.getElementById("name").value = "" ;
+// document.getElementById("password").value = "" ; 
+
+// }
+
+let x = document.getElementById("name");
+let y = document.getElementById("password");
+
+let userInfo = [] ;
 
 function submit () {
-    userInfo = {
-        userName : _userName.value ,
-        userPassword : _userPassword.value ,
+    let a = localStorage.getItem("userInformation");
+    if(a) {
+        userInfo.push(JSON.parse(a));
     }
-    let user = localStorage.getItem("userInfo");
-
-    if(user) {
-        information.push(JSON.parse(user))
+    userData = {
+        userName : x.value ,
+        userPassword : y.value ,
     }
-    information.push(userInfo)
-localStorage.setItem("userInfo" , JSON.stringify(information));
-document.getElementById("name").value = "" ;
-document.getElementById("password").value = "" ; 
-
+    userInfo.push(userData);
+    
+    console.log(userInfo);
+    localStorage.setItem("userInformation" , JSON.stringify(userInfo));
 }
