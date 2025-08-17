@@ -1,0 +1,10 @@
+img {
+    cursor: pointer;
+}
+#div {
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 20px;
+}
