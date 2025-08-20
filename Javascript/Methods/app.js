@@ -693,3 +693,48 @@
 // console.log(Math.round(56.8))
 
 // let random = Math.floor()
+
+
+function taker () {
+    let first = Number(document.getElementById("form1").value);
+    let second = Number(document.getElementById("form2").value);
+    let third = Number(document.getElementById("form3").value);
+    let fourth = Number(document.getElementById("form4").value);
+    let fifth = Number(document.getElementById("form5").value);
+
+    return [first , second , third , fourth , fifth] ;
+}
+
+function add () {
+    let inputTaker = taker () ;
+    let addition = (inputTaker[0] + inputTaker[1] + inputTaker[2] + inputTaker[3] + inputTaker[4]) ;
+    return addition ;
+}
+
+function percen () {
+    let inputTaker1 = add () ;
+    let percentage =  (inputTaker1 / 500) * 100 ;
+    return percentage ;
+}
+
+function gra () {
+    let percent = percen () ;
+    let grade = " " ;
+    if(percent >= 90) {
+        grade = "You Got A+ Grade ! " ;
+    } else if(percent >= 80) {
+        grade = "You Got A Grade ! " ;
+    } else if(percent >= 70) {
+        grade = "You Got B Grade !" ;
+    } else if(percent >= 60) {
+        grade = "You Got C Grade !" ;
+    } else if(percent >= 50) {
+        grade = "You Got D Grade !" ;
+    } else {
+        grade = "You Failed !" ;
+    }
+}
+
+
+
+
