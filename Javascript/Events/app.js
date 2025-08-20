@@ -47,40 +47,66 @@
 // }
 
 
-let x = document.getElementById("form1");
-let y = document.getElementById("form2");
+// let x = document.getElementById("form1");
+// let y = document.getElementById("form2");
 
-function start () {
-    x.style.backgroundColor = "black" ;
-    x.style.fontFamily = "monospace" ;
-    x.style.color = "beige" ;
-    x.style.borderRadius = "20px" ;
-    x.style.fontSize = "20px"
-}
+// function start () {
+//     x.style.backgroundColor = "black" ;
+//     x.style.fontFamily = "monospace" ;
+//     x.style.color = "beige" ;
+//     x.style.borderRadius = "20px" ;
+//     x.style.fontSize = "20px"
+// }
 
-function stop () {
-    x.style.backgroundColor = "white" ;
-    x.style.fontFamily = "san-serif" ;
-    x.style.color = "black" ;
-    x.style.borderRadius = "0px" ;
-    x.style.fontSize = "16px" ;
+// function stop () {
+//     x.style.backgroundColor = "white" ;
+//     x.style.fontFamily = "san-serif" ;
+//     x.style.color = "black" ;
+//     x.style.borderRadius = "0px" ;
+//     x.style.fontSize = "16px" ;
 
-    let userInput = x.value ;
+//     let userInput = x.value ;
 
-    if(userInput.toLowerCase() === "karachi") {
-        y.value = "Sindh" ;
-    } else if(userInput.toLowerCase() === "lahore") {
-        y.value = "Punjab" ;
-    } else if(userInput.toLowerCase() === "peshawar") {
-        y.value =  "KPK" ;
-    } else if(userInput.toLowerCase() === "quetta") {
-        y.value = "Balochistan" ;
-    } 
+//     if(userInput.toLowerCase() === "karachi") {
+//         y.value = "Sindh" ;
+//     } else if(userInput.toLowerCase() === "lahore") {
+//         y.value = "Punjab" ;
+//     } else if(userInput.toLowerCase() === "peshawar") {
+//         y.value =  "KPK" ;
+//     } else if(userInput.toLowerCase() === "quetta") {
+//         y.value = "Balochistan" ;
+//     } 
     
-    let capitalLetter = x.value[0] ;
-    let firstPart = capitalLetter.toUpperCase() ;
-    let smallLetter = userInput.slice(1);
-    let secondPart = smallLetter.toLowerCase() ;
-    x.value = firstPart + secondPart ;
+//     let capitalLetter = x.value[0] ;
+//     let firstPart = capitalLetter.toUpperCase() ;
+//     let smallLetter = userInput.slice(1);
+//     let secondPart = smallLetter.toLowerCase() ;
+//     x.value = firstPart + secondPart ;
+// }
+
+let x = document.getElementById("first");
+function start() {
+    x.src = "./Images/zakat.PNG" ;
+    x.style.cursor = "Pointer" ;
+}
+function stop () {
+    x.src = "./Images/daily-food.PNG" ;
 }
 
+let y = document.getElementById("second");
+function go() {
+    y.src = "./Images/daily-food.PNG" ;
+    y.style.cursor = "Pointer"  ;
+}
+function back () {
+    y.src = "./Images/zakat.PNG" ;
+}
+// let array = ["lIOn" , "PanDA" , "moNkey" , "GroIlLA" , "blaCK PENther"];
+// for(let i = 0; i < array.length; i++) {
+//     let smaller = array[i].toLowerCase().split(" ") ;
+//     for(let j = 0; j < smaller.length; j++) {
+//         smaller[j] = smaller[j].charAt(0).toUpperCase() + smaller[j].slice(1);
+//     }
+//     let finalText = smaller.join(" ");
+//     console.log((i + 1) + " - " + finalText);
+// }

@@ -319,47 +319,122 @@
 // }
 // resultPrinter(userName , m1 , m2 , m3);
 
-function generateStudent (userName , marks1 , marks2 , marks3 , marks4 , marks5) {
-    let studentName = userName ;
-    let marksArray = [marks1 , marks2 , marks3 , marks4 , marks5];
-    let averageMarks = ((marksArray[0] + marksArray[1] + marksArray[2] + marksArray[3] + marksArray[4]) / 5);
-    let grade;
-    if (averageMarks >= 80) {
-        grade = "You Got A Grade !" ;
-    } else if (averageMarks >= 60) {
-        grade = "You Got B Grade !";
-    } else {
-        grade = "You Have Failed !" ;
-    }
-    let percentage = (((marksArray[0] + marksArray[1] + marksArray[2] + marksArray[3] + marksArray[4]) / 500) * 100 ) + " % " ;
-    return {
-        userName : studentName ,
-        average : averageMarks.toFixed(1) ,
-        Grade : grade ,
-        percent : percentage ,
-    }
+// function generateStudent (userName , marks1 , marks2 , marks3 , marks4 , marks5) {
+//     let studentName = userName ;
+//     let marksArray = [marks1 , marks2 , marks3 , marks4 , marks5];
+//     let averageMarks = ((marksArray[0] + marksArray[1] + marksArray[2] + marksArray[3] + marksArray[4]) / 5);
+//     let grade;
+//     if (averageMarks >= 80) {
+//         grade = "You Got A Grade !" ;
+//     } else if (averageMarks >= 60) {
+//         grade = "You Got B Grade !";
+//     } else {
+//         grade = "You Have Failed !" ;
+//     }
+//     let percentage = (((marksArray[0] + marksArray[1] + marksArray[2] + marksArray[3] + marksArray[4]) / 500) * 100 ) + " % " ;
+//     return {
+//         userName : studentName ,
+//         average : averageMarks.toFixed(1) ,
+//         Grade : grade ,
+//         percent : percentage ,
+//     }
+// }
+// let studentName = prompt("Enter Your Name :");
+// let m1 = +prompt("Enter Your English Marks :");
+// let m2 = +prompt("Enter Your Urdu Marks :");
+// let m3 = +prompt("Enter Your Math Marks :");
+// let m4 = +prompt("Enter Your Chemistry Marks :");
+// let m5 = +prompt("Enter Your Physics Marks :");
+
+// function resultPrinter (userName , marks1 , marks2 , marks3 , marks4 , marks5) {
+//     let calculateResult = generateStudent (userName , marks1 , marks2 , marks3 , marks4 , marks5);
+//     let p1 = document.getElementById("firstLine");
+//     let p2 = document.getElementById("secondLine");
+//     let p3 = document.getElementById("thirdLine");
+//     let p4 = document.getElementById("fourthLine");
+//     p1.innerHTML = "Welcome " + calculateResult.userName + " ! " ;
+//     p2.innerHTML = "Your Average Marks Are " + calculateResult.average ;
+//     p3.innerHTML = "Your Percentage Is " + calculateResult.percent ;
+//     p4.innerHTML = calculateResult.Grade ;
+// }
+
+// resultPrinter(studentName , m1 , m2 , m3 , m4 , m5);
+
+
+// // userheight ko **1 inch = 0.0254 meter**  sy multiply
+
+
+
+// function add (a , b) {
+//     let x = (a + b) ;
+//     return x;
+// }
+// console.log(add (3 , 4));
+
+// function greetio () {
+//     console.log("Hello World");
+// }
+// greetio();
+
+// const greet = () => "Hello World !" ;
+// console.log(greet());
+
+
+// let text = "UniVERsity of kaRAchi" ;
+// let x = text.toLowerCase().split(" ");
+// for(let i = 0; i < x.length; i++) {
+//     x[i] = x[i].charAt(0).toUpperCase() + x[i].slice(1);
+// }
+// let y = x.join(" ");
+// console.log(y);
+
+// let text = ["UniVERsity of kaRAchi" , "UniVERsity OF PEShawaR" , "UNIverSiTy Of QueTTA"];
+// for(let i = 0; i < text.length; i++) {
+//     let updatedText = text[i].toLowerCase().split(" ");
+//     for(let j = 0; j < updatedText.length; j++) {
+//         updatedText[j] = updatedText[j].charAt(0).toUpperCase() + updatedText[j].slice(1);
+//     }
+//     let finalText = updatedText.join(" ");
+//     console.log(finalText);
+// }
+
+let inputs = document.querySelectorAll(".input");
+
+function start(x) {
+    x.style.backgroundColor = "black" ;
+    x.style.color = "white" ;
+    x.style.borderRadius = "20px" ;
+    x.style.fontFamily = "monospace" ;
+    x.style.fontSize = "20px" ;
 }
-let studentName = prompt("Enter Your Name :");
-let m1 = +prompt("Enter Your English Marks :");
-let m2 = +prompt("Enter Your Urdu Marks :");
-let m3 = +prompt("Enter Your Math Marks :");
-let m4 = +prompt("Enter Your Chemistry Marks :");
-let m5 = +prompt("Enter Your Physics Marks :");
-
-function resultPrinter (userName , marks1 , marks2 , marks3 , marks4 , marks5) {
-    let calculateResult = generateStudent (userName , marks1 , marks2 , marks3 , marks4 , marks5);
-    let p1 = document.getElementById("firstLine");
-    let p2 = document.getElementById("secondLine");
-    let p3 = document.getElementById("thirdLine");
-    let p4 = document.getElementById("fourthLine");
-    p1.innerHTML = "Welcome " + calculateResult.userName + " ! " ;
-    p2.innerHTML = "Your Average Marks Are " + calculateResult.average ;
-    p3.innerHTML = "Your Percentage Is " + calculateResult.percent ;
-    p4.innerHTML = calculateResult.Grade ;
+function end (x) {
+    x.style.backgroundColor = "white" ;
+    x.style.color = "black" ;
+    x.style.fontSize = "16px" ;
+    x.style.borderRadius = "0px" ;
+    x.style.fontFamily = "Ariel" ;
+    x.style.height = "16px"
 }
 
-resultPrinter(studentName , m1 , m2 , m3 , m4 , m5);
+let p = document.getElementById("printer");
+let a = document.getElementById("first");
+let b = document.getElementById("second");
+let c = document.getElementById("third"); 
+
+function inputTaker (a , b , c) {
+    return[a.value , b.value , c.value];
+}
 
 
-// userheight ko **1 inch = 0.0254 meter**  sy multiply
+function press (a , b , c) {
+
+    if(!a || !b || !c) {
+    p.innerHTML = "Enter Above Fields"
+    return ;
+    }
+    
+    let taking = inputTaker(a , b , c);
+    p.innerHTML = "Your " + taking[0] + " Pizza With " + taking[1] + " Topping and " + taking[2] + " Topping Is Ready !" ; 
+}
+
 
