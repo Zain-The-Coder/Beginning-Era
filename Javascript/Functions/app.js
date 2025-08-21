@@ -398,43 +398,103 @@
 //     console.log(finalText);
 // }
 
-let inputs = document.querySelectorAll(".input");
+// let inputs = document.querySelectorAll(".input");
 
-function start(x) {
-    x.style.backgroundColor = "black" ;
-    x.style.color = "white" ;
-    x.style.borderRadius = "20px" ;
-    x.style.fontFamily = "monospace" ;
-    x.style.fontSize = "20px" ;
-}
-function end (x) {
-    x.style.backgroundColor = "white" ;
-    x.style.color = "black" ;
-    x.style.fontSize = "16px" ;
-    x.style.borderRadius = "0px" ;
-    x.style.fontFamily = "Ariel" ;
-    x.style.height = "16px"
-}
+// function start(x) {
+//     x.style.backgroundColor = "black" ;
+//     x.style.color = "white" ;
+//     x.style.borderRadius = "20px" ;
+//     x.style.fontFamily = "monospace" ;
+//     x.style.fontSize = "20px" ;
+// }
+// function end (x) {
+//     x.style.backgroundColor = "white" ;
+//     x.style.color = "black" ;
+//     x.style.fontSize = "16px" ;
+//     x.style.borderRadius = "0px" ;
+//     x.style.fontFamily = "Ariel" ;
+//     x.style.height = "16px"
+// }
 
-let p = document.getElementById("printer");
-let a = document.getElementById("first");
-let b = document.getElementById("second");
-let c = document.getElementById("third"); 
+// let p = document.getElementById("printer");
+// let a = document.getElementById("first");
+// let b = document.getElementById("second");
+// let c = document.getElementById("third"); 
 
-function inputTaker (a , b , c) {
-    return[a.value , b.value , c.value];
-}
+// function inputTaker (a , b , c) {
+//     return[a.value , b.value , c.value];
+// }
 
 
-function press (a , b , c) {
+// function press (a , b , c) {
 
-    if(!a || !b || !c) {
-    p.innerHTML = "Enter Above Fields"
-    return ;
-    }
+//     if(!a || !b || !c) {
+//     p.innerHTML = "Enter Above Fields"
+//     return ;
+//     }
     
-    let taking = inputTaker(a , b , c);
-    p.innerHTML = "Your " + taking[0] + " Pizza With " + taking[1] + " Topping and " + taking[2] + " Topping Is Ready !" ; 
+//     let taking = inputTaker(a , b , c);
+//     p.innerHTML = "Your " + taking[0] + " Pizza With " + taking[1] + " Topping and " + taking[2] + " Topping Is Ready !" ; 
+// }
+
+
+// function namer (names) {
+//     function capital (names) {
+//         let x = names.charAt(0).toUpperCase() + names.slice(1).toLowerCase() ;
+//         return x ;
+//     }
+//     let greet = ("Hello " + capital(names));
+//     return greet ;
+// }
+
+// console.log(namer("zain"))
+
+// const greet = function namer (userName) {
+//     function capitalism (uName) {
+//         let x = uName.charAt(0).toUpperCase() + uName.slice(1).toLowerCase() ;
+//         return x ;
+//     }
+//     let greeting = ("Hello " + capitalism(userName)) ;
+//     return greeting ;
+// }
+
+// console.log(greet("zain"));
+
+// const result = function resulter (totalMarks , obtMarks) {
+//     function per (tm , om) {
+//         let percen = (om / tm) * 100 ;
+//         return percen.toFixed(2) ; 
+//     }
+//     function gra (percen) {
+//         let answer = "" ;
+//         if(percen >= 90) {
+//             answer = "You Got A+ Grade ! " ;
+//         } else if (percen >= 80) {
+//             answer = "You Got A Grade !" ;
+//         } else if(percen >= 70) {
+//             answer = "You Got B Grade !" ;
+//         } else if(percen >= 60) {
+//             answer = "You Got C Grade !" ;
+//         } else if(percen >= 50) {
+//             answer = "You Got D Grade !" ;
+//         } else {
+//             answer = "Fail !" ;
+//         }
+//         return answer ;
+//     }
+//     let percentage = per(totalMarks , obtMarks);
+//     let finalAnswer = ("Your Percentage Is " + percentage + "  " + gra(percentage));
+//     return finalAnswer ;
+// }
+
+// console.log(result (1100 , 994));
+
+greet ();
+function greet () {
+    function gre () {
+    let x = console.log("hello World");
+    return x ;
+    }
+    let y = gre() ;
+    return y ;
 }
-
-

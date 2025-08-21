@@ -695,46 +695,58 @@
 // let random = Math.floor()
 
 
-function taker () {
-    let first = Number(document.getElementById("form1").value);
-    let second = Number(document.getElementById("form2").value);
-    let third = Number(document.getElementById("form3").value);
-    let fourth = Number(document.getElementById("form4").value);
-    let fifth = Number(document.getElementById("form5").value);
+// function taker () {
+//     let first = Number(document.getElementById("form1").value);
+//     let second = Number(document.getElementById("form2").value);
+//     let third = Number(document.getElementById("form3").value);
+//     let fourth = Number(document.getElementById("form4").value);
+//     let fifth = Number(document.getElementById("form5").value);
 
-    return [first , second , third , fourth , fifth] ;
-}
+//     return [first , second , third , fourth , fifth] ;
+// }
 
-function add () {
-    let inputTaker = taker () ;
-    let addition = (inputTaker[0] + inputTaker[1] + inputTaker[2] + inputTaker[3] + inputTaker[4]) ;
-    return addition ;
-}
+// function add () {
+//     let inputTaker = taker () ;
+//     let addition = (inputTaker[0] + inputTaker[1] + inputTaker[2] + inputTaker[3] + inputTaker[4]) ;
+//     return addition ;
+// }
 
-function percen () {
-    let inputTaker1 = add () ;
-    let percentage =  (inputTaker1 / 500) * 100 ;
-    return percentage ;
-}
+// function percen () {
+//     let inputTaker1 = add () ;
+//     let percentage =  (inputTaker1 / 500) * 100 ;
+//     return percentage ;
+// }
 
-function gra () {
-    let percent = percen () ;
-    let grade = " " ;
-    if(percent >= 90) {
-        grade = "You Got A+ Grade ! " ;
-    } else if(percent >= 80) {
-        grade = "You Got A Grade ! " ;
-    } else if(percent >= 70) {
-        grade = "You Got B Grade !" ;
-    } else if(percent >= 60) {
-        grade = "You Got C Grade !" ;
-    } else if(percent >= 50) {
-        grade = "You Got D Grade !" ;
-    } else {
-        grade = "You Failed !" ;
-    }
-}
+// function gra () {
+//     let percent = percen () ;
+//     let grade = " " ;
+//     if(percent >= 90) {
+//         grade = "You Got A+ Grade ! " ;
+//     } else if(percent >= 80) {
+//         grade = "You Got A Grade ! " ;
+//     } else if(percent >= 70) {
+//         grade = "You Got B Grade !" ;
+//     } else if(percent >= 60) {
+//         grade = "You Got C Grade !" ;
+//     } else if(percent >= 50) {
+//         grade = "You Got D Grade !" ;
+//     } else {
+//         grade = "You Failed !" ;
+//     }
+//     return grade ;
+// }
 
+// function submit () {
+//     let printer = document.getElementById("result");
+//     let x = taker ()
+//     let additions = add() ;
+//     let percentages = percen().toFixed(2) ;
+//     let grades = gra() ;
 
-
+//     if(!(x[0]) || !(x[1]) || !(x[2]) || !(x[3]) || !(x[4])) {
+//         printer.innerHTML = "Please Enter Your Marks !";
+//         return ;
+//     } 
+//     printer.innerHTML =  "Your Total Marks Are : " + additions + "<br>" + " Your Percentage Is " + percentages + "%" + "<br>" + grades; 
+// }
 
