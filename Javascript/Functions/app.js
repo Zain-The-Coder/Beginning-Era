@@ -489,12 +489,45 @@
 
 // console.log(result (1100 , 994));
 
-greet ();
-function greet () {
-    function gre () {
-    let x = console.log("hello World");
-    return x ;
-    }
-    let y = gre() ;
-    return y ;
-}
+// greet ();
+// function greet () {
+//     function gre () {
+//     let x = console.log("hello World");
+//     return x ;
+//     }
+//     let y = gre() ;
+//     return y ;
+// }
+
+// const greet = (greeting) => {
+//     console.log("Hello World" + greeting);
+// }
+
+// greet (" Zain") ;
+
+// function addition ( a = 7 , b = 7) {
+//     let add = (a + b) ;
+//     return add ;
+// }
+// console.log(addition());
+
+// const addition = function add(a = 14 , b = 15) {
+//     let add = ( a + b) ;
+//     console.log(add);
+// }
+// addition();
+
+// const addition = (a = 67 , b = 33) => {
+//     let add = (a + b) ;
+//     return add ;
+// }
+// console.log(addition());
+
+
+// function sum(nums) {
+//  let x = nums.reduce((acc, val) => acc + val, 0);
+//  return x ;
+// }
+// let nums = [1, 2, 3];
+// console.log(sum(nums));
+
