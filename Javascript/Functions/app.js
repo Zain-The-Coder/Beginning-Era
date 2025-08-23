@@ -531,3 +531,16 @@
 // let nums = [1, 2, 3];
 // console.log(sum(nums));
 
+
+function greetInCapital (capital) {
+    const second =  (capital) => {
+        let y = capital.toUpperCase() ;
+        return y ;
+    }
+    let y = console.log(second ("HELLO " + second(capital)));
+    return y ;
+    
+}
+
+const greetInTit
+greetInCapital("zain");
