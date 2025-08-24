@@ -152,3 +152,10 @@
 //     }
 //     printer.innerHTML = hours + minutes + seconds ;
 // } , 1000) ;
+
+let heading = document.getElementById("head");
+let button = document.getElementById("btn");
+
+button.addEventListener("click" , function () {
+    this.textContent.cl
+})

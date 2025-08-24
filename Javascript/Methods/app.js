@@ -750,3 +750,12 @@
 //     printer.innerHTML =  "Your Total Marks Are : " + additions + "<br>" + " Your Percentage Is " + percentages + "%" + "<br>" + grades; 
 // }
 
+
+let numbers = [ 6 , 5 , 8 , 9 , 1] ;
+let numIndex = [] ;
+for(let i = 1 ; i <= 10 ; i++) {
+    if(numbers.includes(i)) {
+        numIndex.push(i) ;
+    }
+}
+console.log("Accending : " + numIndex)
