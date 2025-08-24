@@ -112,10 +112,43 @@
 // let second = curruntDate.getSeconds() ;
 
 
-let curruntDate = new Date ();
-let hour = curruntDate.getHours() ;
-let minute = curruntDate.getMinutes() ;
-let second = curruntDate.getSeconds() ;
-function dater () {
-    
-}
+// let printer = document.getElementById("first");
+// function dater () {
+//     let curruntDate = new Date ();
+//     let hour = curruntDate.getHours() ;
+//     let minute = curruntDate.getMinutes() ;
+//     let second = curruntDate.getSeconds() ;
+//     printer.innerHTML = hour + " : " + minute + " : " + second ;
+// }
+// setInterval(dater , 1000);
+
+// let printer = document.getElementById("first");
+
+// setInterval(function () {
+//     let curruntDate = new Date () ;
+//     let x = curruntDate.getHours() ;
+//     let y = curruntDate.getMinutes() ;
+//     let z = curruntDate.getSeconds() ;
+//     let hours = "" ;
+//     let minutes = "" ;
+//     let seconds = "" ;
+
+//     if(x <= 9) {
+//         hours += String(x).padStart(2 , "0") + " : ";
+//     } else {
+//         hours += x + " : " ;
+//     }
+
+//     if(y <= 9) {
+//         minutes += String(y).padStart(2 , "0") + " : " ;
+//     } else {
+//         minutes += y + " : " ;
+//     }
+
+//     if(z <= 9) {
+//         seconds += String(z).padStart(2 , "0") ;
+//     } else {
+//         seconds += z ;
+//     }
+//     printer.innerHTML = hours + minutes + seconds ;
+// } , 1000) ;
