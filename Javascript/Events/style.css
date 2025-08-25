@@ -8,3 +8,15 @@
     cursor: pointer;
     border-radius: 20px;
 } */
+body {
+    text-align: center;
+}
+@keyframes theme {
+    0% {opacity: 1;}   37% {opacity: 0.3;}   74% {opacity: 0.6;}   100% {opacity: 1;} ;
+}
+@keyframes themer {
+    0% {color: brown;}  50%   {color: #fff;} 100% {color: #00f;} 
+}
+@keyframes spin {
+    from  {transform: rotateX(0deg);} to {transform: rotateX(360deg);} ;
+}

@@ -751,11 +751,18 @@
 // }
 
 
-let numbers = [ 6 , 5 , 8 , 9 , 1] ;
-let numIndex = [] ;
-for(let i = 1 ; i <= 10 ; i++) {
-    if(numbers.includes(i)) {
-        numIndex.push(i) ;
-    }
-}
-console.log("Accending : " + numIndex)
+// let numbers = [ 6 , 5 , 8 , 9 , 1] ;
+// let numIndex = [] ;
+// for(let i = 1 ; i <= 10 ; i++) {
+//     if(numbers.includes(i)) {
+//         numIndex.push(i) ;
+//     }
+// }
+// console.log("Accending : " + numIndex)
+
+let numbers = [23 , 56 , 87 , 555 , 78 , 110 , 3 , 1] ;
+console.log("Orignal Numbers - " + numbers) ;
+let ascending = numbers.sort((a , b) => a - b);
+console.log("Ascending Numbers - " + ascending);
+let descending = numbers.sort((a , b) => (b  - a));
+console.log("Descending Numbers - " + descending);

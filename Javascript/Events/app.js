@@ -84,23 +84,23 @@
 //     x.value = firstPart + secondPart ;
 // }
 
-let x = document.getElementById("first");
-function start() {
-    x.src = "./Images/zakat.PNG" ;
-    x.style.cursor = "Pointer" ;
-}
-function stop () {
-    x.src = "./Images/daily-food.PNG" ;
-}
+// let x = document.getElementById("first");
+// function start() {
+//     x.src = "./Images/zakat.PNG" ;
+//     x.style.cursor = "Pointer" ;
+// }
+// function stop () {
+//     x.src = "./Images/daily-food.PNG" ;
+// }
 
-let y = document.getElementById("second");
-function go() {
-    y.src = "./Images/daily-food.PNG" ;
-    y.style.cursor = "Pointer"  ;
-}
-function back () {
-    y.src = "./Images/zakat.PNG" ;
-}
+// let y = document.getElementById("second");
+// function go() {
+//     y.src = "./Images/daily-food.PNG" ;
+//     y.style.cursor = "Pointer"  ;
+// }
+// function back () {
+//     y.src = "./Images/zakat.PNG" ;
+// }
 // let array = ["lIOn" , "PanDA" , "moNkey" , "GroIlLA" , "blaCK PENther"];
 // for(let i = 0; i < array.length; i++) {
 //     let smaller = array[i].toLowerCase().split(" ") ;
@@ -110,3 +110,63 @@ function back () {
 //     let finalText = smaller.join(" ");
 //     console.log((i + 1) + " - " + finalText);
 // }
+
+
+// let year = new Date() ;
+// let month = (year.getMonth());
+// let months = ["January" , "Feburary" , "March" , "April" , "May" , "June" , "July" , "August" , "September" , "October" , "November" , "December"];
+// let curruntMonth = months[month];
+// console.log(curruntMonth);
+
+// let y = new Date() ;
+// let year = y.getMonth();
+// console.log(year);
+// let update =  String(year).padStart(2 , "0");
+// console.log(update);
+
+// let numbers = [34 , 56 , 85 , 11 , 23 , 45 , 1 , 45];
+// console.log(numbers);
+// let accending = numbers.sort((a , b) => a - b);
+// console.log(accending);
+// let decending = numbers.sort((a , b) => b - a);
+// console.log(decending);
+
+
+// let x = document.getElementById("hi");
+// const first = () => {
+//     let pehla = document.getElementById("form1").value ;
+//     let dosra = document.getElementById("form2").value ;
+//     let teesra = document.getElementById("form3").value ;
+    
+//     let o = String(pehla).toLowerCase();
+//     let one = o.charAt(0).toUpperCase() + o.slice(1) ;
+
+//     let t = String(dosra).toLowerCase() ;
+//     let two = t.charAt(0).toUpperCase() + t.slice(1);
+
+//     let th = String(teesra).toLowerCase() ;
+//     let three = th.charAt(0).toUpperCase() + th.slice(1);
+
+//     return {
+//         _first : one, 
+//         _second : two + " Topping", 
+//         _third : three + " Topping",
+//     } 
+// }
+
+// const sum = () => {
+//     let upper = first() ;
+//     let output = "Your " + upper._first + " Pizza With " + upper._second + " And " +  upper._third + " Is Ready !" ;
+//     console.log(output)
+// }
+
+let x = document.getElementById("hi");
+
+const sum = () => {
+    x.style.border = "20px solid black" ;
+    x.style.borderRadius = "20px" ;
+    x.style.display = "inline-block" ;
+    x.style.transform = "spin 3s ease" ;
+
+
+}
