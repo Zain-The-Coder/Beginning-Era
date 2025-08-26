@@ -166,7 +166,6 @@ const sum = () => {
     x.style.border = "20px solid black" ;
     x.style.borderRadius = "20px" ;
     x.style.display = "inline-block" ;
-    x.style.transform = "spin 3s ease" ;
-
-
+    x.style.animation = "spin 3s ease" ; 
+    x.style.animation = "theme 2s linear "
 }

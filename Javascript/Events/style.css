@@ -12,11 +12,11 @@ body {
     text-align: center;
 }
 @keyframes theme {
-    0% {opacity: 1;}   37% {opacity: 0.3;}   74% {opacity: 0.6;}   100% {opacity: 1;} ;
+    0% {opacity: 1; color: brown;}   37% {opacity: 0.5; color: wheat;} 55% {opacity: 0; color: white;}  74% {opacity: 0.6; color: lightblue;}   100% {opacity:1; color: blue} ;
 }
 @keyframes themer {
     0% {color: brown;}  50%   {color: #fff;} 100% {color: #00f;} 
 }
 @keyframes spin {
-    from  {transform: rotateX(0deg);} to {transform: rotateX(360deg);} ;
+    from  {transform: rotateY(0deg);} to {transform: rotateY(360deg);} ;
 }
