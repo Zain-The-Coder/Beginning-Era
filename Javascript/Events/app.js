@@ -160,12 +160,23 @@
 //     console.log(output)
 // }
 
-let x = document.getElementById("hi");
+// let x = document.getElementById("hi");
 
-const sum = () => {
-    x.style.border = "20px solid black" ;
-    x.style.borderRadius = "20px" ;
-    x.style.display = "inline-block" ;
-    x.style.animation = "spin 3s ease" ; 
-    x.style.animation = "theme 2s linear "
+// const sum = () => {
+//     x.style.border = "20px solid black" ;
+//     x.style.borderRadius = "20px" ;
+//     x.style.display = "inline-block" ;
+//     x.style.animation = "spin 3s ease" ; 
+//     x.style.animation = "theme 2s linear "
+// }
+
+let x = document.getElementById("first");
+let images = ["./Images/daily-food.PNG" , "./Images/facebook.png" , "./Images/it.PNG" , "./Images/youtube.png" , "./Images/zakat.PNG"];
+let index = 0 ;
+const imageChanger = () => {
+    index++ ;
+    if(index >= images.length) {
+        index = 0 ;
+    }
+    x.src = images[index];
 }

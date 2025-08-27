@@ -8,7 +8,7 @@
     cursor: pointer;
     border-radius: 20px;
 } */
-body {
+/* body {
     text-align: center;
 }
 @keyframes theme {
@@ -19,4 +19,14 @@ body {
 }
 @keyframes spin {
     from  {transform: rotateY(0deg);} to {transform: rotateY(360deg);} ;
+} */
+
+img {
+    height: 200px;
+    width: 350px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+button {
+    cursor: pointer;
 }
