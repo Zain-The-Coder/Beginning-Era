@@ -153,9 +153,23 @@
 //     printer.innerHTML = hours + minutes + seconds ;
 // } , 1000) ;
 
-let heading = document.getElementById("head");
-let button = document.getElementById("btn");
+// let heading = document.getElementById("head");
+// let button = document.getElementById("btn");
 
-button.addEventListener("click" , function () {
-    this.textContent.cl
-})
+// button.addEventListener("click" , function () {
+//     this.textContent.cl
+// })
+
+// let x = document.childNodes[1].childNodes
+// console.log(x)
+
+// console.log(document.childNodes) ;  // <doctype html > , <html>
+//console.log(document.nodeName)  ;  // #document
+//console.log(document.childNodes[1].nodeName) ; // HTMl
+//console.log(document.childNodes[1].nodeType)
+
+let x = document.childNodes[1].childNodes[2].childNodes
+console.log(x);
+
+
+
