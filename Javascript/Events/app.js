@@ -170,13 +170,93 @@
 //     x.style.animation = "theme 2s linear "
 // }
 
-let x = document.getElementById("first");
-let images = ["./Images/daily-food.PNG" , "./Images/facebook.png" , "./Images/it.PNG" , "./Images/youtube.png" , "./Images/zakat.PNG"];
-let index = 0 ;
-const imageChanger = () => {
-    index++ ;
-    if(index >= images.length) {
-        index = 0 ;
-    }
-    x.src = images[index];
-}
+// let x = document.getElementById("first");
+// let images = ["./Images/daily-food.PNG" , "./Images/facebook.png" , "./Images/it.PNG" , "./Images/youtube.png" , "./Images/zakat.PNG"];
+// let index = 0 ;
+// const imageChanger = () => {
+//     index++ ;
+//     if(index >= images.length) {
+//         index = 0 ;
+//     }
+//     x.src = images[index];
+// }
+
+
+// let x = document.getElementById("paragraph");
+// let y = document.getElementById("changing");
+//     y.addEventListener("click" , function () {
+//         x.innerHTML = "You Pressed The Button !" ;
+//     }) ;
+
+// let headH1 = document.getElementById("heading");
+
+// headH1.addEventListener("mouseover" , function () {
+//     headH1.style.color = "red" ;
+//     headH1.style.cursor = "pointer"
+// })
+// headH1.addEventListener("mouseout" , function () {
+//     headH1.style.color = "black" ;
+// })
+
+
+// let inputSec = document.getElementById("input-sec");
+
+// inputSec.addEventListener("keydown" , function (event) {
+//     let x = (event.key);
+//         console.log("Key : " + x) ;    
+// })
+
+// let inputSec = document.getElementById("input-sec");
+
+// inputSec.addEventListener("input" , function (event) {
+//     let wantToPrint = ("Abhi Likha " , event.target.value);
+//     console.log(wantToPrint);
+// })
+
+// let inputSec = document.getElementById("input-sec");
+
+// inputSec.addEventListener("input" , (e) => {
+//     let printIt = ("You Write : " + e.target.value);
+//     console.log(printIt);
+// })
+
+// let inputSec = document.getElementById("input-sec");
+
+// inputSec.addEventListener("focus" , function () {
+//     inputSec.style.backgroundColor = "black" ,
+//     inputSec.style.color = "white" ;
+// }) ;
+
+// inputSec.addEventListener("input" , (e) => {
+//     let x = ("You Write : " + e.target.value) ;
+//     console.log(x);
+// })
+// inputSec.addEventListener("blur" , function () {
+//     inputSec.style.backgroundColor = "white" ;
+//     inputSec.style.color = "black" ;
+// })
+
+// let inputSec = document.getElementById("input-sec");
+
+// inputSec.addEventListener("keydown" , (e) => {
+//     console.log("you press key");
+// })
+
+// let inputSec = document.getElementById("input-sec");
+// inputSec.addEventListener("keyup" , (e) => {
+//     console.log("you press key")
+// })
+
+// let inputSec = document.getElementById("input-sec");
+// inputSec.addEventListener("keypress" , (e) => {
+//     console.log("you press key ");
+// })
+
+
+// let card = document.getElementById("flipCard");
+
+// card.addEventListener("click", function () {
+//  //   card.classList.toggle("flipped");
+// });
+
+

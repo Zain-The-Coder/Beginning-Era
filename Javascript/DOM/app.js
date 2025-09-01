@@ -163,13 +163,51 @@
 // let x = document.childNodes[1].childNodes
 // console.log(x)
 
+
+// function add () {
+// let x = document.getElementById("userInput").value ;
+// let userData = document.createTextNode(x);
+// console.log(userData)
+// }
+
 // console.log(document.childNodes) ;  // <doctype html > , <html>
 //console.log(document.nodeName)  ;  // #document
 //console.log(document.childNodes[1].nodeName) ; // HTMl
-//console.log(document.childNodes[1].nodeType)
+//console.log(document.childNodes[1].nodeType
 
-let x = document.childNodes[1].childNodes[2].childNodes
-console.log(x);
+// let x = document.childNodes[1].childNodes[2].childNodes
+// console.log(x);
 
+
+
+let x = document.getElementById("container");
+let addNewEl = document.createElement("p");
+let newEl = x.appendChild(addNewEl);
+console.log(newEl);
+newEl.textContent = "hello para2"
+console.log(document.childNodes[1].childNodes[2].childNodes[3])
+
+// let userInput = document.getElementById("userInput");
+// let x = document.childNodes[1].childNodes[2].childNodes[7];
+// let message = document.getElementById("message");
+
+
+// console.log(x);
+
+// function add () {
+//     if(userInput.value === "") {
+//     message.innerHTML = "Please Enter Input" ;
+// }  else {
+//     let liEl = document.createElement("li");
+//     let userTextNode = document.createTextNode(userInput.value);
+//     console.log(userTextNode);
+
+
+//     let deleteButton = document.createElement("button");
+//     let editButtonTextNode = document.createTextNode("Edit");
+
+// }
+
+//}
 
 
