@@ -180,17 +180,20 @@
 
 
 
-let x = document.getElementById("container");
-let addNewEl = document.createElement("p");
-let newEl = x.appendChild(addNewEl);
-console.log(newEl);
-newEl.textContent = "hello para2"
-console.log(document.childNodes[1].childNodes[2].childNodes[3])
+// let x = document.getElementById("container");
+// let addNewEl = document.createElement("p");
+// let newEl = x.appendChild(addNewEl);
+// console.log(newEl);
+// newEl.textContent = "hello para2"
+// console.log(document.childNodes[1].childNodes[2].childNodes[3])
+
+
+// let x = document.childNodes[1].childNodes[2].childNodes[7];
+// console.log(x);
 
 // let userInput = document.getElementById("userInput");
-// let x = document.childNodes[1].childNodes[2].childNodes[7];
 // let message = document.getElementById("message");
-
+// let ulEl = document.getElementById("unorderedList")
 
 // console.log(x);
 
@@ -204,10 +207,42 @@ console.log(document.childNodes[1].childNodes[2].childNodes[3])
 
 
 //     let deleteButton = document.createElement("button");
-//     let editButtonTextNode = document.createTextNode("Edit");
+//     let deleteButtonTextNode = document.createTextNode("Delete");
+//     deleteButton.setAttribute("onClick" , "removeItem(this)")
 
+//     deleteButton.appendChild(deleteButtonTextNode);
+
+
+//         liEl.appendChild(userTextNode);
+//         liEl.appendChild(deleteButton)
+//         ulEl.appendChild(li);
 // }
-
 //}
 
+// let xyz = document.getElementById("myImg");
+// console.log(xyz.getAttribute("alt"));
+// console.log(xyz.setAttribute("alt" , "hello-car"));
+// console.log(document.childNodes[1].childNodes[2].childNodes[3].childNodes[3]);
+// let z = (xyz.hasAttribute("title"));
+// if(z === false) {
+//     console.log("Not Found !");
+// } else {
+//     console.log("Found");
+// }
 
+
+
+let container = document.getElementById("div");
+console.log(document.childNodes[1].childNodes[2].childNodes[3]);
+
+let newButton = document.createElement("button");
+newButton.textContent = "Press Me" ;
+
+let createButton = container.appendChild(newButton);
+createButton.setAttribute("onClick" , "clickMe()");
+
+function clickMe() {
+    let createElement = document.createElement("p");
+    createElement.textContent = "New Paragraph Added !" ;
+    container.appendChild(createElement);
+}
