@@ -232,17 +232,95 @@
 
 
 
-let container = document.getElementById("div");
-console.log(document.childNodes[1].childNodes[2].childNodes[3]);
+// let container = document.getElementById("div");
+// console.log(document.childNodes[1].childNodes[2].childNodes[3]);
 
-let newButton = document.createElement("button");
-newButton.textContent = "Press Me" ;
+// let newButton = document.createElement("button");
+// newButton.textContent = "Press Me" ;
 
-let createButton = container.appendChild(newButton);
-createButton.setAttribute("onClick" , "clickMe()");
+// let createButton = container.appendChild(newButton);
+// createButton.setAttribute("onClick" , "clickMe()");
 
-function clickMe() {
-    let createElement = document.createElement("p");
-    createElement.textContent = "New Paragraph Added !" ;
-    container.appendChild(createElement);
-}
+// function clickMe() {
+//     let createElement = document.createElement("p");
+//     createElement.textContent = "New Paragraph Added !" ;
+//     container.appendChild(createElement);
+// }
+
+// let container = document.getElementById("div");
+
+// let newButton = document.createElement("button");
+// newButton.textContent = "Press Me" ;
+
+// console.log(document.childNodes[1].childNodes[2].childNodes[3]);
+// container.appendChild(newButton);
+
+// newButton.addEventListener("click" , function () {
+//     let para = document.createElement("p");
+//     para.textContent = "New Paragraph Added !" ;
+//     container.appendChild(para);
+// })
+
+// let container = document.getElementById("div");
+
+// let unorderedList = document.createElement("ul");
+// container.appendChild(unorderedList);
+
+// let path = (document.childNodes[1].childNodes[2].childNodes[3]);
+
+// let button = document.createElement("button");
+// button.textContent = "Press Me" ;
+// container.appendChild(button);
+
+// button.addEventListener("click" , function () {
+//     let ulEl = path.childNodes[3];
+//     let listItem = document.createElement("li");
+//     listItem.textContent = "New Paragraph Added !" ;
+//     ulEl.appendChild(listItem);
+// })
+
+let path = document.childNodes[1].childNodes[2].childNodes[7];
+console.log(path);
+
+let divContainer = document.getElementById("container");
+let mEl = document.getElementById("message");
+let userInput = document.getElementById("userInput");
+
+let addButton = document.createElement("button");
+addButton.textContent = "press me" ;
+divContainer.appendChild(addButton);
+
+let ulEl = document.createElement("ul");
+divContainer.appendChild(ulEl)
+
+addButton.addEventListener("click" , function () {
+    if(userInput.value === "") {
+        mEl.innerHTML = "Please Enter SomeThing"
+    } 
+    else {
+    let listItem = document.createElement("li");
+    let deleteButton = document.createElement("button");
+    let editButton = document.createElement("button");
+
+    deleteButton.textContent = "Delete"
+    listItem.textContent = userInput.value ;
+    editButton.textContent = "Edit" ;
+
+    ulEl.appendChild(listItem);
+    listItem.appendChild(deleteButton);
+    listItem.appendChild(editButton);
+
+    let x = userInput.value ;
+
+    deleteButton.addEventListener("click" , function () {
+        ulEl.removeChild(listItem);
+    })
+
+    editButton.addEventListener("click" , function () {
+        userInput.value = x;
+    })
+
+    userInput.value = "" ;
+    mEl.innerHTML = ""
+    }
+});
