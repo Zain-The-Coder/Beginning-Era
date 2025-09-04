@@ -329,54 +329,103 @@
 
 
 
-let path = document.childNodes[1].childNodes[2].childNodes[7].childNodes[7];
+// let path = document.childNodes[1].childNodes[2].childNodes[7].childNodes[7];
 
-let divContainer = document.getElementById("container");
-let mEl = document.getElementById("message");
+// let divContainer = document.getElementById("container");
+// let mEl = document.getElementById("message");
+// let userInput = document.getElementById("userInput");
+
+// let ulEl = document.createElement("ul");
+// divContainer.appendChild(ulEl)
+
+// function add () {
+
+//     if(userInput.value === "") {
+//         mEl.innerHTML = "input Field Is Empty !" ;
+//         mEl.style.textTransform = "uppercase" ;
+//         mEl.style.fontFamily = "monospace" ;
+//         mEl.style.fontWeight = "bolder" ;
+//     } 
+//     else {
+
+//         let liEl = document.createElement("li") ;
+//         liElTxt = document.createTextNode(userInput.value);
+//         liEl.appendChild(liElTxt) ;
+//         ulEl.appendChild(liEl);
+
+//         let deleteButton = document.createElement("button");
+//         deleteButton.textContent = "Delete" ;
+//         liEl.appendChild(deleteButton) ;
+
+//         let editButton = document.createElement("button");
+//         editButton.textContent = "Edit" ;
+//         liEl.appendChild(editButton);
+
+//         deleteButton.addEventListener("click" , function () {
+//             let Ulpath = (document.childNodes[1].childNodes[2].childNodes[7].childNodes[7]);
+//             Ulpath.removeChild(liEl);
+//         })
+
+//         editButton.addEventListener("click" , function () {
+//             let mainButton = (document.childNodes[1].childNodes[2].childNodes[7].childNodes[5]);
+//             let txt = (editButton.previousSibling.previousSibling);
+//             userInput.value = txt.nodeValue ;
+//             mainButton.textContent = "Save" ;
+
+//         })
+
+//         userInput.value = "" ;
+//         mEl.innerHTML = "" ;
+//     }
+// }
+
+ 
+
+let container = document.getElementById("container");
 let userInput = document.getElementById("userInput");
-
+let message = document.getElementById("message");
 let ulEl = document.createElement("ul");
-divContainer.appendChild(ulEl)
+let mainButton = document.getElementById("main-button");
+let ulPath = (document.childNodes[1].childNodes[2].childNodes[7].childNodes[7])
+container.appendChild(ulEl);
 
 function add () {
-
     if(userInput.value === "") {
-        mEl.innerHTML = "input Field Is Empty !" ;
-        mEl.style.textTransform = "uppercase" ;
-        mEl.style.fontFamily = "monospace" ;
-        mEl.style.fontWeight = "bolder" ;
-    } 
-    else {
-
-        let liEl = document.createElement("li") ;
-        liElTxt = document.createTextNode(userInput.value);
-        liEl.appendChild(liElTxt) ;
+        message.innerHTML = "Input Field Is Empty !" ;
+        message.style.color = "red" ;
+        message.style.fontFamily = "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" ;
+    } else {
+        let liEl = document.createElement("li");
+        let liTxt = document.createTextNode(userInput.value) ;
+        liEl.append(liTxt) ;
         ulEl.appendChild(liEl);
 
         let deleteButton = document.createElement("button");
-        deleteButton.textContent = "Delete" ;
-        liEl.appendChild(deleteButton) ;
+        let deleteButtonTxt = document.createTextNode("Delete") ;
+        deleteButton.appendChild(deleteButtonTxt) ;
+        liEl.appendChild(deleteButton);
+
+        deleteButton.setAttribute("onClick" , "itemDeleted(this)") ;
 
         let editButton = document.createElement("button");
-        editButton.textContent = "Edit" ;
+        let editButtonTxt = document.createTextNode("Edit") ;
+        editButton.appendChild(editButtonTxt) ;
         liEl.appendChild(editButton);
 
-        deleteButton.addEventListener("click" , function () {
-            let Ulpath = (document.childNodes[1].childNodes[2].childNodes[7].childNodes[7]);
-            Ulpath.removeChild(liEl);
-        })
-
-        editButton.addEventListener("click" , function () {
-            let mainButton = (document.childNodes[1].childNodes[2].childNodes[7].childNodes[5]);
-            let txt = (editButton.previousSibling.previousSibling);
-            userInput.value = txt.nodeValue ;
-            mainButton.textContent = "Save" ;
-
-        })
-
+        editButton.setAttribute("onClick" , "itemEdited(this)");
         userInput.value = "" ;
-        mEl.innerHTML = "" ;
+        
     }
+} 
+function itemDeleted (targetEl) {
+    let removeLi = targetEl.parentNode ;
+    let removeUl = (removeLi.parentNode);
+    removeUl.removeChild(removeLi);
 }
 
- 
+function itemEdited (targetEl) {
+    let userValue = targetEl.previousSibling.previousSibling ;
+    userInput.value = userValue.nodeValue;
+    mainButton.innerHTML = "Save" ;
+    mainButton.setAttribute("onClick" , "saveText()");
+}
