@@ -279,48 +279,104 @@
 //     ulEl.appendChild(listItem);
 // })
 
-let path = document.childNodes[1].childNodes[2].childNodes[7];
-console.log(path);
+// let path = document.childNodes[1].childNodes[2].childNodes[7];
+// console.log(path);
+
+// let divContainer = document.getElementById("container");
+// let mEl = document.getElementById("message");
+// let userInput = document.getElementById("userInput");
+
+// let addButton = document.createElement("button");
+// addButton.textContent = "press me" ;
+// divContainer.appendChild(addButton);
+
+// let ulEl = document.createElement("ul");
+// divContainer.appendChild(ulEl)
+
+// addButton.addEventListener("click" , function () {
+//     if(userInput.value === "") {
+//         mEl.innerHTML = "Please Enter SomeThing"
+//     } 
+//     else {
+//     let listItem = document.createElement("li");
+//     let deleteButton = document.createElement("button");
+//     let editButton = document.createElement("button");
+
+//     deleteButton.textContent = "Delete"
+//     listItem.textContent = userInput.value ;
+//     editButton.textContent = "Edit" ;
+
+//     ulEl.appendChild(listItem);
+//     listItem.appendChild(deleteButton);
+//     listItem.appendChild(editButton);
+
+//     let x = userInput.value ;
+//     let newtxtButton = addButton.textContent = "Save" ;
+
+//     deleteButton.addEventListener("click" , function () {
+//         ulEl.removeChild(listItem);
+//     })
+
+//     editButton.addEventListener("click" , function () {
+//         userInput.value =;
+//     })
+
+//     userInput.value = "" ;
+//     mEl.innerHTML = ""
+//     }
+// });
+
+
+
+
+let path = document.childNodes[1].childNodes[2].childNodes[7].childNodes[7];
 
 let divContainer = document.getElementById("container");
 let mEl = document.getElementById("message");
 let userInput = document.getElementById("userInput");
 
-let addButton = document.createElement("button");
-addButton.textContent = "press me" ;
-divContainer.appendChild(addButton);
-
 let ulEl = document.createElement("ul");
 divContainer.appendChild(ulEl)
 
-addButton.addEventListener("click" , function () {
+function add () {
+
     if(userInput.value === "") {
-        mEl.innerHTML = "Please Enter SomeThing"
+        mEl.innerHTML = "input Field Is Empty !" ;
+        mEl.style.textTransform = "uppercase" ;
+        mEl.style.fontFamily = "monospace" ;
+        mEl.style.fontWeight = "bolder" ;
     } 
     else {
-    let listItem = document.createElement("li");
-    let deleteButton = document.createElement("button");
-    let editButton = document.createElement("button");
 
-    deleteButton.textContent = "Delete"
-    listItem.textContent = userInput.value ;
-    editButton.textContent = "Edit" ;
+        let liEl = document.createElement("li") ;
+        liElTxt = document.createTextNode(userInput.value);
+        liEl.appendChild(liElTxt) ;
+        ulEl.appendChild(liEl);
 
-    ulEl.appendChild(listItem);
-    listItem.appendChild(deleteButton);
-    listItem.appendChild(editButton);
+        let deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete" ;
+        liEl.appendChild(deleteButton) ;
 
-    let x = userInput.value ;
+        let editButton = document.createElement("button");
+        editButton.textContent = "Edit" ;
+        liEl.appendChild(editButton);
 
-    deleteButton.addEventListener("click" , function () {
-        ulEl.removeChild(listItem);
-    })
+        deleteButton.addEventListener("click" , function () {
+            let Ulpath = (document.childNodes[1].childNodes[2].childNodes[7].childNodes[7]);
+            Ulpath.removeChild(liEl);
+        })
 
-    editButton.addEventListener("click" , function () {
-        userInput.value = x;
-    })
+        editButton.addEventListener("click" , function () {
+            let mainButton = (document.childNodes[1].childNodes[2].childNodes[7].childNodes[5]);
+            let txt = (editButton.previousSibling.previousSibling);
+            userInput.value = txt.nodeValue ;
+            mainButton.textContent = "Save" ;
 
-    userInput.value = "" ;
-    mEl.innerHTML = ""
+        })
+
+        userInput.value = "" ;
+        mEl.innerHTML = "" ;
     }
-});
+}
+
+ 
