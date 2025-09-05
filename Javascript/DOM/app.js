@@ -428,4 +428,13 @@ function itemEdited (targetEl) {
     userInput.value = userValue.nodeValue;
     mainButton.innerHTML = "Save" ;
     mainButton.setAttribute("onClick" , "saveText()");
+    editItemButton = targetEl ;
+}
+
+const saveText = () => {
+    let x = editItemButton.previousSibling.previousSibling.nodeValue = userInput.value;
+    mainButton.innerHTML = "Add Item" ;
+    userInput.value = "" ;
+    mainButton.setAttribute("onClick" , "add()") ;
+    editItemButton = undefined ;
 }
