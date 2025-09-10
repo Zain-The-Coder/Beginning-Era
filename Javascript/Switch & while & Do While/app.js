@@ -15,22 +15,21 @@
 //     console.log("Our Limit Is Finish")
 // }
 
-function calculator (operator , a , b) {
-    switch (operator) {
+// function calculator (operator , a , b) {
+//     switch (operator) {
 
-        case "+" : 
-        return a + b ;
-        break ;
+//         case "+" : 
+//         return a + b ;
+//         break ;
 
-        case "-" : 
-        return a - b ;
-        break ;
+//         case "-" : 
+//         return a - b ;
+//         break ;
 
-        case "*" :
-            return a * b ;
-            break ;
+//         case "*" :
+//             return a * b ;
+//             break ;
 
-    }
-}
+//     }
+// }
 
-console.log(calculator(3 , 4 , "*"))

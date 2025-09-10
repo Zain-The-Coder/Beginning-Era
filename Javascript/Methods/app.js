@@ -760,9 +760,71 @@
 // }
 // console.log("Accending : " + numIndex)
 
-let numbers = [23 , 56 , 87 , 555 , 78 , 110 , 3 , 1] ;
-console.log("Orignal Numbers - " + numbers) ;
-let ascending = numbers.sort((a , b) => a - b);
-console.log("Ascending Numbers - " + ascending);
-let descending = numbers.sort((a , b) => (b  - a));
-console.log("Descending Numbers - " + descending);
+
+
+// let numbers = [23 , 56 , 87 , 555 , 78 , 110 , 3 , 1] ;
+// console.log("Orignal Numbers - " + numbers) ;
+// let ascending = numbers.sort((a , b) => a - b);
+// console.log("Ascending Numbers - " + ascending);
+// let descending = numbers.sort((a , b) => (b  - a));
+// console.log("Descending Numbers - " + descending);
+
+
+// let myName = "Zain" ;
+// let friend = " Ur Rehman" ;
+
+// let fullName = myName.concat(" Is The Friend Of" , friend);
+// console.log(fullName)
+
+// let nameOf = "     Zain     " ;
+// console.log(nameOf);
+// console.log(nameOf.trim());
+// text = text.toLowerCase();
+// console.log(text);
+// let result = " " ;
+// let textUpper = true ;
+// for (let i = 0; i < text.length; i++) {
+//     let char = text[i] ;
+//     if(textUpper === true && char >= "a" && char <= "z") {
+//         result = result + char.toUpperCase() ;
+//         textUpper = false ;
+//     } else {
+//         result = result + char ;
+//     } 
+//     if(char === " ") {
+//         result = result + char.toLowerCase() ;
+//         textUpper = true ;
+//     }
+// }
+// console.log(result);
+
+
+// let text =  "Lorem ipsum dolor sit amet consectetur . adipisicing elit. Totam numquam, quam aut unde, ullam natus libero quo tenetur distinctio ut illo debitis facilis minus tempora, esse impedit provident quas incidunt. " ;
+// let result = " " ;
+// let switcher = true ;
+
+// for(let i = 0 ; i < text.length ; i++) {
+//     let char = text[i] ;
+//     if(switcher && char >= "a" && char <= "z") {
+//         result = result + char.toUpperCase() ;
+//         switcher = false ;
+//     } else {
+//         result = result + char;
+//     }
+
+//     if(char === " ") {
+//         result = result + char;
+//         switcher = true ;
+//     }
+// }
+// console.log(result);
+
+
+// let arrayOfFruit = ["Apple" , "Banana" , "Gavava" , "Pine Apple"];
+// let arrayOfVegetable = ["Bringal" , "Cucumber" , "Radish" , "Lady Finger"];
+// let country = ["Pakistan" , "India" , "China" , "Africa"];
+// let item = {heloo : "hi"};
+// let text = "Hello World"
+// let finalArray = arrayOfFruit.concat(arrayOfVegetable , country , arrayOfFruit , item , text);
+// console.log(finalArray)
+
