@@ -298,26 +298,112 @@
 // console.log("FAILED STUDENTS :");
 // console.log(failedStudents.join("\n"));
 
-let studentNames = ["Ali", "Sara", "Zain", "Hina", "Ahmed", "Fatima"];
-let studentMarks = [88, 95, 67, 32, 76, 45];
-let lastResult = [] ;
-let grades = [] ;
-let per = [] ;
-let totalMarks = 100;
-for (i = 0; i , studentNames.length; i++) {
-    let percentage = (studentMarks[i] / totalMarks) * 100 ;
-    if(studentMarks[i] >= 90) {
-        grades.push("A+");
-        lastResult.push("Name" + " : " + studentNames[i]);
+// let studentNames = ["Ali", "Sara", "Zain", "Hina", "Ahmed", "Fatima"];
+// let studentMarks = [88, 95, 67, 32, 76, 45];
+// let lastResult = [] ;
+// let grades = [] ;
+// let per = [] ;
+// let totalMarks = 100;
+// for (i = 0; i , studentNames.length; i++) {
+//     let percentage = (studentMarks[i] / totalMarks) * 100 ;
+//     if(studentMarks[i] >= 90) {
+//         grades.push("A+");
+//         lastResult.push("Name" + " : " + studentNames[i]);
 
-    } else if (studentMarks[i] >= 80) {
-        grades.push("A")
-    } else if(studentMarks[i] >= 70) {
-        grades.push("B");
-    } else if(studentMarks[i] >= 60) {
-        grades.push("C");
-    } else if(studentMarks[i]  >= 50) {
-        grades.push("D");
-    }
-}
-console.log(lastResult);
+//     } else if (studentMarks[i] >= 80) {
+//         grades.push("A")
+//     } else if(studentMarks[i] >= 70) {
+//         grades.push("B");
+//     } else if(studentMarks[i] >= 60) {
+//         grades.push("C");
+//     } else if(studentMarks[i]  >= 50) {
+//         grades.push("D");
+//     }
+// }
+// console.log(lastResult
+
+
+// let num = [3 , 2 , 5 , 2 , 2];
+// num.forEach(function (elements) {
+//     console.log(elements * elements);
+
+// }) 
+    
+// let students = ["Ali", "Zain", "Sara", "Ayesha", "Ahmed"];
+
+// students.forEach((index , i) => {
+//     console.log("Student " + index +  [i])
+// })
+
+// let numbers = [2 , 4 , 6 , 8] ;
+
+// numbers.forEach((num , index , arr) => {
+//     arr[index] = num * 2 ;
+
+// })
+// console.log(numbers)
+
+// let words = ["apple", "banana", "cat", "dog"];
+// let lenghtArray = [] ;
+
+// words.forEach((num) => {
+//     let x  = num.length;
+//     if( x >= 5) {
+//     lenghtArray.push(
+//         {
+//             word : num ,
+//             length : x , 
+//             isLong : true ,
+//         })
+//     }
+//     else {
+//     lenghtArray.push(
+//         {
+//             word : num ,
+//             length : x , 
+//             isLong : false,
+//         })
+//     }
+// })
+// console.log(words)
+// console.log(lenghtArray)
+
+
+// let arr = [
+//     {name : "zain" , rollNo : "E 468"},
+//     {name : "zainHaha" , rollNo : "E 468Haha"},
+// ]
+
+// arr.forEach((e , i) => {
+//     console.log(arr[i].name) 
+// });
+
+// let students = [
+//     {name : "firstStudent" , class : "188" , rollNo : "01" , marks : [80 , 85 , 70]},
+//     {name : "secondStudent" , class : "189" , rollNo : "02" , marks : [79 , 95 , 20]},
+//     {name : "thirdStudent" , class : "190" , rollNo : "03" , marks : [67 , 25 , 82]},
+//     {name : "fourthStudent" , class : "191" , rollNo : "04" , marks : [67 , 5 , 42]},
+//     {name : "fifthStudent" , class : "192" , rollNo : "05" , marks : [67 , 65 , 62]}
+// ]
+// students.forEach((element , index , arr) => {
+//     let marks = arr[index].marks  ;
+    
+//     let a = ("Student Name : " + arr[index].name);
+//     let b = ("Student Class : " + arr[index].class);
+//     let c = ("Student Roll No : " + arr[index].rollNo);
+//     let d = marks[0] + marks[1] + marks[2];
+//     let e = "" ;
+//     if(d >= 220) {
+//         e += "Good." ;
+//     } else if(d >= 175) {
+//         e += "Normal." ;
+//     } else {
+//         e += "Fail" ;
+//     }
+//     console.log(a + "\n" + b + "\n" + c + "\n" + "Marks : " +  d + "\n" + "Status : " + e)
+// });
+
+
+let str = "zain" ;
+let x = Array.from(str);
+console.log(x);
