@@ -532,15 +532,29 @@
 // console.log(sum(nums));
 
 
-function greetInCapital (capital) {
-    const second =  (capital) => {
-        let y = capital.toUpperCase() ;
-        return y ;
-    }
-    let y = console.log(second ("HELLO " + second(capital)));
-    return y ;
+// function greetInCapital (capital) {
+//     const second =  (capital) => {
+//         let y = capital.toUpperCase() ;
+//         return y ;
+//     }
+//     let y = console.log(second ("HELLO " + second(capital)));
+//     return y ;
     
-}
+// }
 
-const greetInTit
-greetInCapital("zain");
+// const greetInTit
+// greetInCapital("zain");
+
+// let button = document.getElementById("y");
+
+// button.addEventListener("click" , () => {
+//     let x = document.getElementById("userInput").value ;
+//     try {
+//     let input = x ;
+//     let answer = new Function ("return " + input);
+//     console.log(answer()); 
+//     } catch (e) {
+//         x = "Syntax Error" ;
+//         console.log(e);
+//     }
+// });
