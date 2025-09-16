@@ -408,9 +408,6 @@
 // let x = Array.from(str);
 // console.log(x);
 
-
-let fruits = ["apple" , "banana" , "grapes" , "pomegrants"];
-
 // for(let i of fruits) {
 //     console.log(i);
 // }
@@ -418,3 +415,5 @@ let fruits = ["apple" , "banana" , "grapes" , "pomegrants"];
 // for(let i in fruits) {
 //     console.log(fruits[i])
 // }
+
+

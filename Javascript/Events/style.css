@@ -74,13 +74,13 @@ button {
     transform: rotateY(180deg);
 } */ 
 
-
+/* 
   .card {
       width: 200px;
       height: 300px;
       perspective: 1000px; /* 3D effect */
-      cursor: pointer;
-    }
+      /* cursor: pointer; */
+    /* }
 
     .card-inner {
       position: relative;
@@ -115,4 +115,31 @@ button {
     .back-side {
       background: lightcoral;
       transform: rotateY(180deg);
-    }
+    } */ 
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+.b {
+  position: absolute;
+  height: 40px;
+  width: 80px;
+}
+#leftButton {
+  left: 75%;
+  top: 180px;
+}
+#rightButton {
+  left: 19.1%;
+  top: 168px;
+}

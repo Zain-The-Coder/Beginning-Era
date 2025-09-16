@@ -260,3 +260,28 @@
 // });
 
 
+
+let images = document.getElementsByClassName("image");
+let index = 0;
+let prevIndex = images.length - 1; // pehle last ko prev maan lo
+
+setInterval(() => {
+    // purani image ko back bhejo
+    images[prevIndex].style.zIndex = 0;
+    images[prevIndex].style.animation = "none";
+
+    // reflow force (animation reset)
+    void images[index].offsetWidth;
+
+    // nayi image ko front lao
+    images[index].style.zIndex = 10;
+    images[index].style.animation = "slideZoom 1.5s ease";
+
+    // indexes update karo
+    prevIndex = index;
+    index++;
+    if (index === images.length) {
+        index = 0;
+    }
+}, 3000);
+

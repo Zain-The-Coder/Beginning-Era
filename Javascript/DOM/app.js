@@ -381,60 +381,95 @@
 
  
 
-let container = document.getElementById("container");
-let userInput = document.getElementById("userInput");
-let message = document.getElementById("message");
-let ulEl = document.createElement("ul");
-let mainButton = document.getElementById("main-button");
-let ulPath = (document.childNodes[1].childNodes[2].childNodes[7].childNodes[7])
-container.appendChild(ulEl);
+// let container = document.getElementById("container");
+// let userInput = document.getElementById("userInput");
+// let message = document.getElementById("message");
+// let ulEl = document.createElement("ul");
+// let mainButton = document.getElementById("main-button");
+// let ulPath = (document.childNodes[1].childNodes[2].childNodes[7].childNodes[7])
+// container.appendChild(ulEl);
 
-function add () {
-    if(userInput.value === "") {
-        message.innerHTML = "Input Field Is Empty !" ;
-        message.style.color = "red" ;
-        message.style.fontFamily = "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" ;
-    } else {
-        let liEl = document.createElement("li");
-        let liTxt = document.createTextNode(userInput.value) ;
-        liEl.append(liTxt) ;
-        ulEl.appendChild(liEl);
+// function add () {
+//     if(userInput.value === "") {
+//         message.innerHTML = "Input Field Is Empty !" ;
+//         message.style.color = "red" ;
+//         message.style.fontFamily = "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" ;
+//     } else {
+//         let liEl = document.createElement("li");
+//         let liTxt = document.createTextNode(userInput.value) ;
+//         liEl.append(liTxt) ;
+//         ulEl.appendChild(liEl);
 
-        let deleteButton = document.createElement("button");
-        let deleteButtonTxt = document.createTextNode("Delete") ;
-        deleteButton.appendChild(deleteButtonTxt) ;
-        liEl.appendChild(deleteButton);
+//         let deleteButton = document.createElement("button");
+//         let deleteButtonTxt = document.createTextNode("Delete") ;
+//         deleteButton.appendChild(deleteButtonTxt) ;
+//         liEl.appendChild(deleteButton);
 
-        deleteButton.setAttribute("onClick" , "itemDeleted(this)") ;
+//         deleteButton.setAttribute("onClick" , "itemDeleted(this)") ;
 
-        let editButton = document.createElement("button");
-        let editButtonTxt = document.createTextNode("Edit") ;
-        editButton.appendChild(editButtonTxt) ;
-        liEl.appendChild(editButton);
+//         let editButton = document.createElement("button");
+//         let editButtonTxt = document.createTextNode("Edit") ;
+//         editButton.appendChild(editButtonTxt) ;
+//         liEl.appendChild(editButton);
 
-        editButton.setAttribute("onClick" , "itemEdited(this)");
-        userInput.value = "" ;
+//         editButton.setAttribute("onClick" , "itemEdited(this)");
+//         userInput.value = "" ;
         
-    }
-} 
-function itemDeleted (targetEl) {
-    let removeLi = targetEl.parentNode ;
-    let removeUl = (removeLi.parentNode);
-    removeUl.removeChild(removeLi);
-}
+//     }
+// } 
+// function itemDeleted (targetEl) {
+//     let removeLi = targetEl.parentNode ;
+//     let removeUl = (removeLi.parentNode);
+//     removeUl.removeChild(removeLi);
+// }
 
-function itemEdited (targetEl) {
-    let userValue = targetEl.previousSibling.previousSibling ;
-    userInput.value = userValue.nodeValue;
-    mainButton.innerHTML = "Save" ;
-    mainButton.setAttribute("onClick" , "saveText()");
-    editItemButton = targetEl ;
-}
+// function itemEdited (targetEl) {
+//     let userValue = targetEl.previousSibling.previousSibling ;
+//     userInput.value = userValue.nodeValue;
+//     mainButton.innerHTML = "Save" ;
+//     mainButton.setAttribute("onClick" , "saveText()");
+//     editItemButton = targetEl ;
+// }
 
-const saveText = () => {
-    let x = editItemButton.previousSibling.previousSibling.nodeValue = userInput.value;
-    mainButton.innerHTML = "Add Item" ;
-    userInput.value = "" ;
-    mainButton.setAttribute("onClick" , "add()") ;
-    editItemButton = undefined ;
-}
+// const saveText = () => {
+//     let x = editItemButton.previousSibling.previousSibling.nodeValue = userInput.value;
+//     mainButton.innerHTML = "Add Item" ;
+//     userInput.value = "" ;
+//     mainButton.setAttribute("onClick" , "add()") ;
+//     editItemButton = undefined ;
+// }
+
+
+// let userInput = document.getElementById("user-input");
+// let container = document.getElementById("container")
+
+// function start () {
+//     let elements = container.childNodes;
+//     for(let i = 0 ; i < elements.length ; i++) {
+//         if(elements[i].innerHTML.toLowerCase().indexOf(userInput.value.toLowerCase()) !== -1) {
+//             elements[i].style.display = "" ;
+//         } else {
+//             elements[i].style.display = "none" ;
+//         }
+// }
+// }
+
+// let userInput = document.getElementById("user-input");
+// let container = document.getElementById("container");
+
+// userInput.addEventListener("keyup" , () => {
+//     let input = userInput.value ;
+//     let div = container.childNodes;
+
+//     for(let i = 0 ; i < div.length ; i++) {
+//         let listValue =(div[i].textContent.toLowerCase());
+//         let compareValue = input.toLowerCase() ;
+//         if((div[i].nodeType) === 1) {
+//             if(listValue.indexOf(compareValue) !== -1) {
+//                 div[i].style.display = "" ;
+//             } else {
+//                 div[i].style.display = "none" ;
+//             }
+//         }
+//     }
+// })
