@@ -40,3 +40,74 @@
 // )
 
 
+// function randomGenerator () {
+//     let number = Math.ceil(Math.random() * 10) ;
+
+//     if(number % 2 === 0) {
+//         console.log("this is even number");
+//     } else {
+//         console.log("this is odd number");
+//     }
+//     randomGenerator();
+// }
+
+// let firstSync = new Promise((resolve , reject) => {
+//     function myFunc() {
+//         let random = Math.ceil(Math.random() * 100) ;
+//         if(random % 2 === 0) {
+//             resolve("The Number Is Even");
+//         } else {
+//             reject("The Number Is Odd");
+//         }
+//     }
+//     firstSync() ;
+// })
+
+// firstSync 
+//         .then( function (resolve) {
+//             console.log(resolve)
+//         })
+
+// let lotteryFunction = new Promise( (win , loss) => {
+//     let random = Math.ceil(Math.random() * 50) 
+//         if (random % 2 === 0) {
+//             win("The User Is Win");            
+//         } else {
+//             loss("The User Is Loss");
+//         }
+//     }
+// )
+
+// lotteryFunction
+//     .then (setInterval(() => {
+//         (win) => {
+//             console.log(win)
+//         }
+//     }, 2000))
+//     .catch(setInterval(() => {
+//         (loss) => {
+//             console.log(loss)
+//         }
+//     }, 3000));
+
+
+// let resulter = new Promise((pass , fail) => {
+//     let random = Math.ceil(Math.random() * 100) 
+//     if(random >= 50) {
+//         setInterval(() => {
+//             pass("Congratulation , the user is passed"  + " The number is " + random);
+//         }, 2000)
+//     } else {
+//         setInterval(() => {
+//             fail("Ops ! The User Is Failed"  + " The number is " + random);
+//         }, 2000);
+//     }
+// })
+    
+// resulter
+//     .then((pass) => {
+//         console.log(pass)
+//     }) 
+//     .catch((fail) =>  {
+//         console.log(fail);
+//     })
