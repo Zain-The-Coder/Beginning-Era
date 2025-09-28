@@ -80,3 +80,31 @@
 
 // let x = console.error("error")
 // console.clear();
+
+// let arr = undefined;
+// console.log(typeof(arr));
+
+// let arr = [2 , 5 , 2 , 6 , 10];
+// delete(arr[4])
+// console.log(arr);
+
+// let arr = [2 , 5 , 2 , 6 , 10];
+// arr.forEach((x , i , arrey) => { // ForEach (value , index , array)
+//     console.log(arr[i])
+// })
+
+
+// let arr = [2 , 5 , 2 , 6 , 10];
+// arr.forEach((value , index , array) => {
+//    // console.log(index)
+//    console.log(value * value);
+//    console.log(value + value)
+// })
+
+// let arr = [2 , 5 , 2 , 6 , 10];
+
+// arr.map((value , index , array) => {
+//     console.log(value)
+// })
+
+let arr = [2 , 5 , 2 , 6 , 10];
