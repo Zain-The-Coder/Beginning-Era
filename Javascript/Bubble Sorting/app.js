@@ -52,12 +52,50 @@
 
 //Task No 7 
 
-let userInput = prompt("Enter Your Text");
-let number = 0 ;
-let text = "aeiou" ;
-for(let i = 0 ; i < userInput.length ; i++) {
-    if(userInput[i].indexOf(text)) {
-        ++number ;
+// let userInput = prompt("Enter Your Text");
+// let number = 0 ;
+// let text = ["a" , "e" , "i" , "o" , "u"];
+// for(let i = 0 ; i < userInput.length ; i++) {
+//     console.log(userInput[i])
+//     for(let j = 0 ; j < text.length ; j++) {
+//         if(userInput[i].toLowerCase() === text[j]) {
+//             number++ ;
+//         }
+//     }
+// }
+// console.log("The Number Of Vowels Present In The Text Is : " + number)
+
+
+// //Task No 8
+// let userInput = prompt("Enter Your text");
+// let space = 0 ;
+// let letters = 1 ;
+// let characters = 0 ;
+
+
+// for(let i = 0 ; i < userInput.length ; i++) {
+//     if(userInput[i] === " ") {
+//         letters++ ;
+//         space++ ;
+//     } 
+// }
+// console.log("The Number Of Spaces Is : " +  space + "\n" + "The Number Of Letters Is : " + letters + "\n" + "The Number Of Characters Is : " + userInput.length)
+
+// let arr = [43 , 2 , 345 , 3 , 28, 1];
+// let update = arr.sort((a , b) => a - b);
+// let lastIndex = update.at(-1) ;
+// console.log("The Biggest Number In Array Is : " + lastIndex  + "\n" + "The Smaller Number In Array Is " + update[0]);
+
+let arr = [43 , 2 , 345 , 3 , 28, 1];
+let min = arr[0] ;
+let max = arr[0];
+for(let i = 0 ; i < arr.length ; i++) {
+    if(arr[i] > max) {
+        max = arr[i];
+    }
+    if(arr[i] < min) {
+        min = arr[i];
     }
 }
-console.log(number)
+console.log(max);
+console.log(min)
