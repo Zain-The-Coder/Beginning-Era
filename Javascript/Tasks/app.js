@@ -92,12 +92,58 @@
 // console.log("Biggest Number is " + lastNumber + " The Smaller Number Is : " + firstNumber);
 
 
-let arr = [54 , 2 , 4 ,23 , 87 , 101 , 409];
+// let arr = [54 , 2 , 4 ,23 , 87 , 101 , 409];
 
-for(let i = 0 ; i < arr.length ; i++) {
-    let bigNum = arr[i];
-    if(bigNum < arr[i + 1]) {
-        bigNum = arr[i + 1];
-    } 
-    console.log(bigNum)
+// for(let i = 0 ; i < arr.length ; i++) {
+//     let bigNum = arr[i];
+//     if(bigNum < arr[i + 1]) {
+//         bigNum = arr[i + 1];
+//     } 
+//     console.log(bigNum)
+// }
+
+
+// let number = Number(prompt("Enter Your Number"));
+// let factorial = "" ;
+// for(let i = 0 ; i < number ; i++) {
+//     number 
+// }
+
+// let text = "hello world 123" ;
+// console.log(text)
+// for(let i = 0 ; i < text.length ; i++) {
+//     if(text[i] === "a" || text[i] === "e" || text[i] === "i" || text[i] === "o" || text[i] === "u") {
+//         console.log("")
+//     }
+// }
+
+// let arr = [43 , 2 , 75 , 3 , 45 , 76 , 43 , 44];
+// let even = 0 ;
+// let odd = 0 ;
+
+// for(let i = 0 ; i < arr.length ; i++) {
+//     if(arr[i] % 2 === 0) {
+//         even++ ;
+//     } else {
+//         odd++
+//     }
+// }
+// console.log(even + " " + odd)
+
+// let arr = [43 , 2 , 75 , 3 , 45 , 76 , 43 , 44 , 1002 , 10];
+// let largest = arr[0];
+// let secondLargest = "" ;
+
+// for(let i = 1 ; i < arr.length ; i++) {
+//     if(largest < arr[i]) {
+//         largest = arr[i];
+//     }
+// }
+// console.log(arr)
+// console.log(largest);
+
+let number = [2, 5, 2, 7, 5, 9, 7];
+let arr = [number[0]]
+for(let i = 0 ; i < number.length ; i++) {
+    if(number[i)
 }
