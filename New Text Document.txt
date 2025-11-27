@@ -3,3 +3,6 @@ NEED TO LEARN
 add event listener 
 flip rotate 
 anchor tag do not obey return keyword
+
+
+https://freelanceladingpage.netlify.app/
